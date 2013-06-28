@@ -424,6 +424,23 @@ bot.on('pmmed', function (data)
     }
 });
 
+bot.on('pmmed', function (data)
+{
+    var text = data.text; //text detected in the bots pm
+
+    if (text.match(/^\/moon$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('You are going to the moon! @' + data2.name);
+        });
+
+        bot.pm('You are going to the moon!', data.senderid); //send this text back to the sender...        
+    }
+});
+
 //BlackList
 var blackList = ['xxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxx'];
 
@@ -709,15 +726,10 @@ afkCheck = function () {
 setInterval(afkCheck, 5000); //This repeats the check every five seconds.
 
 //Urban Dictionary Command
-var config;
+
 var Log;
 var http;
 bot.on('speak', function(data) {
-  // Log chat to the console
-  if(config.consolelog) {
-    Log(data.name + ': ' + data.text);
-  }
-  data.text = data.text.trim(); // Get rid of any surrounding whitespace
 
   // Respond to "/define" command (uses UrbanDictionary.com)
   if(data.text.match(/^\/define/i)) {
@@ -776,7 +788,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 2.2 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 2.3 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -891,3 +903,54 @@ function startWatchdog() { // Start the watchdog timer
     }, 10 * 1000); // Try to log back in every 10 seconds
   }
 }
+
+//Vip List
+var vipList = [];
+var currentDjs;
+var people;
+var timer;
+
+var vipListCheck = function ()
+{
+    //this kicks all users off stage when the vip list is not empty
+    if (vipList.length !== 0 && currentDjs.length != vipList.length)
+    {
+        for (var p = 0; p < currentDjs.length; p++)
+        {
+            var checkIfVip = vipList.indexOf(currentDjs[p]);
+            if (checkIfVip == -1 && currentDjs[p] != USERID)
+            {
+                bot.remDj(currentDjs[p]);
+            }
+        }
+    }
+};
+
+
+setInterval(vipListCheck, 5000); //repeats the check every five seconds. 
+
+//this activates when a user joins the stage.
+bot.on('add_dj', function (data)
+{
+});
+    //removes dj when they try to join the stage if the vip list has members in it.
+    //does not remove the bot
+    var checkVip = vipList.indexOf(data);
+    if (vipList.length !== 0 && checkVip == -1 && data.user[0].userid != USERID)
+
+    {
+        bot.remDj(data.user[0].userid);
+        bot.pm('The vip list is currently active, only the vips may dj at this time', data.user[0].userid);
+        ++people[data.user[0].userid].spamCount;
+        if (timer[data.user[0].userid] !== null)
+        {
+            clearTimeout(timer[data.user[0].userid]);
+            timer[data.user[0].userid] = null;
+        }
+        timer[data.user[0].userid] = setTimeout(function ()
+        {
+            people[data.user[0].userid] = {
+                spamCount: 0
+            };
+        }, 10 * 1000);
+    }

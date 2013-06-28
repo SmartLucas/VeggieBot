@@ -24,6 +24,7 @@ Private Message Commands:
 2. /God
 3. /goodbye
 4. /chilly
+5. /moon
 
  Features:
 1. On/Off Switch
@@ -45,8 +46,9 @@ Private Message Commands:
 17. Urban Dictionary Lookup
 18. Auto Reconnects to Turntable.fm
 19. Logs Version Number to his console whenever he logs on
+20. VIP List
 
-Version Number: 2.2
+Version Number: 2.3
 
 When He will be Updated: He will be updated frequently every week. 
  
