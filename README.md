@@ -53,3 +53,6 @@ When He will be Updated: He will be updated frequently every week.
 Debut Date: June 28, 2013
  
 Creator: Turntablelover
+
+To Run the bot when you have Node.Js, do node Bot.Js in the directory with all of the files for the bot
+Or You could run it on a cloud service like Cloud9. 
