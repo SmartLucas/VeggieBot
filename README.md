@@ -4,6 +4,7 @@ VeggieBot
 Bot coded for Turntable.fm
 
 Introduction: His coding is made out of the Turntable-API. Link is at https://github.com/alaingilbert/Turntable-API
+
 Commands so Far:
 /status
 /off
@@ -17,6 +18,7 @@ Commands so Far:
 /username
 /define
 /uptime
+
 Private Message Commands:
 1. /hello
 2. /God
@@ -43,8 +45,10 @@ Private Message Commands:
 17. Urban Dictionary Lookup
 18. Auto Reconnects to Turntable.fm
 19. Logs Version Number to his console whenever he logs on
+
 Version Number: 2.2
-When He will be Updated: He will be updated frequently every day when I add new coding, if there are any bugs,and when I remove coding.
+
+When He will be Updated: He will be updated frequently every week. 
  
 Debut Date: June 28, 2013
  
