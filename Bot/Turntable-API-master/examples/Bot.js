@@ -954,3 +954,12 @@ bot.on('add_dj', function (data)
             };
         }, 10 * 1000);
     }
+    
+    bot.on('registered', function (data)
+{
+    setTimeout(function ()
+    {
+        bot.speak(data.user[0].name + ', welcome to the room!'); //send it in the chatbox
+        bot.pm('welcome to the room!', data.user[0].userid); //send it in the pm    
+    }, 3 * 1000); //slow it down 3 seconds
+});

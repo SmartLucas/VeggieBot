@@ -47,8 +47,9 @@ Private Message Commands:
 18. Auto Reconnects to Turntable.fm
 19. Logs Version Number to his console whenever he logs on
 20. VIP List
+21. Room Greeting
 
-Version Number: 2.3
+Version Number: 2.4
 
 When He will be Updated: He will be updated frequently every week. 
  
