@@ -54,7 +54,7 @@ Admin-Only Commands:
 22. Song Limit
 23. Song Stats
 
-Version Number: 2.4
+Version Number: 2.5
 
 When He will be Updated: He will be updated frequently every week. 
  
