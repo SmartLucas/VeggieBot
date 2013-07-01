@@ -959,7 +959,7 @@ bot.on('add_dj', function (data)
 {
     setTimeout(function ()
     {
-        bot.speak(data.user[0].name + ', welcome to the room!'); //send it in the chatbox
-        bot.pm('welcome to the room!', data.user[0].userid); //send it in the pm    
+        bot.speak(data.user[0].name + ', welcome to the room, and have fun being entertained by awesome music!'); //send it in the chatbox
+        bot.pm('welcome to the room, and have fun being entertained by awesome music!', data.user[0].userid); //send it in the pm    
     }, 3 * 1000); //slow it down 3 seconds
 });
