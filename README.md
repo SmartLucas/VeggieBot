@@ -26,10 +26,7 @@ Private Message Commands:
 4. /chilly
 5. /moon
 
-Admin-Only Commands:
-1. /song info
-
- Features:
+Features:
 1. On/Off Switch
 2. DJing Functions
 3. AutoFan at the beginning of a song(Bot will only fan you only if he didn't fan you before)

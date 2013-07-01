@@ -931,13 +931,6 @@ bot.on('add_dj', function (data)
     }, 3 * 1000); //slow it down 3 seconds
 });
 
-bot.on('speak', function(e) {
-  if(e.userid == '4e16f5414fe7d0665b0cacea' && e.text == '/song info') {
-    // Say Info for the Song
-    bot.speak('The current song is: ' + 'data.room.metadata.current_song.metadata.song' + 'By:' + 'data.room.metadata.current_song.metadata.artist' + 'From:' + 'data.room.metadata.current_song.metadata.album');
-  }
-});
-
 bot.on('endsong', function (data) { 
   var currentdj = data.room.metadata.current_dj;
   var song = data.room.metadata.current_song.metadata.song;
@@ -946,7 +939,7 @@ bot.on('endsong', function (data) {
   var up_votes = data.room.metadata.upvotes;
   var down_votes = data.room.metadata.downvotes;
   var listeners = data.room.metadata.listeners;
-
+  var snagCounter = data.room.metadata.snags;
   bot.speak(song +" ( "+up_votes+" :+1: "+down_votes+" :-1: "+snagCounter+" <3 "+listeners+" :busts_in_silhouette: )");
 
 });
