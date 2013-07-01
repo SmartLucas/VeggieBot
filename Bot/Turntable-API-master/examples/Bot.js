@@ -2,7 +2,6 @@ var Bot    = require('ttapi');
 var AUTH   = 'xxxxxxxxxxxxxxxxxxxxxxxx';
 var USERID = 'xxxxxxxxxxxxxxxxxxxxxxxx';
 var ROOMID = 'xxxxxxxxxxxxxxxxxxxxxxxx';
-var ADMIN = 'xxxxxxxxxxxxxxxxxxxxxxxx';
 var BOTNAME = 'VeggieBot';
 
 var netwatchdogTimer = null; // Used to detect internet connection dropping out
@@ -18,38 +17,6 @@ var songLimitTimer = null;
 var lastdj = null;
 var checkLast = null;
 bot.listen(process.env.Port,process.env.IP);
-
-//Checks if the user is a bot admin
-global.IsAdmin = function(userid) {
-    if ((userid) !== -1) {
-		return true;
-	} else {
-		if (userid === 'xxxxxxxxxxxxxxxxxxxxxxxx') {
-			return true;
-		}
-		return false;
-	}
-    
-//Checks if the user is a moderator
-global.IsMod = function(userid, callback) {
-    bot.roomInfo(function(data) {
-		var moderators = data.room.metadata.moderator_id;
-		if ((userid)) {
-			callback(true);
-			return;
-		}
-		if (moderators.indexOf(userid) != -1) {
-			callback(true);
-			return;
-		} else {
-			callback(false);
-			return;
-		}
-	});
-};
-
-
-};
 
 // Define default value for global variable 'isOn'
 var isOn = true;
@@ -788,7 +755,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 2.3 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 2.4 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -962,4 +929,50 @@ bot.on('add_dj', function (data)
         bot.speak(data.user[0].name + ', welcome to the room, and have fun being entertained by awesome music!'); //send it in the chatbox
         bot.pm('welcome to the room, and have fun being entertained by awesome music!', data.user[0].userid); //send it in the pm    
     }, 3 * 1000); //slow it down 3 seconds
+});
+
+bot.on('speak', function(e) {
+  if(e.userid == '4e16f5414fe7d0665b0cacea' && e.text == '/song info') {
+    // Say Info for the Song
+    bot.speak('The current song is: ' + 'data.room.metadata.current_song.metadata.song' + 'By:' + 'data.room.metadata.current_song.metadata.artist' + 'From:' + 'data.room.metadata.current_song.metadata.album');
+  }
+});
+
+bot.on('endsong', function (data) { 
+  var currentdj = data.room.metadata.current_dj;
+  var song = data.room.metadata.current_song.metadata.song;
+  var artist = data.room.metadata.current_song.metadata.artist;
+  var album = data.room.metadata.current_song.metadata.album;
+  var up_votes = data.room.metadata.upvotes;
+  var down_votes = data.room.metadata.downvotes;
+  var listeners = data.room.metadata.listeners;
+
+  bot.speak(song +" ( "+up_votes+" :+1: "+down_votes+" :-1: "+snagCounter+" <3 "+listeners+" :busts_in_silhouette: )");
+
+});
+
+var songsLimit = 4;
+var djs = {};
+
+bot.on('roomChanged', function (data) {
+  var currentDjs = data.room.metadata.djs;
+  for (var i = 0; i < currentDjs.length; i++) {
+    djs[currentDjs[i]] = { nbSong: 0 };
+  }
+});
+
+bot.on('add_dj', function (data) {
+  djs[data.user[0].userid] = { nbSong: 0 };
+});
+
+bot.on('rem_dj', function (data) {
+  delete djs[data.user[0].userid];
+});
+
+bot.on('endsong', function (data) {
+  var djId = data.room.metadata.current_dj;
+  if (djs[djId] && ++djs[djId].nbSong >= songsLimit) {
+    bot.remDj(djId);
+    delete djs[djId];
+  }
 });

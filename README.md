@@ -26,6 +26,9 @@ Private Message Commands:
 4. /chilly
 5. /moon
 
+Admin-Only Commands:
+1. /song info
+
  Features:
 1. On/Off Switch
 2. DJing Functions
@@ -48,6 +51,8 @@ Private Message Commands:
 19. Logs Version Number to his console whenever he logs on
 20. VIP List
 21. Room Greeting
+22. Song Limit
+23. Song Stats
 
 Version Number: 2.4
 
