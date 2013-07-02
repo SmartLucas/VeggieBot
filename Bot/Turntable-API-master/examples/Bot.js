@@ -520,7 +520,7 @@ bot.on('newsong', function (data) {
 
 //Bop Count
 var bopcount;
-var botuserid = "510b0749eb35c135fbe7370c";
+
 bopcount = 0;
 
 bot.on('speak', function (data) {
@@ -532,7 +532,7 @@ bot.on('speak', function (data) {
   }
 
   // And when the bopcount reaches two...
-  if (bopcount == 2 && (data.userid != botuserid)) {
+  if (bopcount == 2) {
     bot.vote('up');
     bot.speak('This song is so epic! Thanks for playing this song.');
   }
