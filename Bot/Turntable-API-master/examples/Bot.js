@@ -121,7 +121,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 55))
+        switch (Math.round(Math.random() * 57))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -290,6 +290,12 @@ bot.on('speak', function (data)
             break;
         case 55:
             bot.speak('I am legend.');
+            break;
+        case 56:
+            bot.speak('Off with their heads!');
+            break;
+        case 57:
+            bot.speak('You are so awesome, can i have your autograph.');
             break;
 
  
@@ -528,7 +534,7 @@ bot.on('speak', function (data) {
   // And when the bopcount reaches two...
   if (bopcount == 2 && (data.userid != botuserid)) {
     bot.vote('up');
-    bot.speak('This song is so epic!');
+    bot.speak('This song is so epic! Thanks for playing this song.');
   }
 });
 
