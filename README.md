@@ -50,8 +50,8 @@ Features:
 21. Room Greeting
 22. Song Limit
 23. Song Stats
-
-Version Number: 2.5
+24. 8 Ball Database
+Version Number: 2.6
 
 When He will be Updated: He will be updated frequently every week. 
  
