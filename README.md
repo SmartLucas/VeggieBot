@@ -18,6 +18,8 @@ Commands so Far:
 /username
 /define
 /uptime
+/8ball
+/version
 
 Private Message Commands:
 1. /hello
@@ -51,7 +53,7 @@ Features:
 22. Song Limit
 23. Song Stats
 24. 8 Ball Database
-Version Number: 2.6
+Version Number: 2.7
 
 When He will be Updated: He will be updated frequently every week. 
  

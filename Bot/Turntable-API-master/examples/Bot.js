@@ -8,9 +8,9 @@ var netwatchdogTimer = null; // Used to detect internet connection dropping out
 var startTime = Date.now(); // Holds start time of the bot
 var reLogins = 0; // The number of times the bot has re-logged on due to internet/tt.fm outage.
 var botDownDATEtime = ""; // The time/date the bot went down.
+
 var botDownUTCtime = 0; // Used to save the UTC time the bot went down.
 var botDowntime = 0; // Used to save the duration of time the bot was down for last.
-
 var songLengthLimit = 10.0;
 var songLimitTimer = null;
 var lastdj = null;
@@ -535,7 +535,7 @@ bot.on('speak', function (data) {
   // And when the bopcount reaches two...
   if (bopcount == 2) {
     bot.vote('up');
-    bot.speak('This song is so epic! Thanks for playing this song.');
+    bot.speak('This song is so epic! Thanks for playing it.');
   }
 });
 
@@ -700,12 +700,12 @@ afkCheck = function () {
 setInterval(afkCheck, 5000); //This repeats the check every five seconds.
 
 //Urban Dictionary Command
-
 var Log;
 var http;
+
 bot.on('speak', function(data) {
 
-  // Respond to "/define" command (uses UrbanDictionary.com)
+// Respond to "/define" command (uses UrbanDictionary.com)
   if(data.text.match(/^\/define/i)) {
     var queryResponse = '';
     var sSplit = data.text.split("/define");
@@ -762,7 +762,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 2.6 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 2.7 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -947,6 +947,7 @@ bot.on('endsong', function (data) {
   var down_votes = data.room.metadata.downvotes;
   var listeners = data.room.metadata.listeners;
   var snagCounter = data.room.metadata.snags;
+
   bot.speak(song +" ( "+up_votes+" :+1: "+down_votes+" :-1: "+snagCounter+" <3 "+listeners+" :busts_in_silhouette: )");
 
 });
@@ -981,7 +982,7 @@ var randomItem = function (list) {
     return list[Math.floor(Math.random() * list.length)];
 };
 
-var botuserid = "xxxxxxxxxxxxxxxxxxxxxxxx";
+var botuserid = "510b0749eb35c135fbe7370c";
 
 //magic 8ball array
 var eightBallList = [
@@ -999,4 +1000,15 @@ bot.on('speak', function(data) {
     bot.speak(":8ball: Says: " + randomItem(eightBallList));
   }
 
+});
+
+bot.on('speak', function (data) {
+  // Get the data
+  var name = data.name;
+  var text = data.text;
+
+  // Respond to "/version" command
+  if (text.match(/^\/version$/)) {
+    bot.speak('My current version number is 2.7 @'+name+'.');
+  }
 });
