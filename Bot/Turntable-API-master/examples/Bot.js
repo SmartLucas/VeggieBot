@@ -564,26 +564,6 @@ global.checkOnNewSong = function (data)
     }
 };
 
-bot.on('speak', function(data) {
-  var text = data.text; //the chatbox on turntable
-  if (text.match(/^\/userid/)) {
-    var ban8 = data.text.slice(9); //this holds the persons name
-    var checkUser8 = bot.getUserId(ban8, function(data1) {
-      var userid56 = data1.userid; //the person's userid
-      if (typeof userid56 !== 'undefined') { //if successful callback then say userid
-        bot.speak(userid56);
-      } else {
-        bot.speak('error, please enter a valid name'); //else, name was invalid
-      }
-    });
-  } else if (text.match(/^\/username/)) {
-    var ban50 = data.text.slice(10); //holds persons userid
-    var tmp94 = bot.getProfile(ban50, function(data2) {
-      bot.speak(data2.name); //if sucessful callback, say persons name
-    });                      
-  }
-});
-
 //Stuck Song Detection and Correction
 var curSongWatchdog = null;
 var takedownTimer = null;

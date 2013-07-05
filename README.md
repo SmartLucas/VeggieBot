@@ -14,8 +14,6 @@ Commands so Far:
 /skip
 /addsong
 /bop
-/userid
-/username
 /define
 /uptime
 /8ball
@@ -41,16 +39,15 @@ Features:
 10. Bop Count
 11. Randomizes his Playlist
 12. Song Length Limit
-13. Find Anyone's Userid on Turntable.fm
-14. Stuck Song Detection and Correction
-15. AFK Check
-16. Urban Dictionary Lookup
-17. Auto Reconnects to Turntable.fm
-18. Logs Version Number to his console whenever he logs on
-19. Room Greeting
-20. Song Limit
-21. Song Stats
-22. 8 Ball Database
+13. Stuck Song Detection and Correction
+14. AFK Check
+15. Urban Dictionary Lookup
+16. Auto Reconnects to Turntable.fm
+17. Logs Version Number to his console whenever he logs on
+18. Room Greeting
+19. Song Limit
+20. Song Stats
+21. 8 Ball Database
 Version Number: 2.7
 
 When He will be Updated: He will be updated frequently every week. 
