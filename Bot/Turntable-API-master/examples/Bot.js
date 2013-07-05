@@ -442,28 +442,6 @@ bot.on('pmmed', function (data) {
    }
 });
 
-//Theme
-bot.on('speak', function (data) {});
-var   data;
-var  data;
-var welcomeDaily =  ["No Theme @{u}!",  // Sunday
-    "Worship Monday @{u}!",  // Monday
- "Twofer Tuesday@{u}!",  // Tuesday
- "No Theme @{u}!",  // Wednesday
- "Rock and Metal Day @{u}!",  // Thursday
- "Follow-Up Friday @{u}!",  // Friday
- "No Theme @{u}!"];  //Saturday
- 
-setTimeout(function() {
-if (["welcomeMsg"] !== undefined && ["welcomeMsg"].value === "true") {
-	if ([data.user[0].userid] !== undefined) {
-	var d = new Date();
-	var dayOfWeek = d.getDay();
-	bot.speak(welcomeDaily[dayOfWeek], [data.user[0].userid].name, "pm", data.user[0].userid);
-				}
-			}
-		}, 2500);
-        
 //Auto-Escort DJ When Song Gets Lamed
 bot.on('update_votes', function(d) {
 if (d.room.downvotes >= 1) {
@@ -878,58 +856,7 @@ function startWatchdog() { // Start the watchdog timer
   }
 }
 
-//Vip List
-var vipList = [];
-var currentDjs;
-var people;
-var timer;
-
-var vipListCheck = function ()
-{
-    //this kicks all users off stage when the vip list is not empty
-    if (vipList.length !== 0 && currentDjs.length != vipList.length)
-    {
-        for (var p = 0; p < currentDjs.length; p++)
-        {
-            var checkIfVip = vipList.indexOf(currentDjs[p]);
-            if (checkIfVip == -1 && currentDjs[p] != USERID)
-            {
-                bot.remDj(currentDjs[p]);
-            }
-        }
-    }
-};
-
-
-setInterval(vipListCheck, 5000); //repeats the check every five seconds. 
-
-//this activates when a user joins the stage.
-bot.on('add_dj', function (data)
-{
-});
-    //removes dj when they try to join the stage if the vip list has members in it.
-    //does not remove the bot
-    var checkVip = vipList.indexOf(data);
-    if (vipList.length !== 0 && checkVip == -1 && data.user[0].userid != USERID)
-
-    {
-        bot.remDj(data.user[0].userid);
-        bot.pm('The vip list is currently active, only the vips may dj at this time', data.user[0].userid);
-        ++people[data.user[0].userid].spamCount;
-        if (timer[data.user[0].userid] !== null)
-        {
-            clearTimeout(timer[data.user[0].userid]);
-            timer[data.user[0].userid] = null;
-        }
-        timer[data.user[0].userid] = setTimeout(function ()
-        {
-            people[data.user[0].userid] = {
-                spamCount: 0
-            };
-        }, 10 * 1000);
-    }
-    
-    bot.on('registered', function (data)
+bot.on('registered', function (data)
 {
     setTimeout(function ()
     {

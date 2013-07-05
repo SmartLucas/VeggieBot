@@ -35,24 +35,22 @@ Features:
 4. Says a random phrase when you mention VeggieBot's name
 5. Private Message Functions
 6. Blacklisting Functions
-7. Themes
-8. Escort Someone when current song is lamed
-9. Stalking Functions
-10. Vote Skipping
-11. Bop Count
-12. Randomizes his Playlist
-13. Song Length Limit
-14. Find Anyone's Userid on Turntable.fm
-15. Stuck Song Detection and Correction
-16. AFK Check
-17. Urban Dictionary Lookup
-18. Auto Reconnects to Turntable.fm
-19. Logs Version Number to his console whenever he logs on
-20. VIP List
-21. Room Greeting
-22. Song Limit
-23. Song Stats
-24. 8 Ball Database
+7. Escort Someone when current song is lamed
+8. Stalking Functions
+9. Vote Skipping
+10. Bop Count
+11. Randomizes his Playlist
+12. Song Length Limit
+13. Find Anyone's Userid on Turntable.fm
+14. Stuck Song Detection and Correction
+15. AFK Check
+16. Urban Dictionary Lookup
+17. Auto Reconnects to Turntable.fm
+18. Logs Version Number to his console whenever he logs on
+19. Room Greeting
+20. Song Limit
+21. Song Stats
+22. 8 Ball Database
 Version Number: 2.7
 
 When He will be Updated: He will be updated frequently every week. 
