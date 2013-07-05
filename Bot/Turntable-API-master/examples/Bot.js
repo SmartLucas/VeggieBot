@@ -344,13 +344,8 @@ bot.on('pmmed', function (data)
 
         bot.pm('hello', data.senderid); //send this text back to the sender...        
     }
-});
 
-bot.on('pmmed', function (data)
-{
-    var text = data.text; //text detected in the bots pm
-
-    if (text.match(/^\/God$/))
+    else if (text.match(/^\/God$/))
     {
         //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
         //and says their name in the chatbox
@@ -361,14 +356,9 @@ bot.on('pmmed', function (data)
 
         bot.pm('God is awesome', data.senderid); //send this text back to the sender...        
     }
-});
 
 
-bot.on('pmmed', function (data)
-{
-    var text = data.text; //text detected in the bots pm
-
-    if (text.match(/^\/goodbye$/))
+    else if (text.match(/^\/goodbye$/))
     {
         //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
         //and says their name in the chatbox
@@ -379,13 +369,8 @@ bot.on('pmmed', function (data)
 
         bot.pm('Goodbye', data.senderid); //send this text back to the sender...        
     }
-});
 
-bot.on('pmmed', function (data)
-{
-    var text = data.text; //text detected in the bots pm
-
-    if (text.match(/^\/chilly$/))
+    else if (text.match(/^\/chilly$/))
     {
         //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
         //and says their name in the chatbox
@@ -396,13 +381,8 @@ bot.on('pmmed', function (data)
 
         bot.pm('You just got chilled', data.senderid); //send this text back to the sender...        
     }
-});
 
-bot.on('pmmed', function (data)
-{
-    var text = data.text; //text detected in the bots pm
-
-    if (text.match(/^\/moon$/))
+    else if (text.match(/^\/moon$/))
     {
         //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
         //and says their name in the chatbox
@@ -412,6 +392,18 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('You are going to the moon!', data.senderid); //send this text back to the sender...        
+    }
+
+    else if (text.match(/^\/version$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('My current version number is 2.7! @' + data2.name);
+        });
+
+        bot.pm('My current version number is 2.7!', data.senderid); //send this text back to the sender...        
     }
 });
 

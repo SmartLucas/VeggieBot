@@ -17,7 +17,6 @@ Commands so Far:
 /define
 /uptime
 /8ball
-/version
 
 Private Message Commands:
 1. /hello
@@ -25,6 +24,7 @@ Private Message Commands:
 3. /goodbye
 4. /chilly
 5. /moon
+6. /version
 
 Features:
 1. On/Off Switch
