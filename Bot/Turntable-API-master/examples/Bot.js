@@ -400,10 +400,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 2.7! @' + data2.name);
+        bot.speak('My current version number is 2.8! @' + data2.name);
         });
 
-        bot.pm('My current version number is 2.7!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 2.8!', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -712,7 +712,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 2.7 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 2.8 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -898,16 +898,22 @@ bot.on('speak', function(data) {
   if( data.text.match(/8ball/i) && (data.userid != botuserid)) {
     bot.speak(":8ball: Says: " + randomItem(eightBallList));
   }
-
 });
 
-bot.on('speak', function (data) {
-  // Get the data
-  var name = data.name;
-  var text = data.text;
+var randomItem = function (list) {
+    return list[Math.floor(Math.random() * list.length)];
+};
 
-  // Respond to "/version" command
-  if (text.match(/^\/version$/)) {
-    bot.speak('My current version number is 2.7 @'+name+'.');
+var botuserid = "510b0749eb35c135fbe7370c";
+
+//magic Coin Flip array
+var coinFlipList = [
+  "Heads","Tails" ];
+
+bot.on('speak', function(data) {
+
+  // "Coin Flip" command
+  if( data.text.match(/coin flip/i) && (data.userid != botuserid)) {
+    bot.speak("My Magic Coin Says: " + randomItem(coinFlipList));
   }
 });

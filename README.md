@@ -17,6 +17,7 @@ Commands so Far:
 /define
 /uptime
 /8ball
+/coin flip
 
 Private Message Commands:
 1. /hello
@@ -48,7 +49,8 @@ Features:
 19. Song Limit
 20. Song Stats
 21. 8 Ball Database
-Version Number: 2.7
+22. Coin Flipping Functions
+Version Number: 2.8
 
 When He will be Updated: He will be updated frequently every week. 
  
