@@ -122,7 +122,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 57))
+        switch (Math.round(Math.random() * 60))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -297,6 +297,15 @@ bot.on('speak', function (data)
             break;
         case 57:
             bot.speak('You are so awesome, can i have your autograph.');
+            break;
+        case 58:
+            bot.speak('You can not witness the true power of the robot side');
+            break;
+        case 59:
+            bot.speak('*sighs* I wish I had moderator powers, so I can be like the cool robots on turntable.fm');
+            break;
+        case 60:
+            bot.speak('Did you order the awesome music meal, or the epic music meal, I forgot.');
             break;
 
  
