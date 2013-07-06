@@ -29,11 +29,11 @@ bot.on('speak', function (data) {
   //If the bot is ON
   if (isOn) {
     if (text.match(/^\/status$/)) {
-      bot.speak('The bot is currently turned on.');
+      bot.speak('The bot is currently turned on and ready for action.');
     }
 
     if (text.match(/^\/off$/)) {
-      bot.speak('The bot is turned off.');
+      bot.speak('The bot is turned off and sleeping.');
       // Set the status to off
       false;
     }
@@ -44,15 +44,15 @@ bot.on('speak', function (data) {
       bot.speak('Hey! How are you @'+name+' ?');
     }
   }
-
+  
   //If the bot is OFF
   if (!isOn) {
     if (text.match(/^\/status$/)) {
-      bot.speak('The bot is currently turned off.');
+      bot.speak('The bot is currently turned off and sleeping.');
     }
 
     if (text.match(/^\/on$/)) {
-      bot.speak('The bot is turned now on.');
+      bot.speak('The bot is turned on and ready for action.');
       // Set the status to on
       true;
     }
