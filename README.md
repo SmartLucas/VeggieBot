@@ -27,6 +27,7 @@ Private Message Commands:
 5. /moon
 6. /version
 7. /rules
+8. /moderator
 
 Features:
 1. On/Off Switch

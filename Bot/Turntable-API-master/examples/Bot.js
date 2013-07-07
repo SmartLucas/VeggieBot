@@ -460,6 +460,18 @@ bot.on('pmmed', function (data)
 
         bot.pm('Please Play Christian Music! Full Guidelines are at http://goo.gl/ln5BS', data.senderid); //send this text back to the sender...        
     }
+    
+    else if (text.match(/^\/moderator$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('All moderator powers, that have been given to a moderator, must be used the right way. @' + data2.name);
+        });
+
+        bot.pm('All moderator powers, that have been given to a moderator, must be used the right way.', data.senderid); //send this text back to the sender...        
+    }
 });
 
 //BlackList
