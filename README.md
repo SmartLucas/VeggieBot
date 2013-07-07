@@ -26,6 +26,7 @@ Private Message Commands:
 4. /chilly
 5. /moon
 6. /version
+7. /rules
 
 Features:
 1. On/Off Switch

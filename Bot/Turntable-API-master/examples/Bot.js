@@ -418,6 +418,18 @@ bot.on('pmmed', function (data)
 
         bot.pm('My current version number is 2.8!', data.senderid); //send this text back to the sender...        
     }
+    
+    else if (text.match(/^\/rules$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Please Play Christian Music! Full Guidelines are at http://goo.gl/ln5BS @' + data2.name);
+        });
+
+        bot.pm('Please Play Christian Music! Full Guidelines are at http://goo.gl/ln5BS', data.senderid); //send this text back to the sender...        
+    }
 });
 
 //BlackList
