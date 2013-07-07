@@ -69,17 +69,17 @@ bot.on('speak', function (data) {
     bot.addDj();
     bot.speak('I am now Djing on the stage, spinning my tunes for everyone to listen to.');
   }
-  if (text.match(/^\/please stop$/)) {
+  else if (text.match(/^\/please stop$/)) {
     // Bot jumps off the table on /please stop command
     bot.remDj(USERID);
     bot.speak('I am now tired from spinning some epic music for everyone.');
   }
-  if (text.match(/^\/skip$/)) {
+  else if (text.match(/^\/skip$/)) {
     // Bot skips it's own song (if bot is the current DJ) on /skip command
     bot.skip();
     bot.speak('I am skipping my song, because the listeners have gotten tired of it.');
   }
-  if (text.match(/^\/addsong$/)) {
+  else if (text.match(/^\/addsong$/)) {
     // Bot adds song to the bottom of it's DJ queue on /addsong command
     bot.playlistAll(function (data) {
       bot.playlistAdd(data.list.length);
