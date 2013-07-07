@@ -472,6 +472,30 @@ bot.on('pmmed', function (data)
 
         bot.pm('All moderator powers, that have been given to a moderator, must be used the right way.', data.senderid); //send this text back to the sender...        
     }
+    
+    else if (text.match(/^\/facebook$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('The facebook group is at http://goo.gl/O7AXx. @' + data2.name);
+        });
+
+        bot.pm('The facebook group is at http://goo.gl/O7AXx.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/source code$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('My source code is at https://github.com/Turntablelover/VeggieBot. @' + data2.name);
+        });
+
+        bot.pm('My source code is at https://github.com/Turntablelover/VeggieBot.', data.senderid); //send this text back to the sender...        
+    }
 });
 
 //BlackList

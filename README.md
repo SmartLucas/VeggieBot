@@ -28,6 +28,8 @@ Private Message Commands:
 6. /version
 7. /rules
 8. /moderator
+9. /facebook
+10. /source code
 
 Features:
 1. On/Off Switch
