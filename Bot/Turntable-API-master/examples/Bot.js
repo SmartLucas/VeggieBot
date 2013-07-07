@@ -126,7 +126,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 60))
+        switch (Math.round(Math.random() * 70))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -310,6 +310,36 @@ bot.on('speak', function (data)
             break;
         case 60:
             bot.speak('Did you order the awesome music meal, or the epic music meal, I forgot.');
+            break;
+        case 61:
+            bot.speak('First day of school! I can’t be late!');
+            break;
+        case 62:
+            bot.speak('I found a nickel! Sure wish I had pockets.');
+            break;
+        case 63:
+            bot.speak('I’m here to make good scarers great, not to make mediocre scarers more mediocre.');
+            break;
+        case 64:
+            bot.speak('If you’re not scary, what kind of a monster are you?');
+            break;
+        case 65:
+            bot.speak('There come a time, when good man must wear mask.');
+            break;
+        case 66:
+            bot.speak('Everybody needs a hobby.');
+            break;
+        case 67:
+            bot.speak('You think, you are so cool with all of your electronics and cell phones.');
+            break;
+        case 68:
+            bot.speak('God is not dead, he is surely alive.');
+            break;
+        case 69:
+            bot.speak('The Bible is the best book ever in the entire universe.');
+            break;
+        case 70:
+            bot.speak('Internet trolls are actually confused people that do not know about the awesome power of God.');
             break;
 
  
