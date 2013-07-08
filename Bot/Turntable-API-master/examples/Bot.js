@@ -19,6 +19,7 @@ var checkLast = null;
 var bot = new Bot(AUTH, USERID, ROOMID);
 bot.listen(process.env.Port,process.env.IP);
 
+
 // Define default value for global variable 'isOn'
 var isOn = true;
 
@@ -32,7 +33,7 @@ bot.on('speak', function (data) {
       bot.speak('The bot is currently turned on and ready for action.');
     }
 
-    if (text.match(/^\/off$/)) {
+    else if (text.match(/^\/off$/)) {
       bot.speak('The bot is turned off and sleeping.');
       // Set the status to off
       false;
@@ -40,7 +41,7 @@ bot.on('speak', function (data) {
 
     // ADD other functions here for when the bot is turned on. Like, for example:
     // Respond to "/hello" command
-    if (text.match(/^\/hello$/)) {
+    else if (text.match(/^\/hello$/)) {
       bot.speak('Hey! How are you @'+name+' ?');
     }
   }
@@ -51,7 +52,7 @@ bot.on('speak', function (data) {
       bot.speak('The bot is currently turned off and sleeping.');
     }
 
-    if (text.match(/^\/on$/)) {
+    else if (text.match(/^\/on$/)) {
       bot.speak('The bot is turned on and ready for action.');
       // Set the status to on
       true;
@@ -64,6 +65,7 @@ bot.on('speak', function (data) {
 //DJing Functions
 bot.on('speak', function (data) {
   var text = data.text;
+  
   if (text.match(/^\/go$/)) {
     // Bot gets on the DJ table (if there's a spot open) on /go command
     bot.addDj();
@@ -443,10 +445,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 2.8! @' + data2.name);
+        bot.speak('My current version number is 2.9! @' + data2.name);
         });
 
-        bot.pm('My current version number is 2.8!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 2.9!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -803,7 +805,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 2.8 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 2.9 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1006,5 +1008,24 @@ bot.on('speak', function(data) {
   // "Coin Flip" command
   if( data.text.match(/coin flip/i) && (data.userid != botuserid)) {
     bot.speak("My Magic Coin Says: " + randomItem(coinFlipList));
+  }
+});
+
+var randomItem = function (list) {
+    return list[Math.floor(Math.random() * list.length)];
+};
+
+var botuserid = "510b0749eb35c135fbe7370c";
+
+//magic Fortune array
+var fortuneList = [
+  "You must tell everyone at work about God.","You will be eaten alive by mosquitos.",
+  "You must read your Bible to make God happy."];
+
+bot.on('speak', function(data) {
+
+  // "Fortune" command
+  if( data.text.match(/fortune/i) && (data.userid != botuserid)) {
+    bot.speak("My Fortune Ball Says: " + randomItem(fortuneList));
   }
 });
