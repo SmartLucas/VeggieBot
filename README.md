@@ -43,19 +43,18 @@ Features:
 8. Stalking Functions
 9. Vote Skipping
 10. Bop Count
-11. Randomizes his Playlist
-12. Song Length Limit
-13. Stuck Song Detection and Correction
-14. AFK Check
-15. Urban Dictionary Lookup
-16. Auto Reconnects to Turntable.fm
-17. Logs Version Number to his console whenever he logs on
-18. Room Greeting
-19. Song Limit
-20. Song Stats
-21. 8 Ball Database
-22. Coin Flipping Functions
-23. Fortune Reading Functions
+11. Song Length Limit
+12. Stuck Song Detection and Correction
+13. AFK Check
+14. Urban Dictionary Lookup
+15. Auto Reconnects to Turntable.fm
+16. Logs Version Number to his console whenever he logs on
+17. Room Greeting
+18. Song Limit
+19. Song Stats
+20. 8 Ball Database
+21. Coin Flipping Functions
+22. Fortune Reading Functions
 Version Number: 2.9
 
 When He will be Updated: He will be updated frequently every week. 

@@ -607,26 +607,6 @@ bot.on('newsong', function (data) {
   bopcount = 0;
 });
 
-//Playlist Randomizer
-bot.on('ready', function (data) {
-});
-bot.playlistAll(function(playlist) {
-  console.log("Playlist length: " + playlist.list.length);
-  var i = 0;
-  var reorder = setInterval(function() {
-    if (i <= playlist.list.length) {
-      var nextId = Math.ceil(Math.random() * playlist.list.length);
-      bot.playlistReorder(i, nextId);
-      console.log("Song " + i + " changed.");
-      i++;
-    } else {
-      clearInterval(reorder);
-      console.log("Reorder Ended");
-      bot.speak("Reorder completed.");
-    }
-  }, 1000);
-});
-
 //Song Length Limit
 global.checkOnNewSong = function (data)
 {
