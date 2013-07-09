@@ -17,6 +17,7 @@ Commands so Far:
 /define
 /uptime
 /8ball
+/mood
 
 Private Message Commands:
 1. /hello
@@ -51,7 +52,8 @@ Features:
 18. Song Limit
 19. Song Stats
 20. 8 Ball Database
-Version Number: 2.9
+21. Mood Database
+Version Number: 3.0
 
 When He will be Updated: He will be updated frequently every week. 
  

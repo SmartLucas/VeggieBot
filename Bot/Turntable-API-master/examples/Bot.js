@@ -19,7 +19,6 @@ var checkLast = null;
 var bot = new Bot(AUTH, USERID, ROOMID);
 bot.listen(process.env.Port,process.env.IP);
 
-
 // Define default value for global variable 'isOn'
 var isOn = true;
 
@@ -128,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 100))
+        switch (Math.round(Math.random() * 130))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -433,6 +432,95 @@ bot.on('speak', function (data)
         case 100:
             bot.speak('I like being bad. It makes me happy.');
             break;
+        case 101:
+            bot.speak('Betty, Betty, bo-Betty, banana-fana, fo-Fetty!');
+            break;
+        case 102:
+            bot.speak('Shut up. Get out.');
+            break;
+        case 103:
+            bot.speak('Hey, kid, you want a job?');
+            break;
+        case 104:
+            bot.speak('You took him from me. He loved me.');
+            break;
+        case 105:
+            bot.speak('No. He despised you. You were an embarrassment to him.');
+            break;
+        case 106:
+            bot.speak('Look at little Goblin Junior. Gonna cry?');
+            break;
+        case 107:
+            bot.speak('Parker! Miss Brant! That is not the position I hired you for!');
+            break;
+        case 108:
+            bot.speak('I protected you in high school. Now I am gonna kick your little ass.');
+            break;
+        case 109:
+            bot.speak('You want forgiveness? Get Religion.');
+            break;
+        case 110:
+            bot.speak('It is Brock sir, Edward Brock Jr. I am here humbled and humiliated to ask you for one thing... I want you to kill Peter Parker');
+            break;
+        case 111:
+            bot.speak('Oh! My Spider-Sense is tingling!');
+            break;
+        case 112:
+            bot.speak('Hey, Pete! Am I interrupting?');
+            break;
+        case 113:
+            bot.speak('Where do these guys COME from?');
+            break;
+        case 114:
+            bot.speak('It has the characteristics of a symbiote, which needs to bond to a host in order to survive. And once it binds... it can be hard to UNbind.');
+            break;
+        case 115:
+            bot.speak('Good Riddance.');
+            break;
+        case 116:
+            bot.speak('I could use some help over here!');
+            break;
+        case 117:
+            bot.speak('I guess you have not heard. I am the sheriff around these parts!');
+            break;
+        case 118:
+            bot.speak('This could be a tragic day for the people of New York. It could be the end of Spider-Man.');
+            break;
+        case 119:
+            bot.speak('It is hard to believe what is happening. The brutality of it. I - I do not know how he can take anymore.');
+            break;
+        case 120:
+            bot.speak('Whoa. Buddy, love the new outfit. This is exactly what I need to scoop Parker. Gimme - Give me some of that web action.');
+            break;
+        case 121:
+            bot.speak('Look, I am begging you. If you do this, I will lose everything. There is not a paper in town that will hire me.');
+            break;
+        case 122:
+            bot.speak('Take your hands off me.');
+            break;
+        case 123:
+            bot.speak('Peter! What are you doing? No!');
+            break;
+        case 124:
+            bot.speak('Ahem. You know, in the future, if you are going to steal cars, do not dress like a car thief, man.');
+            break;
+        case 125: 
+            bot.speak('Really? You seriously think I am a cop? Cop in a skin-tight red and blue suit?');
+            break;
+        case 126:
+            bot.speak('If you want the truth, Peter, come and get it!');
+            break;
+        case 127:
+            bot.speak('Easy, Bug Boy.');
+            break;
+        case 128:
+            bot.speak('Let me ask you a question. Do I look like the mayor of Tokyo to you?');
+            break;
+        case 129: 
+            bot.speak('Do not... make me... have to... hurt you!');
+            break;
+        case 130:
+            bot.speak('You should LEAVE HIM ALONE!');
 
  
 }
@@ -535,10 +623,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 2.9! @' + data2.name);
+        bot.speak('My current version number is 3.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 2.9!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -875,7 +963,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 2.9 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1061,4 +1149,35 @@ bot.on('speak', function(data) {
   if( data.text.match(/8ball/i) && (data.userid != botuserid)) {
     bot.speak(":8ball: Says: " + randomItem(eightBallList));
   }
+});
+
+//Mood Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/mood/i))
+    {
+        switch (Math.round(Math.random() * 5))
+        {
+        case 0:
+            bot.speak('The current mood, that I am in is grumpy.');
+            break;
+        case 1:
+            bot.speak('My mood tells me that I feel like I need some Christian Rock music.');
+            break;
+        case 2:
+            bot.speak('I feel like I need Worship music.');
+            break;
+        case 3:
+            bot.speak('I feel like I need Rap music.');
+            break;
+        case 4:
+            bot.speak('I feel sad and depressed.');
+            break;
+        case 5:
+            bot.speak('I feel happy and excited.');
+            break;
+            
+
+        }
+    }
 });
