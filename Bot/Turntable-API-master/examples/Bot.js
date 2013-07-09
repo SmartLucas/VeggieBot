@@ -128,7 +128,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 70))
+        switch (Math.round(Math.random() * 100))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -342,6 +342,96 @@ bot.on('speak', function (data)
             break;
         case 70:
             bot.speak('Internet trolls are actually confused people that do not know about the awesome power of God.');
+            break;
+        case 71:
+            bot.speak('Compared to God, the Slime Monster is like a teeny little cornflake!');
+            break;
+        case 72:
+            bot.speak('Bee doo bee doo!');
+            break;
+        case 73:
+            bot.speak('You really should announce your weapons, after you fire them. For example, lipstick taser!');
+            break;
+        case 74:
+            bot.speak('Sometimes I stare at it and imagine a little chick popping out. Peep, peep, peep!');
+            break;
+        case 75:
+            bot.speak('Oh man, i am late again!');
+            break;
+        case 76:
+            bot.speak('I am going to need a dozen robots desguised as cookies.');
+            break;
+        case 77:
+            bot.speak('Assemble the minions!');
+            break;
+        case 78:
+            bot.speak(' We have been working on this for a while now. Anti-gravity serum.');
+            break;
+        case 79:
+            bot.speak('Pins and needles!');
+            break;
+        case 80:
+            bot.speak('Huh? Avery? Is that a girl name or a boy name?');
+            break;
+        case 81:
+            bot.speak('You are gonna be a spy?');
+            break;
+        case 82:
+            bot.speak('I hate boys.');
+            break;
+        case 83:
+            bot.speak('I really hate that chicken!');
+            break;
+        case 84:
+            bot.speak('Peter... you killed my father.');
+            break;
+        case 85:
+            bot.speak('Listen. Listen... to me now. Listen... to ME now!');
+            break;
+        case 86:
+            bot.speak('No. I am alive in you, Harry. You swore to make Spider-Man pay... now make him pay.');
+            break;
+        case 87:
+            bot.speak('Whoa... He just stole that pizza!');
+            break;
+        case 88:
+            bot.speak('You do not trust anyone, that is your problem.');
+            break;
+        case 89:
+            bot.speak('Back to formula!');
+            break;
+        case 90:
+            bot.speak('OUT, AM I?');
+            break;
+        case 91:
+            bot.speak('Misery, Misery, Misery, that is what you have chosen. I offered you friendship and you spat in my face.');
+            break;
+        case 92:
+            bot.speak('What have you done? WHAT HAVE YOU DONE?');
+            break;
+        case 93:
+            bot.speak('Think about it, hero!');
+            break;
+        case 94:
+            bot.speak('The itsy bitsy spider climbed up the water spout. Down came the Goblin and took the spider out.');
+            break;
+        case 95:
+            bot.speak('I do not think it is for us to say whether a person deserves to live or die.');
+            break;
+        case 96:
+            bot.speak('Your blood pressure, Mr. Jameson. Your wife told me to tell you to watch the anger.');
+            break;
+        case 97:
+            bot.speak('So good...');
+            break;
+        case 98:
+            bot.speak('Black-suit Spider-Man! We gotta have these, Jonah.');
+            break;
+        case 99:
+            bot.speak('Eddie, the suit, you have to take it off.');
+            break;
+        case 100:
+            bot.speak('I like being bad. It makes me happy.');
             break;
 
  
