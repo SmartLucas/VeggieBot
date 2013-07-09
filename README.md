@@ -17,8 +17,6 @@ Commands so Far:
 /define
 /uptime
 /8ball
-/coin flip
-/fortune
 
 Private Message Commands:
 1. /hello
@@ -53,8 +51,6 @@ Features:
 18. Song Limit
 19. Song Stats
 20. 8 Ball Database
-21. Coin Flipping Functions
-22. Fortune Reading Functions
 Version Number: 2.9
 
 When He will be Updated: He will be updated frequently every week. 
