@@ -623,10 +623,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0! @' + data2.name);
+        bot.speak('My current version number is 3.0.1! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.1!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -963,7 +963,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.1 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1079,6 +1079,7 @@ function startWatchdog() { // Start the watchdog timer
   }
 }
 
+//Room Greeting
 bot.on('registered', function (data)
 {
     setTimeout(function ()
@@ -1088,6 +1089,7 @@ bot.on('registered', function (data)
     }, 3 * 1000); //slow it down 3 seconds
 });
 
+//Song Stats
 bot.on('endsong', function (data) { 
   var currentdj = data.room.metadata.current_dj;
   var song = data.room.metadata.current_song.metadata.song;
@@ -1102,6 +1104,7 @@ bot.on('endsong', function (data) {
 
 });
 
+//Song Limit
 var songsLimit = 4;
 var djs = {};
 
@@ -1156,10 +1159,10 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 5))
+        switch (Math.round(Math.random() * 10))
         {
         case 0:
-            bot.speak('The current mood, that I am in is grumpy.');
+            bot.speak('The current mood, that I am in, is grumpy.');
             break;
         case 1:
             bot.speak('My mood tells me that I feel like I need some Christian Rock music.');
@@ -1175,6 +1178,21 @@ bot.on('speak', function (data)
             break;
         case 5:
             bot.speak('I feel happy and excited.');
+            break;
+        case 6:
+            bot.speak('I feel mad.');
+            break;
+        case 7:
+            bot.speak('I feel humiliated.');
+            break;
+        case 8:
+            bot.speak('I need Metal music.');
+            break;
+        case 9:
+            bot.speak('I feel angry.');
+            break;
+        case 10:
+            bot.speak('I need Polish music.');
             break;
             
 
