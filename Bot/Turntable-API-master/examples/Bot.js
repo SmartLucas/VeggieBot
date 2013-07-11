@@ -623,10 +623,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.1! @' + data2.name);
+        bot.speak('My current version number is 3.0.2! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.1!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.2!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -963,7 +963,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.1 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.2 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1159,7 +1159,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 10))
+        switch (Math.round(Math.random() * 15))
         {
         case 0:
             bot.speak('The current mood, that I am in, is grumpy.');
@@ -1194,7 +1194,21 @@ bot.on('speak', function (data)
         case 10:
             bot.speak('I need Polish music.');
             break;
-            
+        case 11:
+            bot.speak('I feel tired.');
+            break;
+        case 12:
+            bot.speak('I feel energetic.');
+            break;
+        case 13:
+            bot.speak('I feel like a superhero.');
+            break;
+        case 14:
+            bot.speak('I feel evil.');
+            break;
+        case 15:
+            bot.speak('I feel like a super villian.');
+            break;
 
         }
     }
