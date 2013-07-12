@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 130))
+        switch (Math.round(Math.random() * 135))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -460,7 +460,7 @@ bot.on('speak', function (data)
             bot.speak('You want forgiveness? Get Religion.');
             break;
         case 110:
-            bot.speak('It is Brock sir, Edward Brock Jr. I am here humbled and humiliated to ask you for one thing... I want you to kill Peter Parker');
+            bot.speak('It is Brock sir, Edward Brock Jr. I am here, humbled and humiliated, to ask you for one thing... I want you to kill Peter Parker');
             break;
         case 111:
             bot.speak('Oh! My Spider-Sense is tingling!');
@@ -521,6 +521,22 @@ bot.on('speak', function (data)
             break;
         case 130:
             bot.speak('You should LEAVE HIM ALONE!');
+            break;
+        case 131:
+            bot.speak('*growls* I AM VENOM!');
+            break;
+        case 132:
+            bot.speak('Where is my water buffalo.');
+            break;
+        case 133:
+            bot.speak('*gets bit by a radioactive spider* I feel weird.');
+            break;
+        case 134:
+            bot.speak('There is a huge difference between pickles and cucumbers.');
+            break;
+        case 135:
+            bot.speak('I wish, I had super powers, so I can help people discover the awesome power of God.');
+            break;
 
  
 }
@@ -623,10 +639,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.2! @' + data2.name);
+        bot.speak('My current version number is 3.0.3! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.2!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.3!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -963,7 +979,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.2 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.3 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
