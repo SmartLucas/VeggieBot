@@ -639,10 +639,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.3! @' + data2.name);
+        bot.speak('My current version number is 3.0.4! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.3!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.4!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -691,6 +691,30 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('My source code is at https://github.com/Turntablelover/VeggieBot.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/skillet$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Yes, I am a Skillet fan. @' + data2.name);
+        });
+
+        bot.pm('Yes, I am a Skillet fan.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/monster$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('ROAR, I am a Monster. @' + data2.name);
+        });
+
+        bot.pm('ROAR, I am a Monster.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -979,7 +1003,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.3 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.4 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  

@@ -30,6 +30,8 @@ Private Message Commands:
 8. /moderator
 9. /facebook
 10. /source code
+11. /skillet
+12. /monster
 
 Features:
 1. On/Off Switch
@@ -53,7 +55,7 @@ Features:
 19. Song Stats
 20. 8 Ball Database
 21. Mood Database
-Version Number: 3.0.3
+Version Number: 3.0.4
 
 When He will be Updated: He will be updated frequently every week. 
  
