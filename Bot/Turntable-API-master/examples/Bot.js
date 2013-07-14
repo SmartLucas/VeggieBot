@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 135))
+        switch (Math.round(Math.random() * 140))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -537,6 +537,21 @@ bot.on('speak', function (data)
         case 135:
             bot.speak('I wish, I had super powers, so I can help people discover the awesome power of God.');
             break;
+        case 136:
+            bot.speak('I wish, it was colder.');
+            break;
+        case 137:
+            bot.speak('Summer weather is too hot for a robot like me.');
+            break;
+        case 138:
+            bot.speak('Hurry Up October, I want cold weather.');
+            break;
+        case 139:
+            bot.speak('Flowers are awesome and colorful.');
+            break;
+        case 140:
+            bot.speak('Spiders are fluffy and cute. I want one as a pet so badly.');
+            break;
 
  
 }
@@ -715,6 +730,30 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('ROAR, I am a Monster.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/hero$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('*flys in the air* I am a super-hero. @' + data2.name);
+        });
+
+        bot.pm('*flys in the air* I am a super-hero.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/pickle$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Pickles are not cucumbers. @' + data2.name);
+        });
+
+        bot.pm('Pickles are not cucumbers.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -1003,7 +1042,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.4 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.5 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1199,7 +1238,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 15))
+        switch (Math.round(Math.random() * 20))
         {
         case 0:
             bot.speak('The current mood, that I am in, is grumpy.');
@@ -1248,6 +1287,21 @@ bot.on('speak', function (data)
             break;
         case 15:
             bot.speak('I feel like a super villian.');
+            break;
+        case 16:
+            bot.speak('I feel bored.');
+            break;
+        case 17:
+            bot.speak('I feel like a fuzzy cat.');
+            break;
+        case 18:
+            bot.speak('I feel like a fluffy blanket.');
+            break;
+        case 19:
+            bot.speak('I feel like I need a short nap.');
+            break;
+        case 20:
+            bot.speak('I feel like I need a long nap.');
             break;
 
         }
