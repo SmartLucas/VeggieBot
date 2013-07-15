@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 140))
+        switch (Math.round(Math.random() * 170))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -552,8 +552,97 @@ bot.on('speak', function (data)
         case 140:
             bot.speak('Spiders are fluffy and cute. I want one as a pet so badly.');
             break;
+        case 141:
+            bot.speak('Like sands through the hour glass, so are the last few minutes of our lives.');
+            break;
+        case 142:
+            bot.speak('Help will come from above in the shape of... a donkey.');
+            break;
+        case 143:
+            bot.speak('Why are you taking to that horse? Why am I covered in dirt?');
+            break;
+        case 144:
+            bot.speak(' I buried you.');
+            break;
+        case 145:
+            bot.speak('Hi ho Silver, away!');
+            break;
+        case 146:
+            bot.speak('In that case, not so good.');
+            break;
+        case 147:
+            bot.speak('Never do that again.');
+            break;
+        case 148:
+            bot.speak('Bad trade.');
+            break;
+        case 149:
+            bot.speak('Wrong brother.');
+            break;
+        case 150:
+            bot.speak('Never remove the mask, kemosabe.');
+            break;
+        case 151:
+            bot.speak('Do not be stupid.');
+            break;
+        case 152:
+            bot.speak('I am not going to Ninevah!');
+            break;
+        case 153:
+            bot.speak('Somebody up there must be really upset with somebody down here.');
+            break;
+        case 154:
+            bot.speak('How about for the next song, I drive into the river?');
+            break;
+        case 155:
+            bot.speak('Drive into the river, Bob! Drive into the river, Bob!');
+            break;
+        case 156:
+            bot.speak('Would you prefer poking or non-poking?');
+            break;
+        case 157:
+            bot.speak('There is nothing like a cruise to clean the sand out of your wicket, ay?');
+            break;
+        case 158:
+            bot.speak('Money is no object.');
+            break;
+        case 159:
+            bot.speak('Insight runs very deep in my family.');
+            break;
+        case 160:
+            bot.speak('You are a cheating buccaneer!');
+            break;
+        case 161:
+            bot.speak('How am I supposed to cheat at Go Fish?');
+            break;
+        case 162:
+            bot.speak('Something touched me!');
+            break;
+        case 163:
+            bot.speak('What you need is a little compassion.');
+            break;
+        case 164:
+            bot.speak('You are so vain. I bet you think this movie is about you.');
+            break;
+        case 165:
+            bot.speak('Big goofy asparagus in a turban.');
+            break;
+        case 166:
+            bot.speak('Does anyone have ibuprofen? I need ibuprofen!');
+            break;
+        case 167:
+            bot.speak('Sorry I am late. Work was murder.');
+            break;
+        case 168:
+            bot.speak('I trust my barber.');
+            break;
+        case 169:
+            bot.speak('Follow the cold shiver running down your spine...');
+            break;
+        case 170:
+            bot.speak('Settle down, tough guy.');
+            break;
 
- 
 }
 }
 });
@@ -654,10 +743,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.4! @' + data2.name);
+        bot.speak('My current version number is 3.0.6! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.4!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.6!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -754,6 +843,18 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('Pickles are not cucumbers.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/fruit$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Vegetables and Fruit are very important to keep your body healthy. @' + data2.name);
+        });
+
+        bot.pm('Vegetables and Fruit are very important to keep your body healthy.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -1042,7 +1143,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.5 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.6 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1238,7 +1339,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 20))
+        switch (Math.round(Math.random() * 25))
         {
         case 0:
             bot.speak('The current mood, that I am in, is grumpy.');
@@ -1302,6 +1403,21 @@ bot.on('speak', function (data)
             break;
         case 20:
             bot.speak('I feel like I need a long nap.');
+            break;
+        case 21:
+            bot.speak('I feel like a huge fluff ball.');
+            break;
+        case 22:
+            bot.speak('I feel like a happy fluff ball.');
+            break;
+        case 23:
+            bot.speak('I feel like a sad fluff ball.');
+            break;
+        case 24:
+            bot.speak('I feel like a grumpy fluff ball.');
+            break;
+        case 25:
+            bot.speak('I feel like a angry fluff ball.');
             break;
 
         }
