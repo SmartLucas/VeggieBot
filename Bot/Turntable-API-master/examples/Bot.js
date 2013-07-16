@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 170))
+        switch (Math.round(Math.random() * 190))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -642,6 +642,66 @@ bot.on('speak', function (data)
         case 170:
             bot.speak('Settle down, tough guy.');
             break;
+        case 171:
+            bot.speak('You are useless you...!');
+            break;
+        case 172:
+            bot.speak('Speak of the Devil!');
+            break;
+        case 173:
+            bot.speak('Take care of yourself, son. Do not make the same mistake I did.');
+            break;
+        case 174: 
+            bot.speak('Your friendly neighborhood Spider-Man.');
+            break;
+        case 175:
+            bot.speak('Well, Harry is in love with her. She is still his girl.');
+            break;
+        case 176:
+            bot.speak('We will meet again, Spider-Man!');
+            break;
+        case 177:
+            bot.speak('He stinks and I do not like him.');
+            break;
+        case 178:
+            bot.speak('You have spun your last web, Spider-Man.');
+            break;
+        case 179:
+            bot.speak('Yeah, I hate the little things.');
+            break;
+        case 180:
+            bot.speak('Go web! Fly! Up, up, and away web! Shazaam! Go! Go! Go web go! Tally ho.');
+            break;
+        case 181:
+            bot.speak('Peter, what possibly makes you think I would want to know that?');
+            break;
+        case 182:
+            bot.speak('Hey freak show! You are going nowhere. I got you for three minutes. Three minutes of PLAYTIME!');
+            break;
+        case 183:
+            bot.speak('Finish it. FINISH IT!');
+            break;
+        case 184:
+            bot.speak('Sorry I am late, it is a jungle out there; I had to beat an old lady with a stick to get these cranberries.');
+            break;
+        case 185:
+            bot.speak(' I want you to find your friend Spider-Man. Tell him to meet me at the Westside Tower at 3 o-clock.');
+            break;
+        case 186:
+            bot.speak('Now... lets see who is behind the mask');
+            break;
+        case 187:
+            bot.speak('That is a fly, Peter.');
+            break;
+        case 188:
+            bot.speak('Ready to play God?');
+            break;
+        case 189:
+            bot.speak('Do you have any idea what you really are?');
+            break;
+        case 190:
+            bot.speak('We all have secrets: the ones we keep... and the ones that are kept from us.');
+            break;
 
 }
 }
@@ -743,10 +803,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.6! @' + data2.name);
+        bot.speak('My current version number is 3.0.7! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.6!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.7!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1143,7 +1203,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.6 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.7 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1264,8 +1324,8 @@ bot.on('registered', function (data)
 {
     setTimeout(function ()
     {
-        bot.speak(data.user[0].name + ', welcome to the room, and have fun being entertained by awesome music!'); //send it in the chatbox
-        bot.pm('welcome to the room, and have fun being entertained by awesome music!', data.user[0].userid); //send it in the pm    
+        bot.speak(data.user[0].name + ', welcome to the room! We have free entertainment, lemonade, and crazy moderators.'); //send it in the chatbox
+        bot.pm('welcome to the room! We have free entertainment, lemonade, and crazy moderators.', data.user[0].userid); //send it in the pm    
     }, 3 * 1000); //slow it down 3 seconds
 });
 
@@ -1339,7 +1399,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 25))
+        switch (Math.round(Math.random() * 30))
         {
         case 0:
             bot.speak('The current mood, that I am in, is grumpy.');
@@ -1419,6 +1479,20 @@ bot.on('speak', function (data)
         case 25:
             bot.speak('I feel like a angry fluff ball.');
             break;
+        case 26:
+            bot.speak('I feel like a shy fluff ball.');
+            break;
+        case 27:
+            bot.speak('I feel like a tired fluff ball.');
+            break;
+        case 28:
+            bot.speak('I feel like a silly fluff ball.');
+            break;
+        case 29:
+            bot.speak('I feel like a music-filled robot.');
+            break;
+        case 30:
+            bot.speak('I feel like a happy robot.');
 
         }
     }
