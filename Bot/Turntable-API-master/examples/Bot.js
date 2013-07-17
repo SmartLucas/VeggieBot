@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 190))
+        switch (Math.round(Math.random() * 200))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -702,6 +702,36 @@ bot.on('speak', function (data)
         case 190:
             bot.speak('We all have secrets: the ones we keep... and the ones that are kept from us.');
             break;
+        case 191:
+            bot.speak('I mean who gets kissed by Spider-Man, right?');
+            break;
+        case 192:
+            bot.speak('An orange?');
+            break;
+        case 193:
+            bot.speak('This is none of your business. Go. Go.');
+            break;
+        case 194:
+            bot.speak('YOU TELL MY WIFE...');
+            break;
+        case 195:
+            bot.speak('Time to take your pill.');
+            break;
+        case 196:
+            bot.speak('Drink plenty of water.');
+            break;
+        case 197:
+            bot.speak('My daughter was dying, I needed money.');
+            break;
+        case 198:
+            bot.speak('Hey look, it is Spider-Man!');
+            break;
+        case 199:
+            bot.speak('The real star of Christmas is not something you can steal. In fact, it is not something at all.');
+            break;
+        case 200:
+            bot.speak('Oh my goodness! The youth pastor is stuck in the baptismal!');
+            break;
 
 }
 }
@@ -803,10 +833,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.7! @' + data2.name);
+        bot.speak('My current version number is 3.0.8! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.7!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.8!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1203,7 +1233,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.7 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.8 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
