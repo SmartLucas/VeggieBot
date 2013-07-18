@@ -35,6 +35,7 @@ Private Message Commands:
 13. /hero
 14. /pickle
 15. /fruit
+16. /sin
 
 Features:
 1. On/Off Switch
@@ -58,7 +59,7 @@ Features:
 19. Song Stats
 20. 8 Ball Database
 21. Mood Database
-Version Number: 3.0.8
+Version Number: 3.0.9
 
 When He will be Updated: He will be updated frequently every week. 
  

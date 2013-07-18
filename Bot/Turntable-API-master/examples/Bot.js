@@ -833,10 +833,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.8! @' + data2.name);
+        bot.speak('My current version number is 3.0.9! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.8!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.0.9!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -945,6 +945,18 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('Vegetables and Fruit are very important to keep your body healthy.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/sin$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('God died on the cross, to get rid of all of our sins, not just one sin. @' + data2.name);
+        });
+
+        bot.pm('God died on the cross, to get rid of all of our sins, not just one sin.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -1233,7 +1245,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.8 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.0.9 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1429,7 +1441,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 30))
+        switch (Math.round(Math.random() * 40))
         {
         case 0:
             bot.speak('The current mood, that I am in, is grumpy.');
@@ -1523,6 +1535,37 @@ bot.on('speak', function (data)
             break;
         case 30:
             bot.speak('I feel like a happy robot.');
+            break;
+        case 31:
+            bot.speak('I feel like a sad robot.');
+            break;
+        case 32:
+            bot.speak('I feel like a anger-filled robot.');
+            break;
+        case 33:
+            bot.speak('I feel like a mad robot.');
+            break;
+        case 34:
+            bot.speak('I feel like a grumpy robot.');
+            break;
+        case 35:
+            bot.speak('I feel like a fluffy robot.');
+            break;
+        case 36:
+            bot.speak('I feel like a happy tiger.');
+            break;
+        case 37:
+            bot.speak('I feel like a sad tiger.');
+            break;
+        case 38:
+            bot.speak('I feel like a angry tiger.');
+            break;
+        case 39:
+            bot.speak('I feel like a mad tiger.');
+            break;
+        case 40:
+            bot.speak('I feel like a tired tiger.');
+            break;
 
         }
     }
