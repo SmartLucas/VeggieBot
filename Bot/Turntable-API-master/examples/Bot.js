@@ -833,10 +833,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.0.9! @' + data2.name);
+        bot.speak('My current version number is 3.1.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.0.9!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.1.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -957,6 +957,18 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('God died on the cross, to get rid of all of our sins, not just one sin.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/love$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Love your neighbor. Treat others, the way you wanted to be treated. @' + data2.name);
+        });
+
+        bot.pm('Love your neighbor. Treat others, the way you wanted to be treated.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -1182,56 +1194,6 @@ afkCheck = function () {
 };
 setInterval(afkCheck, 5000); //This repeats the check every five seconds.
 
-//Urban Dictionary Command
-var Log;
-var http;
-
-bot.on('speak', function(data) {
-
-// Respond to "/define" command (uses UrbanDictionary.com)
-  if(data.text.match(/^\/define/i)) {
-    var queryResponse = '';
-    var sSplit = data.text.split("/define");
-    var searchTerms = sSplit.pop().replace(/\s/g, "%20").replace("%20", "").trim();
-    Log("SEARCH: " + searchTerms);
-    // http://api.urbandictionary.com/v0/define?term=one%20two%20three
-    // Build the API call object
-    var options = {
-      host: 'api.urbandictionary.com',
-      port: 80,
-      path: '/v0/define?term=' + searchTerms
-    };
-    // Call the API
-    http.get(options, function(response) {
-      Log("Got response:" + response.statusCode);
-      response.on('data', function(chunk) {
-        try {
-          queryResponse += chunk;
-        } catch(err) {
-          bot.speak(err);
-        }
-      });
-      response.on('end', function() {
-        var ret = JSON.parse(queryResponse);
-        try {
-          if(typeof ret.list[0].definition === "undefined") {
-            Log("DEFINITION: Come on, you're failing at a simple task here.");
-            bot.speak("DEFINITION: Come on, you're failing at a simple task here.");
-          } else {
-            Log("DEFINITION: " + ret.list[0].definition);
-            bot.speak("DEFINITION: " + ret.list[0].definition);
-          }
-        } catch(err) {
-          Log("Sorry, some kind of error" + err);
-        }
-      });
-    }).on('error', function(e) {
-      bot.speak("Got error: " + e.message);
-    });
-  }
-
-}); 
-
 //Auto-Reconnect to Turntable.fm
 // set this to 'true' to see lots and LOTS of debug data :-/
 bot.debug = false;
@@ -1245,7 +1207,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.0.9 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.1.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1447,13 +1409,13 @@ bot.on('speak', function (data)
             bot.speak('The current mood, that I am in, is grumpy.');
             break;
         case 1:
-            bot.speak('My mood tells me that I feel like I need some Christian Rock music.');
+            bot.speak('My mood tells me, that I feel like, I need some Christian Rock music.');
             break;
         case 2:
-            bot.speak('I feel like I need Worship music.');
+            bot.speak('I feel like, I need Worship music.');
             break;
         case 3:
-            bot.speak('I feel like I need Rap music.');
+            bot.speak('I feel like, I need Rap music.');
             break;
         case 4:
             bot.speak('I feel sad and depressed.');
@@ -1567,6 +1529,36 @@ bot.on('speak', function (data)
             bot.speak('I feel like a tired tiger.');
             break;
 
+        }
+    }
+});
+
+//Fortune Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/fortune/i))
+    {
+        switch (Math.round(Math.random() * 5 ))
+        {
+        case 0:
+            bot.speak('I predict, that you will have an awesome day.');
+            break;
+        case 1:
+            bot.speak('I predict, that you will be eaten alive by a shark.');
+            break;
+        case 2:
+            bot.speak('I predict, that you will struggle through your day.');
+            break;
+        case 3:
+            bot.speak('I predict, that you will see God today.');
+            break;
+        case 4:
+            bot.speak('I predict, that you will be attacked by birds.');
+            break;
+        case 5:
+            bot.speak('I predict, that you will be swarmed by angry workers.');
+            break;
+            
         }
     }
 });

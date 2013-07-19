@@ -14,10 +14,10 @@ Commands so Far:
 /skip
 /addsong
 /bop
-/define
 /uptime
 /8ball
 /mood
+/fortune
 
 Private Message Commands:
 1. /hello
@@ -36,6 +36,7 @@ Private Message Commands:
 14. /pickle
 15. /fruit
 16. /sin
+17. /love
 
 Features:
 1. On/Off Switch
@@ -51,15 +52,15 @@ Features:
 11. Song Length Limit
 12. Stuck Song Detection and Correction
 13. AFK Check
-14. Urban Dictionary Lookup
-15. Auto Reconnects to Turntable.fm
-16. Logs Version Number to his console whenever he logs on
-17. Room Greeting
-18. Song Limit
-19. Song Stats
-20. 8 Ball Database
-21. Mood Database
-Version Number: 3.0.9
+14. Auto Reconnects to Turntable.fm
+15. Logs Version Number to his console whenever he logs on
+16. Room Greeting
+17. Song Limit
+18. Song Stats
+19. 8 Ball Database
+20. Mood Database
+21. Fortune Database
+Version Number: 3.1.0
 
 When He will be Updated: He will be updated frequently every week. 
  
