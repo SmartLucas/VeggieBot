@@ -833,10 +833,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.1.0! @' + data2.name);
+        bot.speak('My current version number is 3.1.1! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.1.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.1.1!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -969,6 +969,18 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('Love your neighbor. Treat others, the way you wanted to be treated.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/dark$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Do not be scared of the dark. God will protect you. @' + data2.name);
+        });
+
+        bot.pm('Do not be scared of the dark. God will protect you.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -1207,7 +1219,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.1.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.1.1 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1538,7 +1550,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/fortune/i))
     {
-        switch (Math.round(Math.random() * 5 ))
+        switch (Math.round(Math.random() * 6 ))
         {
         case 0:
             bot.speak('I predict, that you will have an awesome day.');
@@ -1557,6 +1569,9 @@ bot.on('speak', function (data)
             break;
         case 5:
             bot.speak('I predict, that you will be swarmed by angry workers.');
+            break;
+        case 6:
+            bot.speak('I predict, that you will be dive bombed by angry mockingbirds.');
             break;
             
         }

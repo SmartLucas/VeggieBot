@@ -37,6 +37,7 @@ Private Message Commands:
 15. /fruit
 16. /sin
 17. /love
+18. /dark
 
 Features:
 1. On/Off Switch
@@ -60,7 +61,7 @@ Features:
 19. 8 Ball Database
 20. Mood Database
 21. Fortune Database
-Version Number: 3.1.0
+Version Number: 3.1.1
 
 When He will be Updated: He will be updated frequently every week. 
  
