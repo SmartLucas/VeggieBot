@@ -9,10 +9,10 @@ Commands so Far:
 /status
 /off
 /on
-/go
-/please stop
+/jump
+/jump down
 /skip
-/addsong
+/snag
 /bop
 /uptime
 /8ball
@@ -38,6 +38,11 @@ Private Message Commands:
 16. /sin
 17. /love
 18. /dark
+19. /protect
+20. /listen
+21. /sun
+22. /shiny
+23. /fluffy
 
 Features:
 1. On/Off Switch
@@ -61,7 +66,7 @@ Features:
 19. 8 Ball Database
 20. Mood Database
 21. Fortune Database
-Version Number: 3.1.1
+Version Number: 3.1.2
 
 When He will be Updated: He will be updated frequently every week. 
  
