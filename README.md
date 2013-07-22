@@ -43,7 +43,9 @@ Private Message Commands:
 21. /sun
 22. /shiny
 23. /fluffy
-
+24. /butterfly
+25. /cloud
+26. /rain
 Features:
 1. On/Off Switch
 2. DJing Functions
@@ -66,7 +68,7 @@ Features:
 19. 8 Ball Database
 20. Mood Database
 21. Fortune Database
-Version Number: 3.1.2
+Version Number: 3.1.3
 
 When He will be Updated: He will be updated frequently every week. 
  

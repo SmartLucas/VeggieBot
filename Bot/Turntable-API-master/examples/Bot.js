@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 205))
+        switch (Math.round(Math.random() * 215))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -747,6 +747,36 @@ bot.on('speak', function (data)
         case 205:
             bot.speak('God died on the cross to get rid of all of our sins, not just one sin.');
             break;
+        case 206:
+            bot.speak('Of course I am programmed, I major in JavaScript.');
+            break;
+        case 207:
+            bot.speak('What is the difference between senior mods and regulars mods on turntable.fm.');
+            break;
+        case 208:
+            bot.speak('Summer, the season where you get easily burned up.');
+            break;
+        case 209:
+            bot.speak('*reels in something* OH MY GOD, I just caught a shark.');
+            break;
+        case 210:
+            bot.speak('*digs up something* HOLY VEGGIES, I just found a T-REX Fossil.');
+            break;
+        case 211:
+            bot.speak('ugh, chores are a huge waste of time.');
+            break;
+        case 212:
+            bot.speak('God made you special, and he loves you very much.');
+            break;
+        case 213:
+            bot.speak('/me wishes he had money.');
+            break;
+        case 214:
+            bot.speak('Here is a credit card, kid, go buy yourself a super awesome gaming computer.');
+            break;
+        case 215:
+            bot.speak('Bots should be allowed to become mods and senior moderators on turntable.fm.');
+            break;
 
 }
 }
@@ -848,10 +878,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.1.2! @' + data2.name);
+        bot.speak('My current version number is 3.1.3! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.1.2!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.1.3!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1056,6 +1086,42 @@ bot.on('pmmed', function (data)
         });
 
         bot.pm('Fluffy cats are so soft and cozy to hug.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/butterfly$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Butterflys are so cool, and fun to whack around. @' + data2.name);
+        });
+
+        bot.pm('Butterflys are so cool, and fun to whack around.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/cloud$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('I live on Cloud9. @' + data2.name);
+        });
+
+        bot.pm('I live on Cloud9.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/rain$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Rain is so cold and wet. @' + data2.name);
+        });
+
+        bot.pm('Rain is so cold and wet.', data.senderid); //send this text back to the sender...        
     }
 });
 
@@ -1294,7 +1360,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.1.2 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.1.3 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1655,7 +1721,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/fortune/i))
     {
-        switch (Math.round(Math.random() * 10 ))
+        switch (Math.round(Math.random() * 20 ))
         {
         case 0:
             bot.speak('I predict, that you will have an awesome day.');
@@ -1689,6 +1755,36 @@ bot.on('speak', function (data)
             break;
         case 10:
             bot.speak('I predict, that it will be super hot today.');
+            break;
+        case 11:
+            bot.speak('I predict, that you will be cooked by the sun.');
+            break;
+        case 12:
+            bot.speak('I predict, that you will win something awesome.');
+            break;
+        case 13:
+            bot.speak('I predict, that you will be attacked by evil robots.');
+            break;
+        case 14:
+            bot.speak('I predict, that you will save the day, from a super-villian.');
+            break;
+        case 15:
+            bot.speak('I predict, that you will save a damsel in distress today.');
+            break;
+        case 16:
+            bot.speak('I predict, that your mom an dad will kick you out of the house today.');
+            break;
+        case 17:
+            bot.speak('I predict, that you will delete a important file off your computer today.');
+            break;
+        case 18:
+            bot.speak('I predict, that you will burn your breakfast today.');
+            break;
+        case 19:
+            bot.speak('I predict, that you will burn your lunch today.');
+            break;
+        case 20:
+            bot.speak('I predict, that you will burn your dinner today.');
             break;
             
         }
