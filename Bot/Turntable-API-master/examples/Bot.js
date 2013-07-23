@@ -42,7 +42,7 @@ bot.on('speak', function (data) {
     // Respond to "/hello" command
     else if (text.match(/^\/hello$/)) {
       bot.speak('Hey! How are you @'+name+' ?');
-    }
+  }
   }
   
   //If the bot is OFF
@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 215))
+        switch (Math.round(Math.random() * 220))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -751,7 +751,7 @@ bot.on('speak', function (data)
             bot.speak('Of course I am programmed, I major in JavaScript.');
             break;
         case 207:
-            bot.speak('What is the difference between senior mods and regulars mods on turntable.fm.');
+            bot.speak('What is the difference between senior mods and regular mods on turntable.fm.');
             break;
         case 208:
             bot.speak('Summer, the season where you get easily burned up.');
@@ -776,6 +776,21 @@ bot.on('speak', function (data)
             break;
         case 215:
             bot.speak('Bots should be allowed to become mods and senior moderators on turntable.fm.');
+            break;
+        case 216:
+            bot.speak('Bots should be allowed to have fun.');
+            break;
+        case 217:
+            bot.speak('Bots should be allowed to be silly.');
+            break;
+        case 218:
+            bot.speak('Happy Birthday to all the bots around the world.');
+            break;
+        case 219:
+            bot.speak('*tastes his coffee* sheesh, This coffee tastes aweful. It tastes like salty water. This is whysoda is more awesome than coffee');
+            break;
+        case 220:
+            bot.speak('Coffee is for losers. Be like the cool people and drink soda.');
             break;
 
 }
@@ -878,10 +893,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.1.3! @' + data2.name);
+        bot.speak('My current version number is 3.1.4! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.1.3!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.1.4!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1123,6 +1138,66 @@ bot.on('pmmed', function (data)
 
         bot.pm('Rain is so cold and wet.', data.senderid); //send this text back to the sender...        
     }
+    
+    else if (text.match(/^\/spirit$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('The spirit of the lord will heal you. @' + data2.name);
+        });
+
+        bot.pm('The spirit of the lord will heal you.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/honor$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Honor your request by praying it to God. @' + data2.name);
+        });
+
+        bot.pm('Honor your request by praying it to God.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/respect$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Respect God and read the Bible. @' + data2.name);
+        });
+
+        bot.pm('Respect God and read the Bible.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/treat$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('Treat others, the way you want to be treated. @' + data2.name);
+        });
+
+        bot.pm('Treat others, the way you want to be treated.', data.senderid); //send this text back to the sender...        
+    }
+    
+    else if (text.match(/^\/mod$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('The mod list is at http://www.nocturnalvideoproductions.com/mods.html. @' + data2.name);
+        });
+
+        bot.pm('The mod list is at http://www.nocturnalvideoproductions.com/mods.html.', data.senderid); //send this text back to the sender...        
+    }
 });
 
 //BlackList
@@ -1360,7 +1435,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.1.3 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.1.4 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1721,7 +1796,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/fortune/i))
     {
-        switch (Math.round(Math.random() * 20 ))
+        switch (Math.round(Math.random() * 30 ))
         {
         case 0:
             bot.speak('I predict, that you will have an awesome day.');
@@ -1772,7 +1847,7 @@ bot.on('speak', function (data)
             bot.speak('I predict, that you will save a damsel in distress today.');
             break;
         case 16:
-            bot.speak('I predict, that your mom an dad will kick you out of the house today.');
+            bot.speak('I predict, that your mom and dad will kick you out of the house today.');
             break;
         case 17:
             bot.speak('I predict, that you will delete a important file off your computer today.');
@@ -1786,7 +1861,36 @@ bot.on('speak', function (data)
         case 20:
             bot.speak('I predict, that you will burn your dinner today.');
             break;
-            
+        case 21:
+            bot.speak('I predict, that you will be promoted to a moderator today.');
+            break;
+        case 22:
+            bot.speak('I predict, that you will be embarassed by your best friend.');
+            break;
+        case 23:
+            bot.speak('I predict, that everything will go horribly wrong.');
+            break;
+        case 24:
+            bot.speak('I predict, that you will get stuck in the parking lot by crazy drivers.');
+            break;
+        case 25:
+            bot.speak('I predict, that you will be attacked by birds.');
+            break;
+        case 26:
+            bot.speak('I predict, that you will have a terrible day.');
+            break;
+        case 27:
+            bot.speak('I predict, that you will be praised by everybody on turntable.fm.');
+            break;
+        case 28:
+            bot.speak('I predict, that you will win a million dollars.');
+            break;
+        case 29:
+            bot.speak('I predict, that a terrible curse will be bestowed on you.');
+            break;
+        case 30:
+            bot.speak('I predict, that you will burn your house down.');
+            break;
         }
     }
 });
@@ -1797,4 +1901,9 @@ bot.on('new_moderator', function(data) {
 
 bot.on('rem_moderator', function(data) {
   bot.speak('This is so sad! @' + data.name + ' has just been demoted from a moderator!');
+});
+
+bot.on('roomChanged', function(data) {
+  console.log('The current song is: ' + data.room.metadata.current_song.metadata.song);
+  console.log('From the album: ' + data.room.metadata.current_song.metadata.album);
 });

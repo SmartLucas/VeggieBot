@@ -46,6 +46,11 @@ Private Message Commands:
 24. /butterfly
 25. /cloud
 26. /rain
+27. /spirit
+28. /honor
+29. /respect
+30. /treat
+31. /mod
 Features:
 1. On/Off Switch
 2. DJing Functions
@@ -68,7 +73,7 @@ Features:
 19. 8 Ball Database
 20. Mood Database
 21. Fortune Database
-Version Number: 3.1.3
+Version Number: 3.1.4
 
 When He will be Updated: He will be updated frequently every week. 
  
