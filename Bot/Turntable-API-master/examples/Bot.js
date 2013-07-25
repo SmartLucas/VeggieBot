@@ -127,7 +127,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 220))
+        switch (Math.round(Math.random() * 221))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -792,11 +792,13 @@ bot.on('speak', function (data)
         case 220:
             bot.speak('Coffee is for losers. Be like the cool people and drink soda.');
             break;
+        case 221:
+            bot.speak('Soda is way more awesome than Coffee.');
+            break;
 
 }
 }
 });
-
 //Users List
 var theUsersList = { };
 
@@ -893,10 +895,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.1.4! @' + data2.name);
+        bot.speak('My current version number is 3.2.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.1.4!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.2.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1198,6 +1200,18 @@ bot.on('pmmed', function (data)
 
         bot.pm('The mod list is at http://www.nocturnalvideoproductions.com/mods.html.', data.senderid); //send this text back to the sender...        
     }
+    
+    else if (text.match(/^\/victory$/))
+    {
+        //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
+        //and says their name in the chatbox
+        bot.getProfile(data.senderid, function(data2)
+        {
+        bot.speak('We won with the army of God. @' + data2.name);
+        });
+
+        bot.pm('We won with the army of God.', data.senderid); //send this text back to the sender...        
+    }
 });
 
 //BlackList
@@ -1435,7 +1449,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.1.4 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.2.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1903,7 +1917,85 @@ bot.on('rem_moderator', function(data) {
   bot.speak('This is so sad! @' + data.name + ' has just been demoted from a moderator!');
 });
 
-bot.on('roomChanged', function(data) {
-  console.log('The current song is: ' + data.room.metadata.current_song.metadata.song);
-  console.log('From the album: ' + data.room.metadata.current_song.metadata.album);
+//Random Verse Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/random verse/i))
+    {
+        switch (Math.round(Math.random() * 23 ))
+        {
+        case 0:
+            bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
+            break;
+        case 1:
+            bot.speak('Jonah 1:2: Arise, go to Nineveh, that great city, and call out against it, for their evil has come up before me. (ESV)');
+            break;
+        case 2:
+            bot.speak('Jonah 1:3a: But Jonah rose to flee to Tarshish from the presence of the Lord. He went down to Joppa and found a ship going to Tarshish. (ESV)');
+            break;
+        case 3:
+            bot.speak('Jonah 1:3b: So he paid the fare and went down into it, to go with them to Tarshish, away from the presence of the Lord. (ESV)');
+            break;
+        case 4:
+            bot.speak('Jonah 1:4: But the Lord hurled a great wind upon the sea, and there was a mighty tempest on the sea, so that the ship threatened to break up. (ESV)');
+            break;
+        case 5:
+            bot.speak('Jonah 1:5a: Then the mariners were afraid, and each cried out to his god. (ESV)');
+            break;
+        case 6:
+            bot.speak('Jonah 1:5b: And they hurled the cargo that was in the ship into the sea to lighten it for them. (ESV)');
+            break;
+        case 7:
+            bot.speak('Jonah 1:5c: But Jonah had gone down into the inner part of the ship and had lain down and was fast asleep. (ESV)');
+            break;
+        case 8:
+            bot.speak('Jonah 1:6a: So the captain came and said to him, “What do you mean, you sleeper? (ESV)');
+            break;
+        case 9:
+            bot.speak('Jonah 1:6b: Arise, call out to your god! Perhaps the god will give a thought to us, that we may not perish. (ESV)');
+            break;
+        case 10:
+            bot.speak('Jonah 1:7a: And they said to one another, “Come, let us cast lots, that we may know on whose account this evil has come upon us. (ESV)');
+            break;
+        case 11:
+            bot.speak('Jonah 1:7b: So they cast lots, and the lot fell on Jonah. (ESV) ');
+            break;
+        case 12:
+            bot.speak('Jonah 1:8a: Then they said to him, “Tell us on whose account this evil has come upon us. (ESV) ');
+            break;
+        case 13:
+            bot.speak('Jonah 1:8b: What is your occupation? And where do you come from? What is your country? And of what people are you? (ESV)');
+            break;
+        case 14:
+            bot.speak('Jonah 1:9: And he said to them, “I am a Hebrew, and I fear the Lord, the God of heaven, who made the sea and the dry land. (ESV)');
+            break;
+        case 15:
+            bot.speak('Jonah 1:10a: Then the men were exceedingly afraid and said to him, “What is this that you have done!” (ESV) ');
+            break;
+        case 16:
+            bot.speak('Jonah 1:10b: For the men knew that he was fleeing from the presence of the Lord, because he had told them. (ESV)');
+            break;
+        case 17:
+            bot.speak('Jonah 1:11: Then they said to him, “What shall we do to you, that the sea may quiet down for us?” For the sea grew more and more tempestuous. (ESV)');
+            break;
+        case 18:
+            bot.speak('Jonah 1:12: He said to them, “Pick me up and hurl me into the sea; then the sea will quiet down for you, for I know it is because of me that this great tempest has come upon you. (ESV)');
+            break;
+        case 19:
+            bot.speak('Jonah 1:13: Nevertheless, the men rowed hard to get back to dry land, but they could not, for the sea grew more and more tempestuous against them. (ESV)');
+            break;
+        case 20:
+            bot.speak('Jonah 1:14: Therefore they called out to the Lord, “O Lord, let us not perish for this mans life, and lay not on us innocent blood, for you, O Lord, have done as it pleased you. (ESV)');
+            break;
+        case 21:
+            bot.speak('Jonah 1:15: So they picked up Jonah and hurled him into the sea, and the sea ceased from its raging. (ESV)');
+            break;
+        case 22:
+            bot.speak('Jonah 1:16: Then the men feared the Lord exceedingly, and they offered a sacrifice to the Lord and made vows. (ESV)');
+            break;
+        case 23:
+            bot.speak('Jonah 1:17: And the Lord appointed a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights. (ESV)');
+            break;
+        }
+    }
 });

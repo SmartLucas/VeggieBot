@@ -18,6 +18,7 @@ Commands so Far:
 /8ball
 /mood
 /fortune
+/random verse
 
 Private Message Commands:
 1. /hello
@@ -51,6 +52,7 @@ Private Message Commands:
 29. /respect
 30. /treat
 31. /mod
+32. /victory
 Features:
 1. On/Off Switch
 2. DJing Functions
@@ -73,7 +75,8 @@ Features:
 19. 8 Ball Database
 20. Mood Database
 21. Fortune Database
-Version Number: 3.1.4
+22. Random Verse Database
+Version Number: 3.2.0
 
 When He will be Updated: He will be updated frequently every week. 
  
