@@ -895,10 +895,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.2.0! @' + data2.name);
+        bot.speak('My current version number is 3.3.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.2.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.3.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1449,7 +1449,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.2.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.3.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1584,9 +1584,9 @@ bot.on('endsong', function (data) {
   var up_votes = data.room.metadata.upvotes;
   var down_votes = data.room.metadata.downvotes;
   var listeners = data.room.metadata.listeners;
-  var snagCounter = data.room.metadata.snags;
+  var snags = 0;
 
-  bot.speak(song +" ( "+up_votes+" :+1: "+down_votes+" :-1: "+snagCounter+" <3 "+listeners+" :busts_in_silhouette: )");
+  bot.speak(song +" ( "+up_votes+" :+1: "+down_votes+" :-1: "+snags+" <3 "+listeners+" :busts_in_silhouette: )");
 
 });
 
@@ -1922,7 +1922,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 23 ))
+        switch (Math.round(Math.random() * 33 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -1995,6 +1995,36 @@ bot.on('speak', function (data)
             break;
         case 23:
             bot.speak('Jonah 1:17: And the Lord appointed a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights. (ESV)');
+            break;
+        case 24:
+            bot.speak('Jonah 2:1: Then Jonah prayed to the Lord his God from the belly of the fish, (ESV)');
+            break;
+        case 25:
+            bot.speak('Jonah 2:2: saying,“I called out to the Lord, out of my distress,and he answered me; out of the belly of Sheol I cried, and you heard my voice. (ESV)');
+            break;
+        case 26:
+            bot.speak('Jonah 2:3: For you cast me into the deep,into the heart of the seas,and the flood surrounded me; all your waves and your billows passed over me. (ESV)');
+            break;
+        case 27:
+            bot.speak('Jonah 2:4: Then I said, ‘I am driven away from your sight; yet I shall again look upon your holy temple.(ESV)');
+            break;
+        case 28:
+            bot.speak('Jonah 2:5: The waters closed in over me to take my life; the deep surrounded me; (ESV)');
+            break;
+        case 29:
+            bot.speak('Jonah 2:6: weeds were wrapped about my head at the roots of the mountains. I went down to the land whose bars closed upon me forever; yet you brought up my life from the pit, O Lord my God. (ESV)');
+            break;
+        case 30:
+            bot.speak('Jonah 2:7: When my life was fainting away, I remembered the Lord, and my prayer came to you, into your holy temple. (ESV)');
+            break;
+        case 31:
+            bot.speak('Jonah 2:8: Those who pay regard to vain idols forsake their hope of steadfast love. (ESV)');
+            break;
+        case 32:
+            bot.speak('Jonah 2:9: But I with the voice of thanksgiving will sacrifice to you; what I have vowed I will pay. Salvation belongs to the Lord! (ESV) ”');
+            break;
+        case 33:
+            bot.speak('Jonah 2:10: And the Lord spoke to the fish, and it vomited Jonah out upon the dry land. (ESV)');
             break;
         }
     }
