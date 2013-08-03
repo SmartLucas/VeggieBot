@@ -19,48 +19,6 @@ var checkLast = null;
 var bot = new Bot(AUTH, USERID, ROOMID);
 bot.listen(process.env.Port,process.env.IP);
 
-// Define default value for global variable 'isOn'
-var isOn = true;
-
-bot.on('speak', function (data) {
-  var name = data.name;
-  var text = data.text;
-
-  //If the bot is ON
-  if (isOn) {
-    if (text.match(/^\/status$/)) {
-      bot.speak('The bot is currently turned on and ready for action.');
-    }
-
-    else if (text.match(/^\/off$/)) {
-      bot.speak('The bot is turned off and sleeping.');
-      // Set the status to off
-      false;
-    }
-
-    // ADD other functions here for when the bot is turned on. Like, for example:
-    // Respond to "/hello" command
-    else if (text.match(/^\/hello$/)) {
-      bot.speak('Hey! How are you @'+name+' ?');
-  }
-  }
-  
-  //If the bot is OFF
-  if (!isOn) {
-    if (text.match(/^\/status$/)) {
-      bot.speak('The bot is currently turned off and sleeping.');
-    }
-
-    else if (text.match(/^\/on$/)) {
-      bot.speak('The bot is turned on and ready for action.');
-      // Set the status to on
-      true;
-    }
-
-    // ADD other functions here for when the bot is turned off.
-  }
-});
-
 //DJing Functions
 bot.on('speak', function (data) {
   var text = data.text;
@@ -799,6 +757,7 @@ bot.on('speak', function (data)
 }
 }
 });
+
 //Users List
 var theUsersList = { };
 
@@ -895,10 +854,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.3.0! @' + data2.name);
+        bot.speak('My current version number is 3.4.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.3.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.4.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1449,7 +1408,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.3.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.4.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1922,7 +1881,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 33 ))
+        switch (Math.round(Math.random() * 43 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2025,6 +1984,36 @@ bot.on('speak', function (data)
             break;
         case 33:
             bot.speak('Jonah 2:10: And the Lord spoke to the fish, and it vomited Jonah out upon the dry land. (ESV)');
+            break;
+        case 34:
+            bot.speak('Jonah 3:1: Then the word of the Lord came to Jonah the second time, saying, (ESV)');
+            break;
+        case 35:
+            bot.speak('Jonah 3:2: “Arise, go to Nineveh, that great city, and call out against it the message that I tell you.” (ESV)');
+            break;
+        case 36:
+            bot.speak('Jonah 3:3: So Jonah arose and went to Nineveh, according to the word of the Lord. Now Nineveh was an exceedingly great city,[a] three days journey in breadth.[b] (ESV)');
+            break;
+        case 37:
+            bot.speak('Jonah 3:4: Jonah began to go into the city, going a days journey. And he called out, “Yet forty days, and Nineveh shall be overthrown!” (ESV)');
+            break;
+        case 38:
+            bot.speak('Jonah 3:5: And the people of Nineveh believed God. They called for a fast and put on sackcloth, from the greatest of them to the least of them. (ESV)');
+            break;
+        case 39:
+            bot.speak('Jonah 3:6: The word reached[c] the king of Nineveh, and he arose from his throne, removed his robe, covered himself with sackcloth, and sat in ashes. (ESV)');
+            break;
+        case 40:
+            bot.speak('Jonah 3:7: And he issued a proclamation and published through Nineveh, “By the decree of the king and his nobles: Let neither man nor beast, herd nor flock, taste anything. Let them not feed or drink water, (ESV)');
+            break;
+        case 41:
+            bot.speak('Jonah 3:8: but let man and beast be covered with sackcloth, and let them call out mightily to God. Let everyone turn from his evil way and from the violence that is in his hands. (ESV)');
+            break;
+        case 42:
+            bot.speak('Jonah 3:9: Who knows? God may turn and relent and turn from his fierce anger, so that we may not perish. (ESV)”');
+            break;
+        case 43:
+            bot.speak('Jonah 3:10: When God saw what they did, how they turned from their evil way, God relented of the disaster that he had said he would do to them, and he did not do it. (ESV)');
             break;
         }
     }
