@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 221))
+        switch (Math.round(Math.random() * 230))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -745,7 +745,7 @@ bot.on('speak', function (data)
             bot.speak('Happy Birthday to all the bots around the world.');
             break;
         case 219:
-            bot.speak('*tastes his coffee* sheesh, This coffee tastes aweful. It tastes like salty water. This is whysoda is more awesome than coffee');
+            bot.speak('*tastes his coffee* sheesh, This coffee tastes aweful. It tastes like salty water. This is why soda is more awesome than coffee');
             break;
         case 220:
             bot.speak('Coffee is for losers. Be like the cool people and drink soda.');
@@ -753,10 +753,38 @@ bot.on('speak', function (data)
         case 221:
             bot.speak('Soda is way more awesome than Coffee.');
             break;
+        case 222:
+            bot.speak('What they did to me, what I am, can not be undone.');
+            break;
+        case 223:
+            bot.speak('I have been trying to find you for over a year. My employers dying, he wants to thank you for saving his life. It is an honour to meet the Wolverine.');
+            break;
+        case 224:
+            bot.speak('That is not who I am anymore.');
+            break;
+        case 225:
+            bot.speak('That hurt.');
+            break;
+        case 226:
+            bot.speak('Eternity can be a curse. The losses you have had to suffer... a man can run out of things to care for, lose his purpose.');
+            break;
+        case 227:
+            bot.speak('We will accept your surrender with respect.');
+            break;
+        case 228:
+            bot.speak('What kind of monster are you?');
+            break;
+        case 229:
+            bot.speak('The Wolverine!');
+            break;
+        case 230:
+            bot.speak('You brought me here to say goodbye. Sayonara.');
+            break;
 
 }
 }
 });
+
 
 //Users List
 var theUsersList = { };
@@ -854,10 +882,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.4.0! @' + data2.name);
+        bot.speak('My current version number is 3.5.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.4.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.5.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1408,7 +1436,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.4.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.5.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1604,7 +1632,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/mood/i))
     {
-        switch (Math.round(Math.random() * 50))
+        switch (Math.round(Math.random() * 60))
         {
         case 0:
             bot.speak('The current mood, that I am in, is grumpy.');
@@ -1759,6 +1787,36 @@ bot.on('speak', function (data)
         case 50:
             bot.speak('I feel like saving the world.');
             break;
+        case 51:
+            bot.speak('I feel like nothing.');
+            break;
+        case 52:
+            bot.speak('I feel like a worthless space.');
+            break;
+        case 53:
+            bot.speak('I feel like saving a bunch of Pikmin.');
+            break;
+        case 54:
+            bot.speak('I feel like a fool.');
+            break;
+        case 55:
+            bot.speak('I feel like a raging monster.');
+            break;
+        case 56:
+            bot.speak('I feel like a virus.');
+            break;
+        case 57:
+            bot.speak('I feel like a butterfly.');
+            break;
+        case 58:
+            bot.speak('I feel like a dragonfly.');
+            break;
+        case 59:
+            bot.speak('I feel like a shark.');
+            break;
+        case 60:
+            bot.speak('I feel like a goldfish.');
+            break;
 
         }
     }
@@ -1769,7 +1827,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/fortune/i))
     {
-        switch (Math.round(Math.random() * 30 ))
+        switch (Math.round(Math.random() * 40 ))
         {
         case 0:
             bot.speak('I predict, that you will have an awesome day.');
@@ -1864,6 +1922,36 @@ bot.on('speak', function (data)
         case 30:
             bot.speak('I predict, that you will burn your house down.');
             break;
+        case 31:
+            bot.speak('I predict, that your life will be glorious.');
+            break;
+        case 32:
+            bot.speak('I predict, a wonderful storm of happiness and rainbows in your future.');
+            break;
+        case 33:
+            bot.speak('I predict, that your power board will short-circuit.');
+            break;
+        case 34:
+            bot.speak('I predict, that you will be attacked by a 30-foot lizard.');
+            break;
+        case 35:
+            bot.speak('I predict, that you will be biten by a radioactive spider.');
+            break;
+        case 36:
+            bot.speak('I predict, that you will lose everything in a blazing fire.');
+            break;
+        case 37:
+            bot.speak('I predict, that you will get bored and format your hard drive in your computer.');
+            break;
+        case 38:
+            bot.speak('I predict, that your computer mouse will mess up and go crazy.');
+            break;
+        case 39:
+            bot.speak('I predict, that you will get angry and throw your furniture everywhere.');
+            break;
+        case 40:
+            bot.speak('I predict, that a burgular will break into your house.');
+            break;
         }
     }
 });
@@ -1881,7 +1969,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 43 ))
+        switch (Math.round(Math.random() * 54 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2015,6 +2103,51 @@ bot.on('speak', function (data)
         case 43:
             bot.speak('Jonah 3:10: When God saw what they did, how they turned from their evil way, God relented of the disaster that he had said he would do to them, and he did not do it. (ESV)');
             break;
+        case 44:
+            bot.speak('Jonah 4:1: But it displeased Jonah exceedingly,[a] and he was angry. (ESV)');
+            break;
+        case 45:
+            bot.speak('Jonah 4:2: And he prayed to the Lord and said, “O Lord, is not this what I said when I was yet in my country? That is why I made haste to flee to Tarshish; for I knew that you are a gracious God and merciful, slow to anger and abounding in steadfast love, and relenting from disaster. (ESV)');
+            break;
+        case 46:
+            bot.speak('Jonah 4:3: Therefore now, O Lord, please take my life from me, for it is better for me to die than to live.” (ESV)');
+            break;
+        case 47:
+            bot.speak('Jonah 4:4: And the Lord said, “Do you do well to be angry?” (ESV)');
+            break;
+        case 48:
+            bot.speak('Jonah 4:5: Jonah went out of the city and sat to the east of the city and made a booth for himself there. He sat under it in the shade, till he should see what would become of the city. (ESV)');
+            break;
+        case 49:
+            bot.speak('Jonah 4:6: Now the Lord God appointed a plant[b] and made it come up over Jonah, that it might be a shade over his head, to save him from his discomfort.[c] So Jonah was exceedingly glad because of the plant. (ESV)');
+            break;
+        case 50:
+            bot.speak('Jonah 4:7: But when dawn came up the next day, God appointed a worm that attacked the plant, so that it withered. (ESV)');
+            break;
+        case 51:
+            bot.speak('Jonah 4:8: When the sun rose, God appointed a scorching east wind, and the sun beat down on the head of Jonah so that he was faint. And he asked that he might die and said, “It is better for me to die than to live.” (ESV)');
+            break;
+        case 52:
+            bot.speak('Jonah 4:9: But God said to Jonah, “Do you do well to be angry for the plant?” And he said, “Yes, I do well to be angry, angry enough to die.” (ESV)');
+            break;
+        case 53:
+            bot.speak('Jonah 4:10: And the Lord said, “You pity the plant, for which you did not labor, nor did you make it grow, which came into being in a night and perished in a night. (ESV)');
+            break;
+        case 54:
+            bot.speak('Jonah 4:11: And should not I pity Nineveh, that great city, in which there are more than 120,000 persons who do not know their right hand from their left, and also much cattle?” (ESV)');
+            break;
         }
     }
+});
+
+bot.on('speak', function (data) {
+if (data.match(/fan/))
+    bot.becomeFan(data.user[0].userid);
+    bot.speak('I am now your fan, @ data.name.');
+});
+
+bot.on('registered', function (data) {
+var name = data.user[0].name;
+var command = data.command; 
+   bot.becomeFan(data.user[0].userid);
 });

@@ -6,9 +6,6 @@ Bot coded for Turntable.fm
 Introduction: His coding is made out of the Turntable-API. Link is at https://github.com/alaingilbert/Turntable-API
 
 Commands so Far:
-/status
-/off
-/on
 /jump
 /jump down
 /skip
@@ -19,6 +16,7 @@ Commands so Far:
 /mood
 /fortune
 /random verse
+/fan
 
 Private Message Commands:
 1. /hello
@@ -54,29 +52,28 @@ Private Message Commands:
 31. /mod
 32. /victory
 Features:
-1. On/Off Switch
-2. DJing Functions
-3. AutoFan at the beginning of a song(Bot will only fan you only if he didn't fan you before)
-4. Says a random phrase when you mention VeggieBot's name
-5. Private Message Functions
-6. Blacklisting Functions
-7. Escort Someone when current song is lamed
-8. Stalking Functions
-9. Vote Skipping
-10. Bop Count
-11. Song Length Limit
-12. Stuck Song Detection and Correction
-13. AFK Check
-14. Auto Reconnects to Turntable.fm
-15. Logs Version Number to his console whenever he logs on
-16. Room Greeting
-17. Song Limit
-18. Song Stats
-19. 8 Ball Database
-20. Mood Database
-21. Fortune Database
-22. Random Verse Database
-Version Number: 3.4.0
+1. DJing Functions
+2. AutoFan at the beginning of a song(Bot will only fan you only if he didn't fan you before)
+3. Says a random phrase when you mention VeggieBot's name
+4. Private Message Functions
+5. Blacklisting Functions
+6. Escort Someone when current song is lamed
+7. Stalking Functions
+8. Vote Skipping
+9. Bop Count
+10. Song Length Limit
+11. Stuck Song Detection and Correction
+12. AFK Check
+13. Auto Reconnects to Turntable.fm
+14. Logs Version Number to his console whenever he logs on
+15. Room Greeting
+16. Song Limit
+17. Song Stats
+18. 8 Ball Database
+19. Mood Database
+20. Fortune Database
+21. Random Verse Database
+Version Number: 3.5.0
 
 When He will be Updated: He will be updated frequently every week. 
  
