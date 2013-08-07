@@ -16,7 +16,6 @@ Commands so Far:
 /mood
 /fortune
 /random verse
-/fan
 
 Private Message Commands:
 1. /hello
@@ -73,7 +72,7 @@ Features:
 19. Mood Database
 20. Fortune Database
 21. Random Verse Database
-Version Number: 3.5.0
+Version Number: 3.6.0
 
 When He will be Updated: He will be updated frequently every week. 
  

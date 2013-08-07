@@ -882,10 +882,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.5.0! @' + data2.name);
+        bot.speak('My current version number is 3.6.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.5.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.6.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1436,7 +1436,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.5.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.6.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1969,7 +1969,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 54 ))
+        switch (Math.round(Math.random() * 76 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2136,14 +2136,74 @@ bot.on('speak', function (data)
         case 54:
             bot.speak('Jonah 4:11: And should not I pity Nineveh, that great city, in which there are more than 120,000 persons who do not know their right hand from their left, and also much cattle?” (ESV)');
             break;
+        case 55:
+            bot.speak('Exodus 1:1: These are the names of the sons of Israel who came to Egypt with Jacob, each with his household: (ESV)');
+            break;
+        case 56:
+            bot.speak('Exodus 1:2: Reuben, Simeon, Levi, and Judah, (ESV)');
+            break;
+        case 57:
+            bot.speak('Exodus 1:3: Issachar, Zebulun, and Benjamin, (ESV) ');
+            break;
+        case 58:
+            bot.speak('Exodus 1:4: Dan and Naphtali, Gad and Asher. (ESV)');
+            break;
+        case 59:
+            bot.speak('Exodus 1:5: All the descendants of Jacob were seventy persons; Joseph was already in Egypt. (ESV)');
+            break;
+        case 60:
+            bot.speak('Exodus 1:6: Then Joseph died, and all his brothers and all that generation. (ESV)');
+            break;
+        case 61:
+            bot.speak('Exodus 1:7: But the people of Israel were fruitful and increased greatly; they multiplied and grew exceedingly strong, so that the land was filled with them. (ESV)');
+            break;
+        case 62:
+            bot.speak('Exodus 1:8: Now there arose a new king over Egypt, who did not know Joseph. (ESV)');
+            break;
+        case 63:
+            bot.speak('Exodus 1:9: And he said to his people, “Behold, the people of Israel are too many and too mighty for us. (ESV)');
+            break;
+        case 64:
+            bot.speak('Exodus 1:10: Come, let us deal shrewdly with them, lest they multiply, and, if war breaks out, they join our enemies and fight against us and escape from the land.” (ESV)');
+            break;
+        case 65:
+            bot.speak('Exodus 1:11: Therefore they set taskmasters over them to afflict them with heavy burdens. They built for Pharaoh store cities, Pithom and Raamses. (ESV)');
+            break;
+        case 66:
+            bot.speak('Exodus 1:12: But the more they were oppressed, the more they multiplied and the more they spread abroad. And the Egyptians were in dread of the people of Israel. (ESV)');
+            break;
+        case 67:
+            bot.speak('Exodus 1:13: So they ruthlessly made the people of Israel work as slaves (ESV)');
+            break;
+        case 68:
+            bot.speak('Exodus 1:14: and made their lives bitter with hard service, in mortar and brick, and in all kinds of work in the field. In all their work they ruthlessly made them work as slaves. (ESV)');
+            break;
+        case 69:
+            bot.speak('Exodus 1:15: Then the king of Egypt said to the Hebrew midwives, one of whom was named Shiphrah and the other Puah, (ESV)');
+            break;
+        case 70:
+            bot.speak('Exodus 1:16: “When you serve as midwife to the Hebrew women and see them on the birthstool, if it is a son, you shall kill him, but if it is a daughter, she shall live.” (ESV)');
+            break;
+        case 71:
+            bot.speak('Exodus 1:17: But the midwives feared God and did not do as the king of Egypt commanded them, but let the male children live. (ESV)');
+            break;
+        case 72:
+            bot.speak('Exodus 1:18: So the king of Egypt called the midwives and said to them, “Why have you done this, and let the male children live?” (ESV)');
+            break;
+        case 73:
+            bot.speak('Exodus 1:19: The midwives said to Pharaoh, “Because the Hebrew women are not like the Egyptian women, for they are vigorous and give birth before the midwife comes to them.” (ESV)');
+            break;
+        case 74:
+            bot.speak('Exodus 1:20: So God dealt well with the midwives. And the people multiplied and grew very strong. (ESV)');
+            break;
+        case 75:
+            bot.speak('Exodus 1:21: And because the midwives feared God, he gave them families. (ESV)');
+            break;
+        case 76:
+            bot.speak('Exodus 1:22: Then Pharaoh commanded all his people, “Every son that is born to the Hebrews[a] you shall cast into the Nile, but you shall let every daughter live.” (ESV)');
+            break;
         }
     }
-});
-
-bot.on('speak', function (data) {
-if (data.match(/fan/))
-    bot.becomeFan(data.user[0].userid);
-    bot.speak('I am now your fan, @ data.name.');
 });
 
 bot.on('registered', function (data) {
