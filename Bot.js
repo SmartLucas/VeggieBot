@@ -785,7 +785,6 @@ bot.on('speak', function (data)
 }
 });
 
-
 //Users List
 var theUsersList = { };
 
@@ -882,10 +881,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.6.0! @' + data2.name);
+        bot.speak('My current version number is 3.7.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.6.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.7.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1436,7 +1435,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.6.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.7.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -1969,7 +1968,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 76 ))
+        switch (Math.round(Math.random() * 101 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2201,6 +2200,81 @@ bot.on('speak', function (data)
             break;
         case 76:
             bot.speak('Exodus 1:22: Then Pharaoh commanded all his people, “Every son that is born to the Hebrews[a] you shall cast into the Nile, but you shall let every daughter live.” (ESV)');
+            break;
+        case 77:
+            bot.speak('Exodus 2:1: Now a man from the house of Levi went and took as his wife a Levite woman. (ESV)');
+            break;
+        case 78:
+            bot.speak('Exodus 2:2: The woman conceived and bore a son, and when she saw that he was a fine child, she hid him three months. (ESV)');
+            break;
+        case 79:
+            bot.speak('Exodus 2:3: When she could hide him no longer, she took for him a basket made of bulrushes[a] and daubed it with bitumen and pitch. She put the child in it and placed it among the reeds by the river bank. (ESV)');
+            break;
+        case 80:
+            bot.speak('Exodus 2:4: And his sister stood at a distance to know what would be done to him. (ESV)');
+            break;
+        case 81:
+            bot.speak('Exodus 2:5: Now the daughter of Pharaoh came down to bathe at the river, while her young women walked beside the river. She saw the basket among the reeds and sent her servant woman, and she took it. (ESV)');
+            break;
+        case 82:
+            bot.speak('Exodus 2:6: When she opened it, she saw the child, and behold, the baby was crying. She took pity on him and said, “This is one of the Hebrews children.” (ESV)');
+            break;
+        case 83:
+            bot.speak('Exodus 2:7: Then his sister said to Pharaohs daughter, “Shall I go and call you a nurse from the Hebrew women to nurse the child for you?” (ESV)');
+            break;
+        case 84:
+            bot.speak('Exodus 2:8: And Pharaohs daughter said to her, “Go.” So the girl went and called the childs mother. (ESV)');
+            break;
+        case 85:
+            bot.speak('Exodus 2:9: And Pharaohs daughter said to her, “Take this child away and nurse him for me, and I will give you your wages.” So the woman took the child and nursed him. (ESV)');
+            break;
+        case 86:
+            bot.speak('Exodus 2:10: When the child grew older, she brought him to Pharaohs daughter, and he became her son. She named him Moses, “Because,” she said, “I drew him out of the water.” (ESV)');
+            break;
+        case 87:
+            bot.speak('Exodus 2:11: One day, when Moses had grown up, he went out to his people and looked on their burdens, and he saw an Egyptian beating a Hebrew, one of his people. (ESV)');
+            break;
+        case 88:
+            bot.speak('Exodus 2:12: He looked this way and that, and seeing no one, he struck down the Egyptian and hid him in the sand. (ESV)');
+            break;
+        case 89:
+            bot.speak('Exodus 2:13: When he went out the next day, behold, two Hebrews were struggling together. And he said to the man in the wrong, “Why do you strike your companion?” (ESV)');
+            break;
+        case 90:
+            bot.speak('Exodus 2:14: He answered, “Who made you a prince and a judge over us? Do you mean to kill me as you killed the Egyptian?” Then Moses was afraid, and thought, “Surely the thing is known.” (ESV)');
+            break;
+        case 91:
+            bot.speak('Exodus 2:15: When Pharaoh heard of it, he sought to kill Moses. But Moses fled from Pharaoh and stayed in the land of Midian. And he sat down by a well. (ESV)');
+            break;
+        case 92:
+            bot.speak('Exodus 2:16: Now the priest of Midian had seven daughters, and they came and drew water and filled the troughs to water their fathers flock. (ESV) ');
+            break;
+        case 93:
+            bot.speak('Exodus 2:17: The shepherds came and drove them away, but Moses stood up and saved them, and watered their flock. (ESV)');
+            break;
+        case 94:
+            bot.speak('Exodus 2:18: When they came home to their father Reuel, he said, “How is it that you have come home so soon today?” (ESV)');
+            break;
+        case 95:
+            bot.speak('Exodus 2:19: They said, “An Egyptian delivered us out of the hand of the shepherds and even drew water for us and watered the flock.” (ESV)');
+            break;
+        case 96:
+            bot.speak('Exodus 2:20: He said to his daughters, “Then where is he? Why have you left the man? Call him, that he may eat bread.” (ESV)');
+            break;
+        case 97:
+            bot.speak('Exodus 2:21: And Moses was content to dwell with the man, and he gave Moses his daughter Zipporah. (ESV)');
+            break;
+        case 98:
+            bot.speak('Exodus 2:22: She gave birth to a son, and he called his name Gershom, for he said, “I have been a sojourner[d] in a foreign land.” (ESV)');
+            break;
+        case 99:
+            bot.speak('Exodus 2:23: During those many days the king of Egypt died, and the people of Israel groaned because of their slavery and cried out for help. Their cry for rescue from slavery came up to God. (ESV)');
+            break;
+        case 100:
+            bot.speak('Exodus 2:24: And God heard their groaning, and God remembered his covenant with Abraham, with Isaac, and with Jacob. (ESV)');
+            break;
+        case 101:
+            bot.speak('Exodus 2:25: God saw the people of Israel—and God knew. (ESV)');
             break;
         }
     }
