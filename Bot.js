@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 230))
+        switch (Math.round(Math.random() * 260))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -780,7 +780,96 @@ bot.on('speak', function (data)
         case 230:
             bot.speak('You brought me here to say goodbye. Sayonara.');
             break;
-
+        case 231:
+            bot.speak('My apologies, I have not properly introduced myself. Finn McMissile, British intelligence.');
+            break;
+        case 232:
+            bot.speak('Tow Mater, average intelligence.');
+            break;
+        case 233:
+            bot.speak('Speed. I am speed.');
+            break;
+        case 234:
+            bot.speak('Ha ha ha! Really? You are speed? Then Francesco is TRIPLE speed! "Francesco... he is triple speed!" Ho oh! Francesco likes this McQueen! He is a really getting him into the zone!');
+            break;
+        case 235:
+            bot.speak('He is sooo getting beat today...');
+            break;
+        case 236:
+            bot.speak('I will have some of that there pistachio ice cream.');
+            break;
+        case 237:
+            bot.speak('No, no. Wasabi.');
+            break;
+        case 238:
+            bot.speak('Oh, same old, Same old, what is up with you?');
+            break;
+        case 239:
+            bot.speak('Chi trova un amico, trova un tesoro.');
+            break;
+        case 240:
+            bot.speak('What does that mean?');
+            break;
+        case 241:
+            bot.speak('"Whoever finds a friend, finds a treasure."');
+            break;
+        case 242:
+            bot.speak('A wise car hears one word and understands two...');
+            break;
+        case 243:
+            bot.speak('Bona seda!');
+            break;
+        case 244:
+            bot.speak('Uh, nice to meet you, Francesco.');
+            break;
+        case 245:
+            bot.speak('Yes, nice to meet you too. You are very good looking. Not as good as I thought, but you are good!');
+            break;
+        case 246:
+            bot.speak('Scuse me, can I get a picture with you?');
+            break;
+        case 247:
+            bot.speak('Ah, anything for McQueens friend.');
+            break;
+        case 248:
+            bot.speak('Miss Sally is gonna flip when she sees this!');
+            break;
+        case 249:
+            bot.speak('She is Lightning McQueens girlfriend.');
+            break;
+        case 250:
+            bot.speak('Ooh...');
+            break;
+        case 251:
+            bot.speak('She is a big fan of yers.');
+            break;
+        case 252:
+            bot.speak('Hey, she has a-good taste.');
+            break;
+        case 253:
+            bot.speak('Finn, one hour to Porto Corsa.');
+            break;
+        case 254:
+            bot.speak('Thank you, Stephenson.');
+            break;
+        case 255:
+            bot.speak('Ha ha. Cool! Hey computer, make me a German truck!');
+            break;
+        case 256:
+            bot.speak('My condolences.');
+            break;
+        case 257:
+            bot.speak('Do not try the free pistachio ice cream! It done turn!');
+            break;
+        case 258:
+            bot.speak('Siddley. Paris, tout de suite.');
+            break;
+        case 259:
+            bot.speak('Treehugger.');
+            break;
+        case 260:
+            bot.speak('What are you laughing at?');
+            break;
 }
 }
 });
@@ -881,10 +970,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.7.0! @' + data2.name);
+        bot.speak('My current version number is 3.7.1! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.7.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.7.1!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1435,7 +1524,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.7.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.7.1 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
