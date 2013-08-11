@@ -1447,7 +1447,7 @@ bot.on('speak', function (data) {
   // And when the bopcount reaches two...
   if (bopcount == 2) {
     bot.vote('up');
-    bot.speak('This song is so epic! Thanks for playing it.');
+    bot.speak('This song is so epic!');
   }
 });
 
