@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 280))
+        switch (Math.round(Math.random() * 300))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -929,6 +929,66 @@ bot.on('speak', function (data)
             break;
         case 280:
             bot.speak('You are a sad, strange little wagon. You have my pity. Farewell!');
+            break;
+        case 281:
+            bot.speak('Oh, yeah? Well, good riddance, you loony!');
+            break;
+        case 282:
+            bot.speak('Freebird!');
+            break;
+        case 283:
+            bot.speak('You are famous race car? A real race car?');
+            break;
+        case 284:
+            bot.speak('I have followed racing my entire life, my whole life!');
+            break;
+        case 285:
+            bot.speak('Then you know who I am. I am Lightning McQueen.');
+            break;
+        case 286:
+            bot.speak('Lightning McQueen!');
+            break;
+        case 287:
+            bot.speak('Yes! Yes!');
+            break;
+        case 288:
+            bot.speak('I must scream it to the world, my excitement from the top of someplace very high. Do you know many Ferraris?');
+            break;
+        case 289:
+            bot.speak('What?');
+            break;
+        case 290:
+            bot.speak('Luigi follow only the Ferraris.');
+            break;
+        case 291:
+            bot.speak('Perfecto. Guido!');
+            break;
+        case 292:
+            bot.speak('Pit Stop!');
+            break;
+        case 293:
+            bot.speak('He ha ha, what did Luigi tell you, eh?');
+            break;
+        case 294:
+            bot.speak('Wow, you were right, better then a Ferrari, huh?');
+            break;
+        case 295:
+            bot.speak('Eh, no.');
+            break;
+        case 296:
+            bot.speak('My friend Guido, he always dream of giving a real race car, a pit stop.');
+            break;
+        case 297:
+            bot.speak('Fine. Race your own way.');
+            break;
+        case 298:
+            bot.speak('No pit stoppo. Comprende?');
+            break;
+        case 299:
+            bot.speak('I need to get to California, pronto. Where am I?');
+            break;
+        case 300:
+            bot.speak('Red, will you move over? I want to get a look at that sexy hotrod.');
             break;
 }
 }
