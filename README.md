@@ -72,7 +72,7 @@ Features:
 19. Mood Database
 20. Fortune Database
 21. Random Verse Database
-Version Number: 3.7.1
+Version Number: 3.8.0
 
 When He will be Updated: He will be updated frequently every week. 
  

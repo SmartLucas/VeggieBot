@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 260))
+        switch (Math.round(Math.random() * 280))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -870,9 +870,70 @@ bot.on('speak', function (data)
         case 260:
             bot.speak('What are you laughing at?');
             break;
+        case 261:
+            bot.speak('Winter is a grand old time/On this, there are no ifs or buts/But remember all that salt and grime/Can rust your bolts and freeze your -...');
+            break;
+        case 262:
+            bot.speak('Hey, look, there he is!');
+            break;
+        case 263:
+            bot.speak('You hurt your what?');
+            break;
+        case 264:
+            bot.speak('What is your name?');
+            break;
+        case 265:
+            bot.speak('No, uh... no, I know your name. Is your name Mater too?');
+            break;
+        case 266:
+            bot.speak('Will you turn that disrespectful junk OFF?');
+            break;
+        case 267:
+            bot.speak('Here she comes!');
+            break;
+        case 268:
+            bot.speak('Okay, places, everybody! Hurry! Act natural.');
+            break;
+        case 269:
+            bot.speak('Oh, for the love of Chrysler! Can we please ask someone for directions?');
+            break;
+        case 270:
+            bot.speak('Turn right to go left! Guess what? I tried it, and you know what? This crazy thing happened - I went right!');
+            break;
+        case 271:
+            bot.speak('Thanks for the tip!');
+            break;
+        case 272:
+            bot.speak('Git-R-Done!');
+            break;
+        case 273:
+            bot.speak('Thanks to you, Lightning, we had a banner year!');
+            break;
+        case 274:
+            bot.speak('I mean, we might even clear enough to buy you some headlights!');
+            break;
+        case 275:
+            bot.speak('Well, so is my brother, but he still needs headlights!');
+            break;
+        case 276:
+            bot.speak('Oh, hey, Mr. The King.');
+            break;
+        case 277:
+            bot.speak('You got more talent in one lugnut than a lot of cars has got on their whole body.');
+            break;
+        case 278:
+            bot.speak('Okay, here we go. Focus. Speed. I am speed. One winner, forty-two losers. I eat losers for breakfast. Breakfast? Maybe I should have had breakfast? Brekkie could be good for me. No, no, no, focus. Speed. Faster than fast, quicker than quick. I am Lightning.');
+            break;
+        case 279:
+            bot.speak('YOU ARE A TOY - CAR!');
+            break;
+        case 280:
+            bot.speak('You are a sad, strange little wagon. You have my pity. Farewell!');
+            break;
 }
 }
 });
+
 
 //Users List
 var theUsersList = { };
@@ -970,10 +1031,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.7.1! @' + data2.name);
+        bot.speak('My current version number is 3.8.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.7.1!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.8.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1524,7 +1585,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.7.1 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.8.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2373,4 +2434,8 @@ bot.on('registered', function (data) {
 var name = data.user[0].name;
 var command = data.command; 
    bot.becomeFan(data.user[0].userid);
+});
+
+bot.on('roomChanged', function (data) {
+    bot.speak('3.8.0 has been activated');
 });
