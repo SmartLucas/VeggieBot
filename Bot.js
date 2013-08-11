@@ -934,7 +934,6 @@ bot.on('speak', function (data)
 }
 });
 
-
 //Users List
 var theUsersList = { };
 
