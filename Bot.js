@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 300))
+        switch (Math.round(Math.random() * 320))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -990,6 +990,66 @@ bot.on('speak', function (data)
         case 300:
             bot.speak('Red, will you move over? I want to get a look at that sexy hotrod.');
             break;
+        case 301:
+            bot.speak('Do you want to stay at the Cozy Cone or what?');
+            break;
+        case 302:
+            bot.speak('Huh?');
+            break;
+        case 303:
+            bot.speak('I mean, if you do, you gotta be clean, because even here, in hillbilly hell, we have standards.');
+            break;
+        case 304:
+            bot.speak('Mater! What did I tell you about talking to the accused?');
+            break;
+        case 305:
+            bot.speak('To not to.');
+            break;
+        case 306:
+            bot.speak('You know, I once knew this girl Doreen. Good-looking girl. Looked just like a Jaguar, only she was a truck! You know, I used to crash into her just so I could speak to her.');
+            break;
+        case 307:
+            bot.speak('What... are you talking about?');
+            break;
+        case 308:
+            bot.speak('I dunno.');
+            break;
+        case 309:
+            bot.speak('GOODBYE! Okay, I am good.');
+            break;
+        case 310:
+            bot.speak('Ka-chow!');
+            break;
+        case 311:
+            bot.speak('Oh, I love being me.');
+            break;
+        case 312:
+            bot.speak('Fly away, Stanley. Be free!');
+            break;
+        case 313:
+            bot.speak('Oh, I am SO not taking you to dinner.');
+            break;
+        case 314:
+            bot.speak('Hey, I know this may be a bad time right now, but you owe me $32,000 in legal fees.');
+            break;
+        case 315:
+            bot.speak('What?');
+            break;
+        case 316:
+            bot.speak(' Oh, right. That makes perfect sense. Turn right to go left. Yes, thank you! Or should I say No, thank you, because in Opposite World, maybe that really means thank you.');
+            break;
+        case 317:
+            bot.speak('Ka-chicka! Ka-chicka!');
+            break;
+        case 318:
+            bot.speak('In your dreams, Thunder.');
+            break;
+        case 319:
+            bot.speak('Well, you know, because Thunder always comes after... Lightning!');
+            break;
+        case 320:
+            bot.speak('When was the last time you cared about something except yourself, hot rod? You name me one time, and I will take it all back.');
+            break;
 }
 }
 });
@@ -1090,10 +1150,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.8.0! @' + data2.name);
+        bot.speak('My current version number is 3.9.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.8.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 3.9.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1644,7 +1704,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.8.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 3.9.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2496,5 +2556,5 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('3.8.0 has been activated');
+    bot.speak('3.9.0 has been activated');
 });
