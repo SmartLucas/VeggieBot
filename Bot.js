@@ -1050,10 +1050,10 @@ bot.on('speak', function (data)
         case 320:
             bot.speak('When was the last time you cared about something except yourself, hot rod? You name me one time, and I will take it all back.');
             break;
-		case 321:
+        case 321:
             bot.speak('*sees a glowstick* SO SHINY!');
             break;
-		case 322:
+	case 322:
             bot.speak('Uh-huh. I thought so.');
             break;
         case 323:
