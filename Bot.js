@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 320))
+        switch (Math.round(Math.random() * 330))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -1050,6 +1050,36 @@ bot.on('speak', function (data)
         case 320:
             bot.speak('When was the last time you cared about something except yourself, hot rod? You name me one time, and I will take it all back.');
             break;
+		case 321:
+            bot.speak('*sees a glowstick* SO SHINY!');
+            break;
+		case 322:
+            bot.speak('Uh-huh. I thought so.');
+            break;
+        case 323:
+            bot.speak('Hey, yo, DJ!');
+            break;
+        case 324:
+            bot.speak('What up?');
+            break;
+        case 325:
+            bot.speak('Crazy grandpa car.');
+            break;
+        case 326:
+            bot.speak('Shall we cruise?');
+            break;
+        case 327:
+            bot.speak('Flo! What do you have at your store?');
+            break;
+        case 328:
+            bot.speak('OK, boys, stay with me.');
+            break;
+        case 329:
+            bot.speak('Throw him outta here, Sheriff! I want him out of my courtroom, I want him out of our town! Case dismissed!');
+            break;
+        case 330:
+            bot.speak('Music. Sweet music.');
+            break;
 }
 }
 });
@@ -1150,10 +1180,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 3.9.0! @' + data2.name);
+        bot.speak('My current version number is 4.0.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 3.9.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.0.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1704,7 +1734,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 3.9.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.0.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2556,5 +2586,11 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('3.9.0 has been activated');
+    bot.speak('4.0.0 has been activated');
+});
+
+bot.on('newsong', function (data) { 
+bot.speak('The current song is: ' + data.room.metadata.current_song.metadata.song);
+bot.speak('From the artist: ' + data.room.metadata.current_song.metadata.artist);
+bot.speak('From the album: ' + data.room.metadata.current_song.metadata.album);
 });
