@@ -2267,7 +2267,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 101 ))
+        switch (Math.round(Math.random() * 107 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2574,6 +2574,24 @@ bot.on('speak', function (data)
             break;
         case 101:
             bot.speak('Exodus 2:25: God saw the people of Israel—and God knew. (ESV)');
+            break;
+        case 102:
+            bot.speak('Exodus 3:1: Now Moses was keeping the flock of his father-in-law, Jethro, the priest of Midian, and he led his flock to the west side of the wilderness and came to Horeb, the mountain of God. (ESV)');
+            break;
+        case 103:
+            bot.speak('Exodus 3:2: And the angel of the Lord appeared to him in a flame of fire out of the midst of a bush. He looked, and behold, the bush was burning, yet it was not consumed. (ESV)');
+            break;
+        case 104:
+            bot.speak('Exodus 3:3: And Moses said, “I will turn aside to see this great sight, why the bush is not burned.” (ESV)');
+            break;
+        case 105:
+            bot.speak('Exodus 3:4: When the Lord saw that he turned aside to see, God called to him out of the bush, “Moses, Moses!” And he said, “Here I am.” (ESV)');
+            break;
+        case 106:
+            bot.speak('Exodus 3:5: Then he said, “Do not come near; take your sandals off your feet, for the place on which you are standing is holy ground.” (ESV)');
+            break;
+        case 107:
+            bot.speak('Exodus 3:6: And he said, “I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob.” And Moses hid his face, for he was afraid to look at God. (ESV)');
             break;
         }
     }
