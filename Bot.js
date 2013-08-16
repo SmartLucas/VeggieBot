@@ -2267,7 +2267,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 117 ))
+        switch (Math.round(Math.random() * 120 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2622,6 +2622,15 @@ bot.on('speak', function (data)
             break;
         case 117:
             bot.speak('Exodus 3:16: Go and gather the elders of Israel together and say to them, ‘The Lord, the God of your fathers, the God of Abraham, of Isaac, and of Jacob, has appeared to me, saying, “I have observed you and what has been done to you in Egypt, (ESV)');
+            break;
+        case 118:
+            bot.speak('Exodus 3:17: and I promise that I will bring you up out of the affliction of Egypt to the land of the Canaanites, the Hittites, the Amorites, the Perizzites, the Hivites, and the Jebusites, a land flowing with milk and honey.”’ (ESV)');
+            break;
+        case 119:
+            bot.speak('Exodus 3:18: And they will listen to your voice, and you and the elders of Israel shall go to the king of Egypt and say to him, ‘The Lord, the God of the Hebrews, has met with us; and now, please let us go a three days journey into the wilderness, that we may sacrifice to the Lord our God.’ (ESV)');
+            break;
+        case 120:
+            bot.speak('Exodus 3:19: But I know that the king of Egypt will not let you go unless compelled by a mighty hand.[c] (ESV)');
             break;
         }
     }
