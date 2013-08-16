@@ -2267,7 +2267,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 120 ))
+        switch (Math.round(Math.random() * 123 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2631,6 +2631,15 @@ bot.on('speak', function (data)
             break;
         case 120:
             bot.speak('Exodus 3:19: But I know that the king of Egypt will not let you go unless compelled by a mighty hand.[c] (ESV)');
+            break;
+        case 121:
+            bot.speak('Exodus 3:20: So I will stretch out my hand and strike Egypt with all the wonders that I will do in it; after that he will let you go. (ESV)');
+            break;
+        case 122:
+            bot.speak('Exodus 3:21: And I will give this people favor in the sight of the Egyptians; and when you go, you shall not go empty, (ESV)');
+            break;
+        case 123:
+            bot.speak('Exodus 3:22: but each woman shall ask of her neighbor, and any woman who lives in her house, for silver and gold jewelry, and for clothing. You shall put them on your sons and on your daughters. So you shall plunder the Egyptians.” (ESV)');
             break;
         }
     }
