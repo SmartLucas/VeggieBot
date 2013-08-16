@@ -2267,7 +2267,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 113 ))
+        switch (Math.round(Math.random() * 117 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2610,6 +2610,18 @@ bot.on('speak', function (data)
             break;
         case 113:
             bot.speak('Exodus 3:12: He said, “But I will be with you, and this shall be the sign for you, that I have sent you: when you have brought the people out of Egypt, you shall serve God on this mountain.” (ESV)');
+            break;
+        case 114:
+            bot.speak('Exodus 3:13: Then Moses said to God, “If I come to the people of Israel and say to them, ‘The God of your fathers has sent me to you,’ and they ask me, ‘What is his name?’ what shall I say to them?” (ESV)');
+            break;
+        case 115:
+            bot.speak('Exodus 3:14: God said to Moses, “I am who I am.”[a] And he said, “Say this to the people of Israel, ‘I am has sent me to you.’” (ESV)');
+            break;
+        case 116:
+            bot.speak('Exodus 3:15: God also said to Moses, “Say this to the people of Israel, ‘The Lord,[b] the God of your fathers, the God of Abraham, the God of Isaac, and the God of Jacob, has sent me to you.’ This is my name forever, and thus I am to be remembered throughout all generations. (ESV)');
+            break;
+        case 117:
+            bot.speak('Exodus 3:16: Go and gather the elders of Israel together and say to them, ‘The Lord, the God of your fathers, the God of Abraham, of Isaac, and of Jacob, has appeared to me, saying, “I have observed you and what has been done to you in Egypt, (ESV)');
             break;
         }
     }
