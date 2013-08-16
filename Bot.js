@@ -2267,7 +2267,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 107 ))
+        switch (Math.round(Math.random() * 113 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2592,6 +2592,24 @@ bot.on('speak', function (data)
             break;
         case 107:
             bot.speak('Exodus 3:6: And he said, “I am the God of your father, the God of Abraham, the God of Isaac, and the God of Jacob.” And Moses hid his face, for he was afraid to look at God. (ESV)');
+            break;
+        case 108:
+            bot.speak('Exodus 3:7: Then the Lord said, “I have surely seen the affliction of my people who are in Egypt and have heard their cry because of their taskmasters. I know their sufferings, (ESV)');
+            break;
+        case 109:
+            bot.speak('Exodus 3:8: and I have come down to deliver them out of the hand of the Egyptians and to bring them up out of that land to a good and broad land, a land flowing with milk and honey, to the place of the Canaanites, the Hittites, the Amorites, the Perizzites, the Hivites, and the Jebusites. (ESV)');
+            break;
+        case 110:
+            bot.speak('Exodus 3:9: And now, behold, the cry of the people of Israel has come to me, and I have also seen the oppression with which the Egyptians oppress them. (ESV)');
+            break;
+        case 111:
+            bot.speak('Exodus 3:10: Come, I will send you to Pharaoh that you may bring my people, the children of Israel, out of Egypt.” (ESV)');
+            break;
+        case 112:
+            bot.speak('Exodus 3:11: But Moses said to God, “Who am I that I should go to Pharaoh and bring the children of Israel out of Egypt?” (ESV)');
+            break;
+        case 113:
+            bot.speak('Exodus 3:12: He said, “But I will be with you, and this shall be the sign for you, that I have sent you: when you have brought the people out of Egypt, you shall serve God on this mountain.” (ESV)');
             break;
         }
     }
