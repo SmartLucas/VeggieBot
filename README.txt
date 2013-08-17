@@ -50,6 +50,7 @@ Private Message Commands:
 30. /treat
 31. /mod
 32. /victory
+
 Features:
 1. DJing Functions
 2. AutoFan at the beginning of a song(Bot will only fan you only if he didn't fan you before)
@@ -72,6 +73,7 @@ Features:
 19. Mood Database
 20. Fortune Database
 21. Random Verse Database
+
 Version Number: 4.1.0
 
 When He will be Updated: He will be updated frequently every week. 
