@@ -82,5 +82,4 @@ Debut Date: June 28, 2013
  
 Creator: Turntablelover
 
-To Run the bot when you have Node.Js, do node Bot.js in the directory, you have the file in.
-Or You could run it on a cloud service like Cloud9. 
+To Run the bot, when you have Node.Js, do node Bot.js, in the directory, you have the file in, or You could run it on a cloud service like Cloud9 or OpenShift. 
