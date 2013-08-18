@@ -53,11 +53,11 @@ Private Message Commands:
 
 Features:
 1. DJing Functions
-2. AutoFan at the beginning of a song(Bot will only fan you only if he didn't fan you before)
+2. Auto-Fan at the beginning of a song(Bot will only fan you only if he didn't fan you before)
 3. Says a random phrase when you mention VeggieBot's name
 4. Private Message Functions
 5. Blacklisting Functions
-6. Escort Someone when current song is lamed
+6. Escort Someone when Current Song is Lamed
 7. Stalking Functions
 8. Vote Skipping
 9. Bop Count
@@ -65,11 +65,11 @@ Features:
 11. Stuck Song Detection and Correction
 12. AFK Check
 13. Auto Reconnects to Turntable.fm
-14. Logs Version Number to his console whenever he logs on
+14. Logs Version Number to his console Whenever He Logs On
 15. Room Greeting
 16. Song Limit
 17. Song Stats
-18. 8 Ball Database
+18. 8-Ball Database
 19. Mood Database
 20. Fortune Database
 21. Random Verse Database
