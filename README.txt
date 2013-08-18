@@ -76,7 +76,7 @@ Features:
 
 Version Number: 4.1.0
 
-When He will be Updated: He will be updated frequently every week. 
+When He will be Updated: He will be updated frequently with minor features, updates to his features, and other stuff. 
  
 Debut Date: June 28, 2013
  
