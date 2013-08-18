@@ -1,8 +1,9 @@
 VeggieBot
 =========
 
-Bot coded for Turntable.fm with the powerful magic of the Turntable-API. This bot wouldn't be possible without the nice people at this GitHub repository, 
-https://github.com/alaingilbert/Turntable-API. They helped me get the code working perfectly with no bugs so far. 
+Bot coded for Turntable.fm with the powerful magic of the Turntable-API. This bot wouldn't be possible without 
+the nice people at this GitHub repository, https://github.com/alaingilbert/Turntable-API. 
+They helped me get the code working perfectly with no bugs so far. 
 
 Introduction: His coding is made out of the Turntable-API. Link is at https://github.com/alaingilbert/Turntable-API
 
