@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 330))
+        switch (Math.round(Math.random() * 350))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -517,7 +517,7 @@ bot.on('speak', function (data)
             bot.speak('Help will come from above in the shape of... a donkey.');
             break;
         case 143:
-            bot.speak('Why are you taking to that horse? Why am I covered in dirt?');
+            bot.speak('Why are you talking to that horse? Why am I covered in dirt?');
             break;
         case 144:
             bot.speak(' I buried you.');
@@ -1036,7 +1036,7 @@ bot.on('speak', function (data)
             bot.speak('What?');
             break;
         case 316:
-            bot.speak(' Oh, right. That makes perfect sense. Turn right to go left. Yes, thank you! Or should I say No, thank you, because in Opposite World, maybe that really means thank you.');
+            bot.speak('Oh, right. That makes perfect sense. Turn right to go left. Yes, thank you! Or should I say No, thank you, because in Opposite World, maybe that really means thank you.');
             break;
         case 317:
             bot.speak('Ka-chicka! Ka-chicka!');
@@ -1053,7 +1053,7 @@ bot.on('speak', function (data)
         case 321:
             bot.speak('*sees a glowstick* SO SHINY!');
             break;
-	case 322:
+        case 322:
             bot.speak('Uh-huh. I thought so.');
             break;
         case 323:
@@ -1079,6 +1079,66 @@ bot.on('speak', function (data)
             break;
         case 330:
             bot.speak('Music. Sweet music.');
+            break;
+        case 331:
+            bot.speak('Oh, oh, oh, oh, I like your style. You drive the hard bargain, eh? OK, we make you a new deal. You buy one tire, I give you three for free!');
+            break;
+        case 332:
+            bot.speak('This is it, my last offer: you buy one tire, I give you seven snow tires for free!');
+            break;
+        case 333:
+            bot.speak('Low and slow?');
+            break;
+        case 334:
+            bot.speak('Oh, yeah, baby!');
+            break;
+        case 335:
+            bot.speak('Respect the classics, man! It is Hendrix!');
+            break;
+        case 336:
+            bot.speak('My name is Mater.');
+            break;
+        case 337:
+            bot.speak('Mater?');
+            break;
+        case 338:
+            bot.speak('Yeah, like tuh-mater, but without the "tuh."');
+            break;
+        case 339:
+            bot.speak('Oh, dude... are you crying?');
+            break;
+        case 340:
+            bot.speak('All rise! The honorable Doc Hudson presiding!');
+            break;
+        case 341:
+            bot.speak('Show-off.');
+            break;
+        case 342:
+            bot.speak('Yeah! Ka-chow!');
+            break;
+        case 343:
+            bot.speak('Three cars are tied for the season points lead, heading into the final race of the season. And the winner of this race, Darrell, will win the season title and the Piston Cup. Does the King, Strip Weathers, have one more victory in him before he retires?');
+            break;
+        case 344:
+            bot.speak('The legend, the runner-up, and the rookie! Three cars, one champion!');
+            break;
+        case 345:
+            bot.speak('Oh, no. Oh, maybe he can help me!');
+            break;
+        case 346:
+            bot.speak('Officer, talk to me, babe. How long is this gonna take? I gotta get to California, pronto.');
+            break;
+        case 347:
+            bot.speak('When the defendant has no lawyer, the court will assign one to him. Hey, anyone wants to be his lawyer?');
+            break;
+        case 348:
+            bot.speak('Oh, take a carwash, hippie.');
+            break;
+        case 349:
+            bot.speak('Wonderful. Now go away.');
+            break;
+        case 350:
+            bot.speak('We are not the same! Understand? Now, get out!');
             break;
 }
 }
@@ -1180,10 +1240,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.1.1! @' + data2.name);
+        bot.speak('My current version number is 4.2.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.1.1!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.2.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1734,7 +1794,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.1.1 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.2.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2652,7 +2712,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.1.1 has been activated');
+    bot.speak('4.2.0 has been activated');
 });
 
 bot.on('newsong', function (data) { 
