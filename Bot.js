@@ -1240,10 +1240,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.2.0! @' + data2.name);
+        bot.speak('My current version number is 4.2.1! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.2.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.2.1!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1794,7 +1794,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.2.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.2.1 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2327,7 +2327,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 123 ))
+        switch (Math.round(Math.random() * 154 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2701,6 +2701,99 @@ bot.on('speak', function (data)
         case 123:
             bot.speak('Exodus 3:22: but each woman shall ask of her neighbor, and any woman who lives in her house, for silver and gold jewelry, and for clothing. You shall put them on your sons and on your daughters. So you shall plunder the Egyptians.” (ESV)');
             break;
+        case 124:
+            bot.speak('Exodus 4:1: Then Moses answered, “But behold, they will not believe me or listen to my voice, for they will say, ‘The Lord did not appear to you.’” (ESV)');
+            break;
+        case 125:
+            bot.speak('Exodus 4:2: The Lord said to him, “What is that in your hand?” He said, “A staff.” (ESV) ');
+            break;
+        case 126:
+            bot.speak('Exodus 4:3: And he said, “Throw it on the ground.” So he threw it on the ground, and it became a serpent, and Moses ran from it. (ESV)');
+            break;
+        case 127:
+            bot.speak('Exodus 4:4: But the Lord said to Moses, “Put out your hand and catch it by the tail”—so he put out his hand and caught it, and it became a staff in his hand— (ESV)');
+            break;
+        case 128:
+            bot.speak('Exodus 4:5: “that they may believe that the Lord, the God of their fathers, the God of Abraham, the God of Isaac, and the God of Jacob, has appeared to you.” (ESV)');
+            break;
+        case 129:
+            bot.speak('Exodus 4:6: Again, the Lord said to him, “Put your hand inside your cloak.”[a] And he put his hand inside his cloak, and when he took it out, behold, his hand was leprous[b] like snow. (ESV)');
+            break;
+        case 130:
+            bot.speak('Exodus 4:7: Then God said, “Put your hand back inside your cloak.” So he put his hand back inside his cloak, and when he took it out, behold, it was restored like the rest of his flesh. (ESV)');
+            break;
+        case 131:
+            bot.speak('Exodus 4:8: “If they will not believe you,” God said, “or listen to the first sign, they may believe the latter sign. (ESV)');
+            break;
+        case 132:
+            bot.speak('Exodus 4:9: If they will not believe even these two signs or listen to your voice, you shall take some water from the Nile and pour it on the dry ground, and the water that you shall take from the Nile will become blood on the dry ground.” (ESV)');
+            break;
+        case 133:
+            bot.speak('Exodus 4:10: But Moses said to the Lord, “Oh, my Lord, I am not eloquent, either in the past or since you have spoken to your servant, but I am slow of speech and of tongue.” (ESV) ');
+            break;
+        case 134:
+            bot.speak('Exodus 4:11: Then the Lord said to him, “Who has made mans mouth? Who makes him mute, or deaf, or seeing, or blind? Is it not I, the Lord? (ESV)');
+            break;
+        case 135:
+            bot.speak('Exodus 4:12: Now therefore go, and I will be with your mouth and teach you what you shall speak.” (ESV)');
+            break;
+        case 136:
+            bot.speak('Exodus 4:13: But he said, “Oh, my Lord, please send someone else.” (ESV)');
+            break;
+        case 137:
+            bot.speak('Exodus 4:14: Then the anger of the Lord was kindled against Moses and he said, “Is there not Aaron, your brother, the Levite? I know that he can speak well. Behold, he is coming out to meet you, and when he sees you, he will be glad in his heart. (ESV) ');
+            break;
+        case 138:
+            bot.speak('Exodus 4:15: You shall speak to him and put the words in his mouth, and I will be with your mouth and with his mouth and will teach you both what to do. (ESV)');
+            break;
+        case 139:
+            bot.speak('Exodus 4:16: He shall speak for you to the people, and he shall be your mouth, and you shall be as God to him. (ESV) ');
+            break;
+        case 140:
+            bot.speak('Exodus 4:17: And take in your hand this staff, with which you shall do the signs.” (ESV)');
+            break;
+        case 141:
+            bot.speak('Exodus 4:18: Moses went back to Jethro his father-in-law and said to him, “Please let me go back to my brothers in Egypt to see whether they are still alive.” And Jethro said to Moses, “Go in peace.” (ESV) ');
+            break;
+        case 142:
+            bot.speak('Exodus 4:19: And the Lord said to Moses in Midian, “Go back to Egypt, for all the men who were seeking your life are dead.” (ESV)');
+            break;
+        case 143:
+            bot.speak('Exodus 4:20: So Moses took his wife and his sons and had them ride on a donkey, and went back to the land of Egypt. And Moses took the staff of God in his hand. (ESV)');
+            break;
+        case 144:
+            bot.speak('Exodus 4:21: And the Lord said to Moses, “When you go back to Egypt, see that you do before Pharaoh all the miracles that I have put in your power. But I will harden his heart, so that he will not let the people go. (ESV)');
+            break;
+        case 145:
+            bot.speak('Exodus 4:22: Then you shall say to Pharaoh, ‘Thus says the Lord, Israel is my firstborn son, (ESV)');
+            break;
+        case 146:
+            bot.speak('Exodus 4:23: and I say to you, “Let my son go that he may serve me.” If you refuse to let him go, behold, I will kill your firstborn son.’” (ESV)');
+            break;
+        case 147:
+            bot.speak('Exodus 4:24: At a lodging place on the way the Lord met him and sought to put him to death. (ESV)');
+            break;
+        case 148:
+            bot.speak('Exodus 4:25: Then Zipporah took a flint and cut off her sons foreskin and touched Moses[c] feet with it and said, “Surely you are a bridegroom of blood to me!” (ESV)');
+            break;
+        case 149:
+            bot.speak('Exodus 4:26: So he let him alone. It was then that she said, “A bridegroom of blood,” because of the circumcision. (ESV)');
+            break;
+        case 150:
+            bot.speak('Exodus 4:27: The Lord said to Aaron, “Go into the wilderness to meet Moses.” So he went and met him at the mountain of God and kissed him. (ESV)');
+            break;
+        case 151:
+            bot.speak('Exodus 4:28: And Moses told Aaron all the words of the Lord with which he had sent him to speak, and all the signs that he had commanded him to do. (ESV)');
+            break;
+        case 152:
+            bot.speak('Exodus 4:29: Then Moses and Aaron went and gathered together all the elders of the people of Israel. (ESV)');
+            break;
+        case 153:
+            bot.speak('Exodus 4:30: Aaron spoke all the words that the Lord had spoken to Moses and did the signs in the sight of the people. (ESV) ');
+            break;
+        case 154:
+            bot.speak('Exodus 4:31: And the people believed; and when they heard that the Lord had visited the people of Israel and that he had seen their affliction, they bowed their heads and worshiped. (ESV)');
+            break;
         }
     }
 });
@@ -2712,7 +2805,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.2.0 has been activated');
+    bot.speak('4.2.1 has been activated');
 });
 
 bot.on('newsong', function (data) { 
