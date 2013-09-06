@@ -74,7 +74,7 @@ Features:
 20. Fortune Database
 21. Random Verse Database
 
-Version Number: 4.2.1
+Version Number: 4.3.0
 
 When He will be Updated: He will be updated frequently with minor features, updates to his features, and other stuff. 
  
