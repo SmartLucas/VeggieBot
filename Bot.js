@@ -1255,10 +1255,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.3.0! @' + data2.name);
+        bot.speak('My current version number is 4.3.1! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.3.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.3.1!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1809,7 +1809,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.3.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.3.1 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2342,7 +2342,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 154 ))
+        switch (Math.round(Math.random() * 177 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2809,6 +2809,75 @@ bot.on('speak', function (data)
         case 154:
             bot.speak('Exodus 4:31: And the people believed; and when they heard that the Lord had visited the people of Israel and that he had seen their affliction, they bowed their heads and worshiped. (ESV)');
             break;
+        case 155:
+            bot.speak('Exodus 5:1: Afterward Moses and Aaron went and said to Pharaoh, “Thus says the Lord, the God of Israel, ‘Let my people go, that they may hold a feast to me in the wilderness.’” (ESV)');
+            break;
+        case 156:
+            bot.speak('Exodus 5:2: But Pharaoh said, “Who is the Lord, that I should obey his voice and let Israel go? I do not know the Lord, and moreover, I will not let Israel go.” (ESV)');
+            break;
+        case 157:
+            bot.speak('Exodus 5:3: Then they said, “The God of the Hebrews has met with us. Please let us go a three days journey into the wilderness that we may sacrifice to the Lord our God, lest he fall upon us with pestilence or with the sword.” (ESV)');
+            break;
+        case 158:
+            bot.speak('Exodus 5:4: But the king of Egypt said to them, “Moses and Aaron, why do you take the people away from their work? Get back to your burdens.” (ESV)');
+            break;
+        case 159:
+            bot.speak('Exodus 5:5: And Pharaoh said, “Behold, the people of the land are now many,[a] and you make them rest from their burdens!” (ESV)');
+            break;
+        case 160:
+            bot.speak('Exodus 5:6: The same day Pharaoh commanded the taskmasters of the people and their foremen, (ESV)');
+            break;
+        case 161:
+            bot.speak('Exodus 5:7: “You shall no longer give the people straw to make bricks, as in the past; let them go and gather straw for themselves. (ESV)');
+            break;
+        case 162:
+            bot.speak('Exodus 5:8: But the number of bricks that they made in the past you shall impose on them, you shall by no means reduce it, for they are idle. Therefore they cry, ‘Let us go and offer sacrifice to our God.’ (ESV)');
+            break;
+        case 163:
+            bot.speak('Exodus 5:9: Let heavier work be laid on the men that they may labor at it and pay no regard to lying words.” (ESV)');
+            break;
+        case 164:
+            bot.speak('Exodus 5:10: So the taskmasters and the foremen of the people went out and said to the people, “Thus says Pharaoh, ‘I will not give you straw. (ESV)');
+            break;
+        case 165:
+            bot.speak('Exodus 5:11: Go and get your straw yourselves wherever you can find it, but your work will not be reduced in the least.’” (ESV)');
+            break;
+        case 166:
+            bot.speak('Exodus 5:12: So the people were scattered throughout all the land of Egypt to gather stubble for straw. (ESV)');
+            break;
+        case 167:
+            bot.speak('Exodus 5:13: The taskmasters were urgent, saying, “Complete your work, your daily task each day, as when there was straw.” (ESV)');
+            break;
+        case 168:
+            bot.speak('Exodus 5:14: And the foremen of the people of Israel, whom Pharaohs taskmasters had set over them, were beaten and were asked, “Why have you not done all your task of making bricks today and yesterday, as in the past?” (ESV)');
+            break;
+        case 169:
+            bot.speak('Exodus 5:15: Then the foremen of the people of Israel came and cried to Pharaoh, “Why do you treat your servants like this? (ESV)');
+            break;
+        case 170:
+            bot.speak('Exodus 5:16: No straw is given to your servants, yet they say to us, ‘Make bricks!’ And behold, your servants are beaten; but the fault is in your own people.” (ESV)');
+            break;
+        case 171:
+            bot.speak('Exodus 5:17: But he said, “You are idle, you are idle; that is why you say, ‘Let us go and sacrifice to the Lord.’ (ESV)');
+            break;
+        case 172:
+            bot.speak('Exodus 5:18: Go now and work. No straw will be given you, but you must still deliver the same number of bricks.” (ESV)');
+            break;
+        case 173:
+            bot.speak('Exodus 5:19: The foremen of the people of Israel saw that they were in trouble when they said, “You shall by no means reduce your number of bricks, your daily task each day.” (ESV)');
+            break;
+        case 174:
+            bot.speak('Exodus 5:20: They met Moses and Aaron, who were waiting for them, as they came out from Pharaoh; (ESV)');
+            break;
+        case 175:
+            bot.speak('Exodus 5:21: and they said to them, “The Lord look on you and judge, because you have made us stink in the sight of Pharaoh and his servants, and have put a sword in their hand to kill us.” (ESV)');
+            break;
+        case 176:
+            bot.speak('Exodus 5:22: Then Moses turned to the Lord and said, “O Lord, why have you done evil to this people? Why did you ever send me? (ESV)');
+            break;
+        case 177:
+            bot.speak('Exodus 5:23: For since I came to Pharaoh to speak in your name, he has done evil to this people, and you have not delivered your people at all.” (ESV)');
+            break;
         }
     }
 });
@@ -2820,7 +2889,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.3.0 has been activated');
+    bot.speak('4.3.1 has been activated');
 });
 
 bot.on('newsong', function (data) { 
