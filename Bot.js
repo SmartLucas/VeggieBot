@@ -1155,7 +1155,7 @@ bot.on('speak', function (data)
         case 355:
             bot.speak('*smashes a guitar in half* This is how true rock stars get paid. We smash guitars for fun.');
             break;
-		case 356:
+        case 356:
             bot.speak('gizmotronic has gone to the coding side. ');
             break;
         case 357:
