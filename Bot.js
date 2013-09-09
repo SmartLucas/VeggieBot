@@ -1168,7 +1168,7 @@ bot.on('speak', function (data)
             bot.speak('I can count to killer tomato.');
             break;
         case 360:
-            bot.speak('*hands robot polish to Boaz* hey, buddy, you need this, to stay shiny. No one wants you to rust and fall apart.');
+            bot.speak('*hands robot polish to Boaz* hey buddy, you need this to stay shiny. No one wants you to rust and fall apart.');
             break;
 }
 }
