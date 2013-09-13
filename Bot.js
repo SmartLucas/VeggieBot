@@ -2950,7 +2950,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/stable/i))
     {
-        switch (Math.round(Math.random() * 2 ))
+        switch (Math.round(Math.random() * 5 ))
         {
         case 0:
             bot.speak('I am super stable. I can run for hours.');
@@ -2960,6 +2960,15 @@ bot.on('speak', function (data)
             break;
         case 2:
             bot.speak('I am stable, but my feet are shaking a bit.');
+            break;
+        case 3:
+            bot.speak('I am pretty unstable. My code is filled with bugs or unrecognized code. I will crash like crazy.');
+            break;
+        case 4:
+            bot.speak('I am unstable. My code is buggish.');
+            break;
+        case 5:
+            bot.speak('I am stable. My code has recognized code.');
             break;
         }
     }
