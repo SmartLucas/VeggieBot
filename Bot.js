@@ -2944,3 +2944,23 @@ bot.speak('From the album: ' + data.room.metadata.current_song.metadata.album);
 bot.speak('Genre is: ' + data.room.metadata.current_song.metadata.genre);
 bot.speak('Start Time is: ' + data.room.metadata.current_song.starttime);
 });
+
+//Stable Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/stable/i))
+    {
+        switch (Math.round(Math.random() * 2 ))
+        {
+        case 0:
+            bot.speak('I am super stable. I can run for hours.');
+            break;
+        case 1:
+            bot.speak('I am pretty stable. I can run for a couple of hours with no crashs.');
+            break;
+        case 2:
+            bot.speak('I am stable, but my feet are shaking a bit.');
+            break;
+        }
+    }
+});
