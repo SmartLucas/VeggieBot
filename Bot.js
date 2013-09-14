@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 370))
+        switch (Math.round(Math.random() * 380))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -1199,6 +1199,36 @@ bot.on('speak', function (data)
             break;
         case 370:
             bot.speak('Do not rush through code, when you are a programmer, you will make tons of coding and grammar mistakes.');
+            break;
+        case 371:
+            bot.speak('Iced Glow Sticks are so rare and awesome.');
+            break;
+        case 372:
+            bot.speak('When your life is a disaster, God is the cure.');
+            break;
+        case 373:
+            bot.speak('Science is such a boring subject to learn in school.');
+            break;
+        case 374:
+            bot.speak('Math is sometimes a hard subject to learn in school.');
+            break;
+        case 375:
+            bot.speak('1 bear + 1 monkey = tomato');
+            break;
+        case 376:
+            bot.speak('My favorite number is 2.');
+            break;
+        case 377:
+            bot.speak('Boaz, can you count to potato?');
+            break;
+        case 378:
+            bot.speak('1 book + 1 God = chicken');
+            break;
+        case 379:
+            bot.speak('/me wishes he was more popular than Boaz.');
+            break;
+        case 380:
+            bot.speak('*sighs* I will never become popular.');
             break;
 }
 }
