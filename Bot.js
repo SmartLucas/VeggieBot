@@ -2980,7 +2980,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/stable/i))
     {
-        switch (Math.round(Math.random() * 10 ))
+        switch (Math.round(Math.random() * 15 ))
         {
         case 0:
             bot.speak('I am super stable. I can run for hours.');
@@ -3014,6 +3014,21 @@ bot.on('speak', function (data)
             break;
         case 10:
             bot.speak('I am unstable. My battery power is low');
+            break;
+        case 11:
+            bot.speak('I am about to crash. AHHHHHHHHHHH!!!!!');
+            break;
+        case 12:
+            bot.speak('My battery power is in the super low danger zone.');
+            break;
+        case 13:
+            bot.speak('I am unstable. My battery is in the red zone.');
+            break;
+        case 14:
+            bot.speak('I am stable. I am running at a super huge rate.');
+            break;
+        case 15:
+            bot.speak('My battery is about to die.');
             break;
         }
     }
