@@ -85,7 +85,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/VeggieBot/i))
     {
-        switch (Math.round(Math.random() * 370))
+        switch (Math.round(Math.random() * 380))
         {
         case 0:
             bot.speak('Exterminate, Exterminate');
@@ -1200,6 +1200,36 @@ bot.on('speak', function (data)
         case 370:
             bot.speak('Do not rush through code, when you are a programmer, you will make tons of coding and grammar mistakes.');
             break;
+        case 371:
+            bot.speak('Iced Glow Sticks are so rare and awesome.');
+            break;
+        case 372:
+            bot.speak('When your life is a disaster, God is the cure.');
+            break;
+        case 373:
+            bot.speak('Science is such a boring subject to learn in school.');
+            break;
+        case 374:
+            bot.speak('Math is sometimes a hard subject to learn in school.');
+            break;
+        case 375:
+            bot.speak('1 bear + 1 monkey = tomato');
+            break;
+        case 376:
+            bot.speak('My favorite number is 2.');
+            break;
+        case 377:
+            bot.speak('Boaz, can you count to potato?');
+            break;
+        case 378:
+            bot.speak('1 book + 1 God = chicken');
+            break;
+        case 379:
+            bot.speak('/me wishes he was more popular than Boaz.');
+            break;
+        case 380:
+            bot.speak('*sighs* I will never become popular.');
+            break;
 }
 }
 });
@@ -1300,10 +1330,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.3.3! @' + data2.name);
+        bot.speak('My current version number is 4.4.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.3.3!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.4.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1854,7 +1884,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.3.3 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.4.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2934,7 +2964,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.3.3 has been activated');
+    bot.speak('4.4.0 has been activated');
 });
 
 bot.on('newsong', function (data) { 
@@ -2943,4 +2973,78 @@ bot.speak('From the artist: ' + data.room.metadata.current_song.metadata.artist)
 bot.speak('From the album: ' + data.room.metadata.current_song.metadata.album);
 bot.speak('Genre is: ' + data.room.metadata.current_song.metadata.genre);
 bot.speak('Start Time is: ' + data.room.metadata.current_song.starttime);
+});
+
+//Stable Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/stable/i))
+    {
+        switch (Math.round(Math.random() * 20 ))
+        {
+        case 0:
+            bot.speak('I am super stable. I can run for hours.');
+            break;
+        case 1:
+            bot.speak('I am pretty stable. I can run for a couple of hours with no crashs.');
+            break;
+        case 2:
+            bot.speak('I am stable, but my feet are shaking a bit.');
+            break;
+        case 3:
+            bot.speak('I am pretty unstable. My code is filled with bugs or unrecognized code. I will crash like crazy.');
+            break;
+        case 4:
+            bot.speak('I am unstable. My code is buggish.');
+            break;
+        case 5:
+            bot.speak('I am stable. My code has recognized code.');
+            break;
+        case 6:
+            bot.speak('I am super stable. I drank my daily can of soda.');
+            break;
+        case 7:
+            bot.speak('I am unstable. I am half-asleep.');
+            break;
+        case 8:
+            bot.speak('I am unstable. My legs are asleep.');
+            break;
+        case 9:
+            bot.speak('I am stable. I am wide awake and ready for action.');
+            break;
+        case 10:
+            bot.speak('I am unstable. My battery power is low');
+            break;
+        case 11:
+            bot.speak('I am about to crash. AHHHHHHHHHHH!!!!!');
+            break;
+        case 12:
+            bot.speak('My battery power is in the super low danger zone.');
+            break;
+        case 13:
+            bot.speak('I am unstable. My battery is in the red zone.');
+            break;
+        case 14:
+            bot.speak('I am stable. I am running at a super huge rate.');
+            break;
+        case 15:
+            bot.speak('My battery is about to die.');
+            break;
+        case 16:
+            bot.speak('I am half-asleep.');
+            break;
+        case 17:
+            bot.speak('About to fall asleep and crash. Need more soda.');
+            break;
+        case 18:
+            bot.speak('I am super hyper. I drank a lot of soda to stay awake.');
+            break;
+        case 19:
+            bot.speak('I am about to crash. *yawns*');
+            break;
+        case 20:
+            bot.speak('So sleepy. *puts his head down on the pillow');
+            break;
+        }
+    }
 });
