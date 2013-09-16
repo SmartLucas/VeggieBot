@@ -2980,7 +2980,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/stable/i))
     {
-        switch (Math.round(Math.random() * 15 ))
+        switch (Math.round(Math.random() * 20 ))
         {
         case 0:
             bot.speak('I am super stable. I can run for hours.');
@@ -3029,6 +3029,21 @@ bot.on('speak', function (data)
             break;
         case 15:
             bot.speak('My battery is about to die.');
+            break;
+        case 16:
+            bot.speak('I am half-asleep.');
+            break;
+        case 17:
+            bot.speak('About to fall asleep and crash. Need more soda.');
+            break;
+        case 18:
+            bot.speak('I am super hyper. I drank a lot of soda to stay awake.');
+            break;
+        case 19:
+            bot.speak('I am about to crash. *yawns*');
+            break;
+        case 20:
+            bot.speak('So sleepy. *puts his head down on the pillow');
             break;
         }
     }

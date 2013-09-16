@@ -76,7 +76,7 @@ Features:
 21. Random Verse Database
 22. Stable Database
 
-Version Number: 4.4.0 Preview
+Version Number: 4.4.0 
 
 When He will be Updated: He will be updated frequently with minor features, updates to his features, and other stuff. 
  
