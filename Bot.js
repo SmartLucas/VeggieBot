@@ -1330,10 +1330,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.4.0! @' + data2.name);
+        bot.speak('My current version number is 4.4.1! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.4.0!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.4.1!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1884,7 +1884,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.4.0 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.4.1 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2964,7 +2964,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.4.0 has been activated');
+    bot.speak('4.4.1 has been activated');
 });
 
 bot.on('newsong', function (data) { 
@@ -2978,7 +2978,7 @@ bot.speak('Start Time is: ' + data.room.metadata.current_song.starttime);
 //Stable Database
 bot.on('speak', function (data)
 {
-    if (data.text.match(/stable/i))
+    if (data.text.match(/stable/i) && data.userid != USERID)
     {
         switch (Math.round(Math.random() * 20 ))
         {
