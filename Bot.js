@@ -1330,10 +1330,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.4.1! @' + data2.name);
+        bot.speak('My current version number is 4.5.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.4.1!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.5.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1884,7 +1884,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.4.1 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.5.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2417,7 +2417,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 177 ))
+        switch (Math.round(Math.random() * 186 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2953,6 +2953,33 @@ bot.on('speak', function (data)
         case 177:
             bot.speak('Exodus 5:23: For since I came to Pharaoh to speak in your name, he has done evil to this people, and you have not delivered your people at all.” (ESV)');
             break;
+        case 178:
+            bot.speak('Exodus 6:1: But the Lord said to Moses, “Now you shall see what I will do to Pharaoh; for with a strong hand he will send them out, and with a strong hand he will drive them out of his land.” (ESV)');
+            break;
+        case 179:
+            bot.speak('Exodus 6:2: God spoke to Moses and said to him, “I am the Lord. (ESV)');
+            break;
+        case 180:
+            bot.speak('Exodus 6:3: I appeared to Abraham, to Isaac, and to Jacob, as God Almighty,[a] but by my name the Lord I did not make myself known to them. (ESV)');
+            break;
+        case 181:
+            bot.speak('Exodus 6:4: I also established my covenant with them to give them the land of Canaan, the land in which they lived as sojourners. (ESV)');
+            break;
+        case 182:
+            bot.speak('Exodus 6:5: Moreover, I have heard the groaning of the people of Israel whom the Egyptians hold as slaves, and I have remembered my covenant. (ESV)');
+            break;
+        case 183:
+            bot.speak('Exodus 6:6: Say therefore to the people of Israel, ‘I am the Lord, and I will bring you out from under the burdens of the Egyptians, and I will deliver you from slavery to them, and I will redeem you with an outstretched arm and with great acts of judgment. (ESV)');
+            break;
+        case 184:
+            bot.speak('Exodus 6:7: I will take you to be my people, and I will be your God, and you shall know that I am the Lord your God, who has brought you out from under the burdens of the Egyptians. (ESV)');
+            break;
+        case 185:
+            bot.speak('Exodus 6:8: I will bring you into the land that I swore to give to Abraham, to Isaac, and to Jacob. I will give it to you for a possession. I am the Lord.’” (ESV)');
+            break;
+        case 186:
+            bot.speak('Exodus 6:9: Moses spoke thus to the people of Israel, but they did not listen to Moses, because of their broken spirit and harsh slavery. (ESV)');
+            break;
         }
     }
 });
@@ -2964,7 +2991,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.4.1 has been activated');
+    bot.speak('4.5.0 has been activated');
 });
 
 bot.on('newsong', function (data) { 
