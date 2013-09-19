@@ -2417,7 +2417,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 186 ))
+        switch (Math.round(Math.random() * 197 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2979,6 +2979,39 @@ bot.on('speak', function (data)
             break;
         case 186:
             bot.speak('Exodus 6:9: Moses spoke thus to the people of Israel, but they did not listen to Moses, because of their broken spirit and harsh slavery. (ESV)');
+            break;
+        case 187:
+            bot.speak('Exodus 6:10: So the Lord said to Moses, (ESV)');
+            break;
+        case 188:
+            bot.speak('Exodus 6:11: “Go in, tell Pharaoh king of Egypt to let the people of Israel go out of his land.” (ESV)');
+            break;
+        case 189:
+            bot.speak('Exodus 6:12: But Moses said to the Lord, “Behold, the people of Israel have not listened to me. How then shall Pharaoh listen to me, for I am of uncircumcised lips?” (ESV)');
+            break;
+        case 190:
+            bot.speak('Exodus 6:13: But the Lord spoke to Moses and Aaron and gave them a charge about the people of Israel and about Pharaoh king of Egypt: to bring the people of Israel out of the land of Egypt. (ESV)');
+            break;
+        case 191:
+            bot.speak('Exodus 6:14: These are the heads of their fathers houses: the sons of Reuben, the firstborn of Israel: Hanoch, Pallu, Hezron, and Carmi; these are the clans of Reuben. (ESV)');
+            break;
+        case 192:
+            bot.speak('Exodus 6:15: The sons of Simeon: Jemuel, Jamin, Ohad, Jachin, Zohar, and Shaul, the son of a Canaanite woman; these are the clans of Simeon. (ESV)');
+            break;
+        case 193:
+            bot.speak('Exodus 6:16: These are the names of the sons of Levi according to their generations: Gershon, Kohath, and Merari, the years of the life of Levi being 137 years. (ESV)');
+            break;
+        case 194:
+            bot.speak('Exodus 6:17: The sons of Gershon: Libni and Shimei, by their clans. (ESV)');
+            break;
+        case 195:
+            bot.speak('Exodus 6:18: The sons of Kohath: Amram, Izhar, Hebron, and Uzziel, the years of the life of Kohath being 133 years. (ESV)');
+            break;
+        case 196:
+            bot.speak('Exodus 6:19: The sons of Merari: Mahli and Mushi. These are the clans of the Levites according to their generations. (ESV)');
+            break;
+        case 197:
+            bot.speak('Exodus 6:20: Amram took as his wife Jochebed his fathers sister, and she bore him Aaron and Moses, the years of the life of Amram being 137 years. (ESV)');
             break;
         }
     }
