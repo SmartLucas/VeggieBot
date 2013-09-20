@@ -2417,7 +2417,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 197 ))
+        switch (Math.round(Math.random() * 207 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -3012,6 +3012,36 @@ bot.on('speak', function (data)
             break;
         case 197:
             bot.speak('Exodus 6:20: Amram took as his wife Jochebed his fathers sister, and she bore him Aaron and Moses, the years of the life of Amram being 137 years. (ESV)');
+            break;
+        case 198:
+            bot.speak('Exodus 6:21: The sons of Izhar: Korah, Nepheg, and Zichri. (ESV)');
+            break;
+        case 199:
+            bot.speak('Exodus 6:22: The sons of Uzziel: Mishael, Elzaphan, and Sithri. (ESV)');
+            break;
+        case 200:
+            bot.speak('Exodus 6:23: Aaron took as his wife Elisheba, the daughter of Amminadab and the sister of Nahshon, and she bore him Nadab, Abihu, Eleazar, and Ithamar. (ESV)');
+            break;
+        case 201:
+            bot.speak('Exodus 6:24: The sons of Korah: Assir, Elkanah, and Abiasaph; these are the clans of the Korahites. (ESV)');
+            break;
+        case 202:
+            bot.speak('Exodus 6:25: Eleazar, Aarons son, took as his wife one of the daughters of Putiel, and she bore him Phinehas. These are the heads of the fathers houses of the Levites by their clans. (ESV)');
+            break;
+        case 203:
+            bot.speak('Exodus 6:26: These are the Aaron and Moses to whom the Lord said: “Bring out the people of Israel from the land of Egypt by their hosts.” (ESV)');
+            break;
+        case 204:
+            bot.speak('Exodus 6:27: It was they who spoke to Pharaoh king of Egypt about bringing out the people of Israel from Egypt, this Moses and this Aaron. (ESV)');
+            break;
+        case 205:
+            bot.speak('Exodus 6:28: On the day when the Lord spoke to Moses in the land of Egypt, (ESV)');
+            break;
+        case 206:
+            bot.speak('Exodus 6:29: the Lord said to Moses, “I am the Lord; tell Pharaoh king of Egypt all that I say to you.” (ESV)');
+            break;
+        case 207:
+            bot.speak('Exodus 6:30: But Moses said to the Lord, “Behold, I am of uncircumcised lips. How will Pharaoh listen to me?” (ESV)');
             break;
         }
     }
