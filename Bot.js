@@ -3138,3 +3138,23 @@ bot.on('speak', function (data)
         }
     }
 });
+
+//Sandwich Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/VeggieBot, make me a sandwich?/i))
+    {
+        switch (Math.round(Math.random() * 2 ))
+        {
+        case 0:
+            bot.speak('You make your own sandwich. *throws the sandwich pieces at you*');
+            break;
+        case 1:
+            bot.speak('I will not make a sandwichy sandwich for you.');
+            break;
+        case 2:
+            bot.speak('Sure! *makes @ data.name a sandwich*');
+            break;
+        }
+    }
+});
