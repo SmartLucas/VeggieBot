@@ -3142,7 +3142,7 @@ bot.on('speak', function (data)
 //Sandwich Database
 bot.on('speak', function (data)
 {
-    if (data.text.match(/VeggieBot, make me a sandwich?/i))
+    if (data.text.match(/sandwich/i))
     {
         switch (Math.round(Math.random() * 2 ))
         {
