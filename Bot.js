@@ -3153,7 +3153,7 @@ bot.on('speak', function (data)
             bot.speak('I will not make a sandwichy sandwich for you.');
             break;
         case 2:
-            bot.speak('Sure! *makes @ data.name a sandwich*');
+            bot.speak('Sure! *makes you a sandwich*');
             break;
         }
     }
