@@ -17,6 +17,7 @@ Commands so Far:
 /fortune
 /random verse
 /stable
+/sandwich
 
 Private Message Commands:
 1. /hello
