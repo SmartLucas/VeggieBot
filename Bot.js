@@ -3144,7 +3144,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/sandwich/i) && data.userid != USERID)
     {
-        switch (Math.round(Math.random() * 4 ))
+        switch (Math.round(Math.random() * 6 ))
         {
         case 0:
             bot.speak('You make your own sandwich. *throws the sandwich pieces at you*');
@@ -3160,6 +3160,12 @@ bot.on('speak', function (data)
             break;
         case 4:
             bot.speak('I ran out of bread. AHHHHHHHHHHHHHHHHHHHHHHHHH!');
+            break;
+        case 5:
+            bot.speak('My tomato just rolled off of the counter and out of the kitchen.');
+            break;
+        case 6:
+            bot.speak('My onion will not let me slice him.');
             break;
         }
     }
