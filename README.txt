@@ -18,6 +18,7 @@ Commands so Far:
 /random verse
 /stable
 /sandwich
+/mod
 
 Private Message Commands:
 1. /hello
