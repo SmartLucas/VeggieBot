@@ -2417,7 +2417,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 214 ))
+        switch (Math.round(Math.random() * 221 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -3063,6 +3063,27 @@ bot.on('speak', function (data)
             break;
         case 214:
             bot.speak('Philemon 1:7: For I have derived much joy and comfort from your love, my brother, because the hearts of the saints have been refreshed through you. (ESV)');
+            break;
+        case 215:
+            bot.speak('Philemon 1:8: Accordingly, though I am bold enough in Christ to command you to do what is required, (ESV)');
+            break;
+        case 216:
+            bot.speak('Philemon 1:9: yet for loves sake I prefer to appeal to you—I, Paul, an old man and now a prisoner also for Christ Jesus—(ESV)');
+            break;
+        case 217:
+            bot.speak('Philemon 1:10: I appeal to you for my child, Onesimus,[b] whose father I became in my imprisonment. (ESV)');
+            break;
+        case 218:
+            bot.speak('Philemon 1:11: (Formerly he was useless to you, but now he is indeed useful to you and to me.) (ESV)');
+            break;
+        case 219:
+            bot.speak('Philemon 1:12: I am sending him back to you, sending my very heart. (ESV)');
+            break;
+        case 220:
+            bot.speak('Philemon 1:13:  I would have been glad to keep him with me, in order that he might serve me on your behalf during my imprisonment for the gospel, (ESV)');
+            break;
+        case 221:
+            bot.speak('Philemon 1:14: but I preferred to do nothing without your consent in order that your goodness might not be by compulsion but of your own accord. (ESV)');
             break;
         }
     }
