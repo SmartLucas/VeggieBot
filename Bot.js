@@ -2417,7 +2417,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 207 ))
+        switch (Math.round(Math.random() * 214 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -3042,6 +3042,27 @@ bot.on('speak', function (data)
             break;
         case 207:
             bot.speak('Exodus 6:30: But Moses said to the Lord, “Behold, I am of uncircumcised lips. How will Pharaoh listen to me?” (ESV)');
+            break;
+        case 208:
+            bot.speak('Philemon 1:1: Paul, a prisoner for Christ Jesus, and Timothy our brother, To Philemon our beloved fellow worker (ESV)');
+            break;
+        case 209:
+            bot.speak('Philemon 1:2: and Apphia our sister and Archippus our fellow soldier, and the church in your house: (ESV)');
+            break;
+        case 210:
+            bot.speak('Philemon 1:3: Grace to you and peace from God our Father and the Lord Jesus Christ. (ESV)');
+            break;
+        case 211:
+            bot.speak('Philemon 1:4: I thank my God always when I remember you in my prayers, (ESV)');
+            break;
+        case 212:
+            bot.speak('Philemon 1:5: because I hear of your love and of the faith that you have toward the Lord Jesus and for all the saints, (ESV)');
+            break;
+        case 213:
+            bot.speak('Philemon 1:6: and I pray that the sharing of your faith may become effective for the full knowledge of every good thing that is in us for the sake of Christ. (ESV)');
+            break;
+        case 214:
+            bot.speak('Philemon 1:7: For I have derived much joy and comfort from your love, my brother, because the hearts of the saints have been refreshed through you. (ESV)');
             break;
         }
     }
