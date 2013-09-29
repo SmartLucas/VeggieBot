@@ -3070,7 +3070,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/stable/i) && data.userid != USERID)
     {
-        switch (Math.round(Math.random() * 20 ))
+        switch (Math.round(Math.random() * 25 ))
         {
         case 0:
             bot.speak('I am super stable. I can run for hours.');
@@ -3134,6 +3134,21 @@ bot.on('speak', function (data)
             break;
         case 20:
             bot.speak('So sleepy. *puts his head down on the pillow');
+            break;
+        case 21:
+            bot.speak('Too tired, do not want to do anything.');
+            break;
+        case 22:
+            bot.speak('/me lays his head down and crashes.');
+            break;
+        case 23:
+            bot.speak('/me falls on the ground and goes offline.');
+            break;
+        case 24:
+            bot.speak('So so so so tired.');
+            break;
+        case 25:
+            bot.speak('Need more soda. *falls asleep next to the soda vending machine.');
             break;
         }
     }
