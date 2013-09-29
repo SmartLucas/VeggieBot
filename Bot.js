@@ -2417,7 +2417,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 221 ))
+        switch (Math.round(Math.random() * 232 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -3084,6 +3084,39 @@ bot.on('speak', function (data)
             break;
         case 221:
             bot.speak('Philemon 1:14: but I preferred to do nothing without your consent in order that your goodness might not be by compulsion but of your own accord. (ESV)');
+            break;
+        case 222:
+            bot.speak('Philemon 1:15: For this perhaps is why he was parted from you for a while, that you might have him back forever, (ESV)');
+            break;
+        case 223:
+            bot.speak('Philemon 1:16: no longer as a bondservant[c] but more than a bondservant, as a beloved brother—especially to me, but how much more to you, both in the flesh and in the Lord. (ESV)');
+            break;
+        case 224:
+            bot.speak('Philemon 1:17: So if you consider me your partner, receive him as you would receive me. (ESV)');
+            break;
+        case 225:
+            bot.speak('Philemon 1:18: If he has wronged you at all, or owes you anything, charge that to my account. (ESV)');
+            break;
+        case 226:
+            bot.speak('Philemon 1:19: I, Paul, write this with my own hand: I will repay it—to say nothing of your owing me even your own self. (ESV)');
+            break;
+        case 227:
+            bot.speak('Philemon 1:20: Yes, brother, I want some benefit from you in the Lord. Refresh my heart in Christ. (ESV)');
+            break;
+        case 228:
+            bot.speak('Philemon 1:21: Confident of your obedience, I write to you, knowing that you will do even more than I say. (ESV)');
+            break;
+        case 229:
+            bot.speak('Philemon 1:22: At the same time, prepare a guest room for me, for I am hoping that through your prayers I will be graciously given to you. (ESV)');
+            break;
+        case 230:
+            bot.speak('Philemon 1:23: Epaphras, my fellow prisoner in Christ Jesus, sends greetings to you, (ESV)');
+            break;
+        case 231:
+            bot.speak('Philemon 1:24: and so do Mark, Aristarchus, Demas, and Luke, my fellow workers. (ESV)');
+            break;
+        case 232:
+            bot.speak('Philemon 1:25: The grace of the Lord Jesus Christ be with your spirit. (ESV)');
             break;
         }
     }
