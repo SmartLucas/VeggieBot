@@ -77,6 +77,7 @@ Features:
 21. Random Verse Database
 22. Stable Database
 23. Sandwich Database
+24. Mod Greeting
 
 Version Number: 4.5.0 Preview 
 

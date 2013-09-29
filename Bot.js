@@ -3144,7 +3144,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/sandwich/i) && data.userid != USERID)
     {
-        switch (Math.round(Math.random() * 6 ))
+        switch (Math.round(Math.random() * 10 ))
         {
         case 0:
             bot.speak('You make your own sandwich. *throws the sandwich pieces at you*');
@@ -3167,6 +3167,26 @@ bot.on('speak', function (data)
         case 6:
             bot.speak('My onion will not let me slice him.');
             break;
+        case 7:
+            bot.speak('Why will you not slice, you stupid bread.');
+            break;
+        case 8:
+            bot.speak('*whacks Boaz* You do not deserve a sandwich. you have been a bad bot lately.');
+            break;
+        case 9:
+            bot.speak('Do not get scared of me, bread, I am only turning you into a sandwich.');
+            break;
+        case 10:
+            bot.speak('Oh, it is peanut butter and jelly sandwich time. Oh, it is peanut butter and jelly sandwich time.');
+            break;
         }
+    }
+});
+
+bot.on('registered', function(data)
+{
+    if(modList.indexOf(data.user[0].userid) != -1) //if user entering is in mod list
+    {
+        bot.speak('A powerful moderator just walked into the room.');
     }
 });
