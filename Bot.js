@@ -2275,7 +2275,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/fortune/i))
     {
-        switch (Math.round(Math.random() * 40 ))
+        switch (Math.round(Math.random() * 45 ))
         {
         case 0:
             bot.speak('I predict, that you will have an awesome day.');
@@ -2399,6 +2399,21 @@ bot.on('speak', function (data)
             break;
         case 40:
             bot.speak('I predict, that a burgular will break into your house.');
+            break;
+        case 41:
+            bot.speak('I predict, that you will have a sad day.');
+            break;
+        case 42:
+            bot.speak('I predict, that you will have a happy day.');
+            break;
+        case 43:
+            bot.speak('I predict, that you will have a mad day.');
+            break;
+        case 44:
+            bot.speak('I predict, that you will have a angry day.');
+            break;
+        case 45:
+            bot.speak('I predict, that you will have a anxious day.');
             break;
         }
     }
