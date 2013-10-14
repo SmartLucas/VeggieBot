@@ -1330,10 +1330,10 @@ bot.on('pmmed', function (data)
         //and says their name in the chatbox
         bot.getProfile(data.senderid, function(data2)
         {
-        bot.speak('My current version number is 4.4.1! @' + data2.name);
+        bot.speak('My current version number is 4.5.0! @' + data2.name);
         });
 
-        bot.pm('My current version number is 4.4.1!', data.senderid); //send this text back to the sender...        
+        bot.pm('My current version number is 4.5.0!', data.senderid); //send this text back to the sender...        
     }
     
     else if (text.match(/^\/rules$/))
@@ -1884,7 +1884,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.4.1 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.5.0 is READY! on " + Date() + " ] ");
 });
  
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2275,7 +2275,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/fortune/i))
     {
-        switch (Math.round(Math.random() * 40 ))
+        switch (Math.round(Math.random() * 45 ))
         {
         case 0:
             bot.speak('I predict, that you will have an awesome day.');
@@ -2400,6 +2400,21 @@ bot.on('speak', function (data)
         case 40:
             bot.speak('I predict, that a burgular will break into your house.');
             break;
+        case 41:
+            bot.speak('I predict, that you will have a sad day.');
+            break;
+        case 42:
+            bot.speak('I predict, that you will have a happy day.');
+            break;
+        case 43:
+            bot.speak('I predict, that you will have a mad day.');
+            break;
+        case 44:
+            bot.speak('I predict, that you will have a angry day.');
+            break;
+        case 45:
+            bot.speak('I predict, that you will have a anxious day.');
+            break;
         }
     }
 });
@@ -2417,7 +2432,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/random verse/i))
     {
-        switch (Math.round(Math.random() * 177 ))
+        switch (Math.round(Math.random() * 232 ))
         {
         case 0:
             bot.speak('Jonah 1:1: Now the word of the Lord came to Jonah the son of Amittai, saying, (ESV)');
@@ -2953,6 +2968,171 @@ bot.on('speak', function (data)
         case 177:
             bot.speak('Exodus 5:23: For since I came to Pharaoh to speak in your name, he has done evil to this people, and you have not delivered your people at all.” (ESV)');
             break;
+        case 178:
+            bot.speak('Exodus 6:1: But the Lord said to Moses, “Now you shall see what I will do to Pharaoh; for with a strong hand he will send them out, and with a strong hand he will drive them out of his land.” (ESV)');
+            break;
+        case 179:
+            bot.speak('Exodus 6:2: God spoke to Moses and said to him, “I am the Lord. (ESV)');
+            break;
+        case 180:
+            bot.speak('Exodus 6:3: I appeared to Abraham, to Isaac, and to Jacob, as God Almighty,[a] but by my name the Lord I did not make myself known to them. (ESV)');
+            break;
+        case 181:
+            bot.speak('Exodus 6:4: I also established my covenant with them to give them the land of Canaan, the land in which they lived as sojourners. (ESV)');
+            break;
+        case 182:
+            bot.speak('Exodus 6:5: Moreover, I have heard the groaning of the people of Israel whom the Egyptians hold as slaves, and I have remembered my covenant. (ESV)');
+            break;
+        case 183:
+            bot.speak('Exodus 6:6: Say therefore to the people of Israel, ‘I am the Lord, and I will bring you out from under the burdens of the Egyptians, and I will deliver you from slavery to them, and I will redeem you with an outstretched arm and with great acts of judgment. (ESV)');
+            break;
+        case 184:
+            bot.speak('Exodus 6:7: I will take you to be my people, and I will be your God, and you shall know that I am the Lord your God, who has brought you out from under the burdens of the Egyptians. (ESV)');
+            break;
+        case 185:
+            bot.speak('Exodus 6:8: I will bring you into the land that I swore to give to Abraham, to Isaac, and to Jacob. I will give it to you for a possession. I am the Lord.’” (ESV)');
+            break;
+        case 186:
+            bot.speak('Exodus 6:9: Moses spoke thus to the people of Israel, but they did not listen to Moses, because of their broken spirit and harsh slavery. (ESV)');
+            break;
+        case 187:
+            bot.speak('Exodus 6:10: So the Lord said to Moses, (ESV)');
+            break;
+        case 188:
+            bot.speak('Exodus 6:11: “Go in, tell Pharaoh king of Egypt to let the people of Israel go out of his land.” (ESV)');
+            break;
+        case 189:
+            bot.speak('Exodus 6:12: But Moses said to the Lord, “Behold, the people of Israel have not listened to me. How then shall Pharaoh listen to me, for I am of uncircumcised lips?” (ESV)');
+            break;
+        case 190:
+            bot.speak('Exodus 6:13: But the Lord spoke to Moses and Aaron and gave them a charge about the people of Israel and about Pharaoh king of Egypt: to bring the people of Israel out of the land of Egypt. (ESV)');
+            break;
+        case 191:
+            bot.speak('Exodus 6:14: These are the heads of their fathers houses: the sons of Reuben, the firstborn of Israel: Hanoch, Pallu, Hezron, and Carmi; these are the clans of Reuben. (ESV)');
+            break;
+        case 192:
+            bot.speak('Exodus 6:15: The sons of Simeon: Jemuel, Jamin, Ohad, Jachin, Zohar, and Shaul, the son of a Canaanite woman; these are the clans of Simeon. (ESV)');
+            break;
+        case 193:
+            bot.speak('Exodus 6:16: These are the names of the sons of Levi according to their generations: Gershon, Kohath, and Merari, the years of the life of Levi being 137 years. (ESV)');
+            break;
+        case 194:
+            bot.speak('Exodus 6:17: The sons of Gershon: Libni and Shimei, by their clans. (ESV)');
+            break;
+        case 195:
+            bot.speak('Exodus 6:18: The sons of Kohath: Amram, Izhar, Hebron, and Uzziel, the years of the life of Kohath being 133 years. (ESV)');
+            break;
+        case 196:
+            bot.speak('Exodus 6:19: The sons of Merari: Mahli and Mushi. These are the clans of the Levites according to their generations. (ESV)');
+            break;
+        case 197:
+            bot.speak('Exodus 6:20: Amram took as his wife Jochebed his fathers sister, and she bore him Aaron and Moses, the years of the life of Amram being 137 years. (ESV)');
+            break;
+        case 198:
+            bot.speak('Exodus 6:21: The sons of Izhar: Korah, Nepheg, and Zichri. (ESV)');
+            break;
+        case 199:
+            bot.speak('Exodus 6:22: The sons of Uzziel: Mishael, Elzaphan, and Sithri. (ESV)');
+            break;
+        case 200:
+            bot.speak('Exodus 6:23: Aaron took as his wife Elisheba, the daughter of Amminadab and the sister of Nahshon, and she bore him Nadab, Abihu, Eleazar, and Ithamar. (ESV)');
+            break;
+        case 201:
+            bot.speak('Exodus 6:24: The sons of Korah: Assir, Elkanah, and Abiasaph; these are the clans of the Korahites. (ESV)');
+            break;
+        case 202:
+            bot.speak('Exodus 6:25: Eleazar, Aarons son, took as his wife one of the daughters of Putiel, and she bore him Phinehas. These are the heads of the fathers houses of the Levites by their clans. (ESV)');
+            break;
+        case 203:
+            bot.speak('Exodus 6:26: These are the Aaron and Moses to whom the Lord said: “Bring out the people of Israel from the land of Egypt by their hosts.” (ESV)');
+            break;
+        case 204:
+            bot.speak('Exodus 6:27: It was they who spoke to Pharaoh king of Egypt about bringing out the people of Israel from Egypt, this Moses and this Aaron. (ESV)');
+            break;
+        case 205:
+            bot.speak('Exodus 6:28: On the day when the Lord spoke to Moses in the land of Egypt, (ESV)');
+            break;
+        case 206:
+            bot.speak('Exodus 6:29: the Lord said to Moses, “I am the Lord; tell Pharaoh king of Egypt all that I say to you.” (ESV)');
+            break;
+        case 207:
+            bot.speak('Exodus 6:30: But Moses said to the Lord, “Behold, I am of uncircumcised lips. How will Pharaoh listen to me?” (ESV)');
+            break;
+        case 208:
+            bot.speak('Philemon 1:1: Paul, a prisoner for Christ Jesus, and Timothy our brother, To Philemon our beloved fellow worker (ESV)');
+            break;
+        case 209:
+            bot.speak('Philemon 1:2: and Apphia our sister and Archippus our fellow soldier, and the church in your house: (ESV)');
+            break;
+        case 210:
+            bot.speak('Philemon 1:3: Grace to you and peace from God our Father and the Lord Jesus Christ. (ESV)');
+            break;
+        case 211:
+            bot.speak('Philemon 1:4: I thank my God always when I remember you in my prayers, (ESV)');
+            break;
+        case 212:
+            bot.speak('Philemon 1:5: because I hear of your love and of the faith that you have toward the Lord Jesus and for all the saints, (ESV)');
+            break;
+        case 213:
+            bot.speak('Philemon 1:6: and I pray that the sharing of your faith may become effective for the full knowledge of every good thing that is in us for the sake of Christ. (ESV)');
+            break;
+        case 214:
+            bot.speak('Philemon 1:7: For I have derived much joy and comfort from your love, my brother, because the hearts of the saints have been refreshed through you. (ESV)');
+            break;
+        case 215:
+            bot.speak('Philemon 1:8: Accordingly, though I am bold enough in Christ to command you to do what is required, (ESV)');
+            break;
+        case 216:
+            bot.speak('Philemon 1:9: yet for loves sake I prefer to appeal to you—I, Paul, an old man and now a prisoner also for Christ Jesus—(ESV)');
+            break;
+        case 217:
+            bot.speak('Philemon 1:10: I appeal to you for my child, Onesimus,[b] whose father I became in my imprisonment. (ESV)');
+            break;
+        case 218:
+            bot.speak('Philemon 1:11: (Formerly he was useless to you, but now he is indeed useful to you and to me.) (ESV)');
+            break;
+        case 219:
+            bot.speak('Philemon 1:12: I am sending him back to you, sending my very heart. (ESV)');
+            break;
+        case 220:
+            bot.speak('Philemon 1:13:  I would have been glad to keep him with me, in order that he might serve me on your behalf during my imprisonment for the gospel, (ESV)');
+            break;
+        case 221:
+            bot.speak('Philemon 1:14: but I preferred to do nothing without your consent in order that your goodness might not be by compulsion but of your own accord. (ESV)');
+            break;
+        case 222:
+            bot.speak('Philemon 1:15: For this perhaps is why he was parted from you for a while, that you might have him back forever, (ESV)');
+            break;
+        case 223:
+            bot.speak('Philemon 1:16: no longer as a bondservant[c] but more than a bondservant, as a beloved brother—especially to me, but how much more to you, both in the flesh and in the Lord. (ESV)');
+            break;
+        case 224:
+            bot.speak('Philemon 1:17: So if you consider me your partner, receive him as you would receive me. (ESV)');
+            break;
+        case 225:
+            bot.speak('Philemon 1:18: If he has wronged you at all, or owes you anything, charge that to my account. (ESV)');
+            break;
+        case 226:
+            bot.speak('Philemon 1:19: I, Paul, write this with my own hand: I will repay it—to say nothing of your owing me even your own self. (ESV)');
+            break;
+        case 227:
+            bot.speak('Philemon 1:20: Yes, brother, I want some benefit from you in the Lord. Refresh my heart in Christ. (ESV)');
+            break;
+        case 228:
+            bot.speak('Philemon 1:21: Confident of your obedience, I write to you, knowing that you will do even more than I say. (ESV)');
+            break;
+        case 229:
+            bot.speak('Philemon 1:22: At the same time, prepare a guest room for me, for I am hoping that through your prayers I will be graciously given to you. (ESV)');
+            break;
+        case 230:
+            bot.speak('Philemon 1:23: Epaphras, my fellow prisoner in Christ Jesus, sends greetings to you, (ESV)');
+            break;
+        case 231:
+            bot.speak('Philemon 1:24: and so do Mark, Aristarchus, Demas, and Luke, my fellow workers. (ESV)');
+            break;
+        case 232:
+            bot.speak('Philemon 1:25: The grace of the Lord Jesus Christ be with your spirit. (ESV)');
+            break;
         }
     }
 });
@@ -2964,7 +3144,7 @@ var command = data.command;
 });
 
 bot.on('roomChanged', function (data) {
-    bot.speak('4.4.1 has been activated');
+    bot.speak('4.5.0 has been activated');
 });
 
 bot.on('newsong', function (data) { 
@@ -2980,7 +3160,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/stable/i) && data.userid != USERID)
     {
-        switch (Math.round(Math.random() * 20 ))
+        switch (Math.round(Math.random() * 25 ))
         {
         case 0:
             bot.speak('I am super stable. I can run for hours.');
@@ -3045,6 +3225,100 @@ bot.on('speak', function (data)
         case 20:
             bot.speak('So sleepy. *puts his head down on the pillow');
             break;
+        case 21:
+            bot.speak('Too tired, do not want to do anything.');
+            break;
+        case 22:
+            bot.speak('/me lays his head down and crashes.');
+            break;
+        case 23:
+            bot.speak('/me falls on the ground and goes offline.');
+            break;
+        case 24:
+            bot.speak('So so so so tired.');
+            break;
+        case 25:
+            bot.speak('Need more soda. *falls asleep next to the soda vending machine.');
+            break;
         }
+    }
+});
+
+//Sandwich Database
+bot.on('speak', function (data)
+{
+    if (data.text.match(/sandwich/i) && data.userid != USERID)
+    {
+        switch (Math.round(Math.random() * 12 ))
+        {
+        case 0:
+            bot.speak('You make your own sandwich. *throws the sandwich pieces at you*');
+            break;
+        case 1:
+            bot.speak('I will not make a sandwichy sandwich for you.');
+            break;
+        case 2:
+            bot.speak('Sure! *makes you a sandwich*');
+            break;
+        case 3:
+            bot.speak('Bread, Tomato, Cheese, Onions. No, it has to be Bread, Cheese, Onion, Tomato.');
+            break;
+        case 4:
+            bot.speak('I ran out of bread. AHHHHHHHHHHHHHHHHHHHHHHHHH!');
+            break;
+        case 5:
+            bot.speak('My tomato just rolled off of the counter and out of the kitchen.');
+            break;
+        case 6:
+            bot.speak('My onion will not let me slice him.');
+            break;
+        case 7:
+            bot.speak('Why will you not slice, you stupid bread.');
+            break;
+        case 8:
+            bot.speak('*whacks Boaz* You do not deserve a sandwich. you have been a bad bot lately.');
+            break;
+        case 9:
+            bot.speak('Do not get scared of me, bread, I am only turning you into a sandwich.');
+            break;
+        case 10:
+            bot.speak('Oh, it is peanut butter and jelly sandwich time. Oh, it is peanut butter and jelly sandwich time.');
+            break;
+        case 11:
+            bot.speak('Bork Bork Bork! *makes a sandwich super fast while throwing sandwich ingredients everywhere*');
+            break;
+        case 12:
+            bot.speak('Laddle Le De, Laddle Le Do! *cuts up onions*');
+            break;
+        }
+    }
+});
+
+// Define global variable "modList" as an array of USERIDs
+var modList = ['xxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxx'];
+
+// When someone is a moderator in the array AND types in "/mod", the bot displays a message.
+bot.on('speak', function (data) {
+  var name = data.name;
+  var text = data.text;
+  var userid = data.userid;
+
+  for (var i=0; i<modList.length; i++) {
+    if (userid == modList[i]) {
+      // Respond to "/mod" command
+      if (data.text.match(/^\/mod$/)) {
+        bot.speak('Yo @'+data.name+', it looks like you are a bot moderator!');
+      }
+      // ADD other moderator commands here!
+      break;
+    }
+  }
+});
+
+bot.on('registered', function(data)
+{
+    if(modList.indexOf(data.user[0].userid) != -1) //if user entering is in mod list
+    {
+        bot.speak('A powerful moderator just walked into the room.');
     }
 });
