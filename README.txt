@@ -80,7 +80,7 @@ Features:
 23. Sandwich Database
 24. Mod Greeting
 
-Version Number: 4.5.0 Preview 
+Version Number: 4.5.0 
 
 When He will be Updated: He will be updated frequently with minor features, updates to his features, and other stuff. 
  

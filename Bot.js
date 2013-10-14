@@ -3249,7 +3249,7 @@ bot.on('speak', function (data)
 {
     if (data.text.match(/sandwich/i) && data.userid != USERID)
     {
-        switch (Math.round(Math.random() * 10 ))
+        switch (Math.round(Math.random() * 12 ))
         {
         case 0:
             bot.speak('You make your own sandwich. *throws the sandwich pieces at you*');
@@ -3283,6 +3283,12 @@ bot.on('speak', function (data)
             break;
         case 10:
             bot.speak('Oh, it is peanut butter and jelly sandwich time. Oh, it is peanut butter and jelly sandwich time.');
+            break;
+        case 11:
+            bot.speak('Bork Bork Bork! *makes a sandwich super fast while throwing sandwich ingredients everywhere*');
+            break;
+        case 12:
+            bot.speak('Laddle Le De, Laddle Le Do! *cuts up onions*');
             break;
         }
     }
