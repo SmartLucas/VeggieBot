@@ -3319,6 +3319,6 @@ bot.on('registered', function(data)
 {
     if(modList.indexOf(data.user[0].userid) != -1) //if user entering is in mod list
     {
-        bot.speak('A powerful moderator just walked into the room.');
+        bot.speak('A powerful moderator chased a ghost into this room.');
     }
 });
