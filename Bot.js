@@ -1300,10 +1300,10 @@ bot.on('pmmed', function (data) {
     //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
     //and says their name in the chatbox
     bot.getProfile(data.senderid, function (data2) {
-      bot.speak('My current version number is 4.5.1! @' + data2.name);
+      bot.speak('My current version number is 4.5.2! @' + data2.name);
     });
 
-    bot.pm('My current version number is 4.5.1!', data.senderid); //send this text back to the sender...        
+    bot.pm('My current version number is 4.5.2!', data.senderid); //send this text back to the sender...        
   } else if (text.match(/^\/rules$/)) {
     //data.senderid is the person who pmmed the bot, so it plugs their id into the getProfile function
     //and says their name in the chatbox
@@ -1745,7 +1745,7 @@ bot.debug = false;
 // 888  T88b  888         d8888888888 888  .d88P    888     
 // 888   T88b 8888888888 d88P     888 8888888P"     888    
 bot.on('ready', function () {
-  console.log("[ " + BOTNAME + " 4.5.1 is READY! on " + Date() + " ] ");
+  console.log("[ " + BOTNAME + " 4.5.2 is READY! on " + Date() + " ] ");
 });
 
 //  .d8888b.  8888888b.  8888888888        d8888 888    d8P  
@@ -2999,7 +2999,7 @@ bot.on('registered', function (data) {
 });
 
 bot.on('roomChanged', function (data) {
-  bot.speak('4.5.1 has been activated');
+  bot.speak('4.5.2 has been activated');
 });
 
 bot.on('newsong', function (data) {
@@ -3167,13 +3167,13 @@ bot.on('speak', function (data) {
 bot.on('registered', function (data) {
   if (modList.indexOf(data.user[0].userid) != -1) //if user entering is in mod list
   {
-    bot.speak('A powerful moderator chased a ghost into this room.');
+    bot.speak('A powerful moderator walked into this room.');
   }
 });
 
 bot.on('deregistered', function (data) {
   if (modList.indexOf(data.user[0].userid) != -1) //if user entering is in mod list
   {
-    bot.speak('A powerful moderator chased a ghost out of this room.');
+    bot.speak('A powerful moderator walked out of this room.');
   }
 });
