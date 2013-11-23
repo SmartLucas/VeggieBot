@@ -5,6 +5,9 @@ Bot coded for Turntable.fm with the powerful magic of the Turntable-API. This bo
 the nice people at this GitHub repository, https://github.com/alaingilbert/Turntable-API. 
 They helped me get the code working perfectly with no bugs so far. 
 
+This code is now for show and tell.
+It will help people learn Javascript since Turntable.fm closed down on December 2, 2013
+
 Commands so Far:
 /jump
 /jump down
