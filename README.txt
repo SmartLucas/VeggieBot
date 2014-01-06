@@ -1,9 +1,7 @@
 VeggieBot
 =========
 
-Bot coded for Turntable.fm with the powerful magic of the Turntable-API. This bot wouldn't be possible without 
-the nice people at this GitHub repository, https://github.com/alaingilbert/Turntable-API. 
-They helped me get the code working perfectly with no bugs so far. 
+Bot coded for Turntable.fm with the powerful magic of the Turntable-API. 
 
 This code is now for show and tell.
 It will help people learn Javascript since Turntable.fm closed down on December 2, 2013
@@ -85,10 +83,7 @@ Features:
 
 Version Number: 4.5.2
 
-When He will be Updated: He will be updated frequently with minor features, updates to his features, and other stuff. 
- 
 Debut Date: June 28, 2013
  
 Creator: Turntablelover
 
-To Run the bot, when you have Node.Js, do node Bot.js, in the directory, you have the file in, or You could run it on a cloud service like Cloud9 or OpenShift. 
