@@ -1,9 +1,10 @@
 VeggieBot
 =========
 
-Bot coded for Turntable.fm with the powerful magic of the Turntable-API. 
+Bot that was coded for Turntable.fm 
 
 This code is now for show and tell.
+
 It will help people learn Javascript since Turntable.fm closed down on December 2, 2013
 
 Commands so Far:
@@ -84,6 +85,8 @@ Features:
 Version Number: 4.5.2
 
 Debut Date: June 28, 2013
- 
+
+Retired Date: December 2, 2013
+
 Creator: Turntablelover
 
