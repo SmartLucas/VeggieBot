@@ -166,7 +166,7 @@ bot.on('speak', function (data) {
       bot.speak('Silly humans, moderator powers are for robots');
       break;
     case 28:
-      bot.speak(' I wanted to play Mousetrap. You roll your dice, you move your mice. Nobody gets hurt.');
+      bot.speak('I wanted to play Mousetrap. You roll your dice, you move your mice. Nobody gets hurt.');
       break;
     case 29:
       bot.speak('Christmas is when you get stuff! You need more toys!');
