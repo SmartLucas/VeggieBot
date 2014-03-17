@@ -316,7 +316,7 @@ bot.on('speak', function (data) {
       bot.speak('Assemble the minions!');
       break;
     case 78:
-      bot.speak(' We have been working on this for a while now. Anti-gravity serum.');
+      bot.speak('We have been working on this for a while now. Anti-gravity serum.');
       break;
     case 79:
       bot.speak('Pins and needles!');
